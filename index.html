@@ -48,7 +48,19 @@ layout: default
 				<a href="{{ kit.url }}" >{{ kit.name }}</a>
 			</span>
 		  </td>
-          <td>{{ kit.since }}</td>
+          	<td>
+				{% if kit.since == "iOS8" %}
+					<span class="label label-primary">{{kit.since}}</span>
+				{% elsif kit.since == "iOS7" %}
+					<span class="label label-success">{{kit.since}}</span>
+				{% elsif kit.since == "iOS6" %}
+					<span class="label label-info">{{kit.since}}</span>
+				{% elsif kit.since == "iOS5" %}
+					<span class="label label-warning">{{kit.since}}</span>
+				{% else %}
+					<span class="label label-danger">{{kit.since}}</span>
+				{% endif %}
+			</td>
         </tr>
 		  {% endfor %}
       </tbody>
