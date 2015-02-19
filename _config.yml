@@ -1,7 +1,7 @@
 #
 # Jekyll configuration
 #
-exclude: ["vendor"]
+#exclude: ["vendor"]
 
 markdown: kramdown
 
