@@ -11,7 +11,7 @@ The Social framework (Social.framework) provides a simple interface for accessin
 
 * For more information about the Social framework, see [Social Framework Reference](https://developer.apple.com/library/ios/documentation/Social/Reference/Social_Framework/index.html#//apple_ref/doc/uid/TP40012233).
 * Available networks: Facebook, Twitter and Asia Weibo
-* Le (TwitterFramework)[/] (`TWTweetComposeViewController`) becomes deprecated
+* Le (TwitterFramework)[/TwitterFramework] (`TWTweetComposeViewController`) becomes deprecated
 * Available with [iOS 6](/ios6) and OS X
 * We can share:: text, image, video and files
 * Benefits of this built-in API:
