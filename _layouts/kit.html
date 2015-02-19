@@ -2,6 +2,19 @@
 layout: default
 ---
 
-<p><b>{{page.since}}</b> &bull; <a href="{{page.link}}">more</a></p>
+  <div class="bs-docs-section">
+    	<div class="page-header">
+      		<div class="row">
+        		<div class="col-lg-12">
+          			<h1 id="page-title">{{ page.name }}</h1>
+        		</div>
+      		</div>
+    	</div>
 
-{{content}}
+</div>
+
+<p><span class="label label-primary">{{page.since}}</span> &bull; <a href="{{page.link}}">more</a></p>
+
+<div class="row">
+	{{ content }}
+</div>
