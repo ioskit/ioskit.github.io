@@ -54,11 +54,11 @@ layout: default
 				{% elsif kit.since == "iOS7" %}
 					<span class="label label-success">{{kit.since}}</span>
 				{% elsif kit.since == "iOS6" %}
-					<span class="label label-info">{{kit.since}}</span>
+					<span class="label label-danger">{{kit.since}}</span>
 				{% elsif kit.since == "iOS5" %}
 					<span class="label label-warning">{{kit.since}}</span>
 				{% else %}
-					<span class="label label-danger">{{kit.since}}</span>
+					<span class="label label-info">{{kit.since}}</span>
 				{% endif %}
 			</td>
         </tr>
