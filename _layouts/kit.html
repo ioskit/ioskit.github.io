@@ -17,6 +17,18 @@ layout: default
 	<div class="row">
         <div class="col-lg-12">
 			{{ content }}
+
+			{% if page.links %}
+				<p>&nbsp;</p>
+				<h3>Resources</h3>
+				<ul>
+					{% for l in page.links %}
+						<li>
+							{{ l.link.description }}<a href="{{ l.link.url }}">{{ l.link.name }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
 		</div>
 	</div>
 
