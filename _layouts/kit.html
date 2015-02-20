@@ -7,12 +7,27 @@ layout: default
 	<div class="page-header">
     	<div class="row">
         	<div class="col-lg-12">
-          		<h1 id="page-title">{{ page.name }}</h1>
+          		<h1 id="page-title">
+					{{ page.name }}
+			      	{% if page.status %}
+						<small><small><span class="label label-primary"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;{{page.status}}</span></small></small>
+					{% endif %}
+				</h1>
         	</div>
       	</div>
     </div>
 
-	<p><span class="label label-primary">{{page.since}}</span> &bull; <a href="{{page.link}}">more</a></p>
+	<p>
+      	{% if page.since == "iOS2" %}<span class="label label-info">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS3" %}<span class="label label-info">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS4" %}<span class="label label-info">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS5" %}<span class="label label-warning">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS6" %}<span class="label label-danger">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS7" %}<span class="label label-success">{{page.since}}</span>{% endif %}
+      	{% if page.since == "iOS8" %}<span class="label label-primary">{{page.since}}</span>{% endif %}
+
+		{% if page.link %}&nbsp;&bull;&nbsp;<a href="{{page.link}}" target="_blank">more</a>{% endif %}
+	</p>
 
 	<div class="row">
         <div class="col-lg-12">

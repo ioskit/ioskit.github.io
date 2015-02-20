@@ -29,13 +29,14 @@ layout: default
 </h3>
 -->
 
-<div class="col-lg-2">
+<div class="col-lg-1">
 </div>
 
-<div class="col-lg-2">
+<div class="col-lg-4">
     <table class="table table-striped table-hover">
       <thead>
         <tr>
+          <th>?</th>
           <th>Since</th>
           <th>Framework</th>
         </tr>
@@ -44,6 +45,11 @@ layout: default
 		  {% for kit in site.kits %}
         <tr>
           <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
+        	<td>
+				{% if kit.status == "TODO" %}
+					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+				{% endif %}
+			</td>
           	<td>
 				{% if kit.since == "iOS8" %}
 					<span class="label label-primary">{{kit.since}}</span>
@@ -73,6 +79,7 @@ layout: default
     <table class="table table-striped table-hover">
       <thead>
         <tr>
+			<th>?</th>
           <th>Framework</th>
 		  	{% for ios in site.versions %}
           		<th>{{ ios }}</th>
@@ -87,6 +94,11 @@ layout: default
 			  {% for kit in kits %}
 	        <tr>
 	          <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
+        	<td>
+				{% if kit.status == "TODO" %}
+					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+				{% endif %}
+			</td>
 	          <td>
 				<span data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip">
 					<a href="{{ kit.url }}" >{{ kit.name }}</a>
@@ -108,5 +120,5 @@ layout: default
       </tbody>
     </table>
 </div>
-<div class="col-lg-2">
+<div class="col-lg-1">
 </div>
