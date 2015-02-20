@@ -12,13 +12,12 @@ collections:
             output: true
             permalink: /:path/index:output_ext
 
-schedule2013_j2:
-- 13_agile
-- 13_fun_prog
-- 13_java
-- 13_microsoft
-- 13_mobile
-- 13_web_dev
-- 13_incubator
-- 13_ruby
-- 13_ia_robotics
+versions:
+- iOS8
+- iOS7
+- iOS6
+- iOS5
+- iOS4
+- iOS3
+- iOS2
+- iOS1
