@@ -29,8 +29,46 @@ layout: default
 </h3>
 -->
 
-<div class="col-lg-3">
+<div class="col-lg-2">
 </div>
+
+<div class="col-lg-2">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Since</th>
+          <th>Framework</th>
+        </tr>
+      </thead>
+      <tbody>
+		  {% for kit in site.kits %}
+        <tr>
+          <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
+          	<td>
+				{% if kit.since == "iOS8" %}
+					<span class="label label-primary">{{kit.since}}</span>
+				{% elsif kit.since == "iOS7" %}
+					<span class="label label-success">{{kit.since}}</span>
+				{% elsif kit.since == "iOS6" %}
+					<span class="label label-danger">{{kit.since}}</span>
+				{% elsif kit.since == "iOS5" %}
+					<span class="label label-warning">{{kit.since}}</span>
+				{% else %}
+					<span class="label label-info">{{kit.since}}</span>
+				{% endif %}
+			</td>
+          <td>
+			<span data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip">
+				<a href="{{ kit.url }}" >{{ kit.name }}</a>
+			</span>
+		  </td>
+        </tr>
+		  {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+
 <div class="col-lg-6">
     <table class="table table-striped table-hover">
       <thead>
@@ -54,7 +92,6 @@ layout: default
 					<a href="{{ kit.url }}" >{{ kit.name }}</a>
 				</span>
 			  </td>
-	          	<td>{% if kit.since == "iOS1" %}<span class="label label-info">{{kit.since}}</span>{% endif %}</td>
 	          	<td>{% if kit.since == "iOS2" %}<span class="label label-info">{{kit.since}}</span>{% endif %}</td>
 	          	<td>{% if kit.since == "iOS3" %}<span class="label label-info">{{kit.since}}</span>{% endif %}</td>
 	          	<td>{% if kit.since == "iOS4" %}<span class="label label-info">{{kit.since}}</span>{% endif %}</td>
@@ -71,38 +108,5 @@ layout: default
       </tbody>
     </table>
 </div>
-<div class="col-lg-3">
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Framework</th>
-          <th>Since</th>
-        </tr>
-      </thead>
-      <tbody>
-		  {% for kit in site.kits %}
-        <tr>
-          <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
-          <td>
-			<span data-toggle="tooltip" data-placement="top" data-original-title="Default tooltip">
-				<a href="{{ kit.url }}" >{{ kit.name }}</a>
-			</span>
-		  </td>
-          	<td>
-				{% if kit.since == "iOS8" %}
-					<span class="label label-primary">{{kit.since}}</span>
-				{% elsif kit.since == "iOS7" %}
-					<span class="label label-success">{{kit.since}}</span>
-				{% elsif kit.since == "iOS6" %}
-					<span class="label label-danger">{{kit.since}}</span>
-				{% elsif kit.since == "iOS5" %}
-					<span class="label label-warning">{{kit.since}}</span>
-				{% else %}
-					<span class="label label-info">{{kit.since}}</span>
-				{% endif %}
-			</td>
-        </tr>
-		  {% endfor %}
-      </tbody>
-    </table>
+<div class="col-lg-2">
 </div>

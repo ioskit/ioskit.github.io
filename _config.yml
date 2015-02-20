@@ -13,11 +13,10 @@ collections:
             permalink: /:path/index:output_ext
 
 versions:
-- iOS8
-- iOS7
-- iOS6
-- iOS5
-- iOS4
-- iOS3
 - iOS2
-- iOS1
+- iOS3
+- iOS4
+- iOS5
+- iOS6
+- iOS7
+- iOS8
