@@ -18,13 +18,19 @@ layout: default
     </div>
 
 	<p>
-      	{% if page.since == "iOS2" %}<span class="label label-info">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS3" %}<span class="label label-info">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS4" %}<span class="label label-info">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS5" %}<span class="label label-warning">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS6" %}<span class="label label-danger">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS7" %}<span class="label label-success">{{page.since}}</span>{% endif %}
-      	{% if page.since == "iOS8" %}<span class="label label-primary">{{page.since}}</span>{% endif %}
+  		<a href="/{{page.since}}"><span class="label 
+		{% if page.since == "iOS8" %}
+      		label-primary
+		{% elsif page.since == "iOS7" %}
+  			label-success
+		{% elsif page.since == "iOS6" %}
+			label-danger
+		{% elsif page.since == "iOS5" %}
+			label-warning
+		{% else %}
+			label-info
+		{% endif %}
+  		">{{page.since}}</span></a>
 
 		{% if page.link %}&nbsp;&bull;&nbsp;<a href="{{page.link}}" target="_blank">more</a>{% endif %}
 	</p>

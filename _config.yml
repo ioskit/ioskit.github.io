@@ -8,6 +8,9 @@ markdown: kramdown
 encoding: utf-8
 
 collections:
+    ios:
+            output: true
+            permalink: /:path/index:output_ext
     kits:
             output: true
             permalink: /:path/index:output_ext

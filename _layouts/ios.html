@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div >
+
+	{% assign kits = site.kits | where: "since", page.name %}
+
+	<div class="page-header">
+    	<div class="row">
+        	<div class="col-lg-4">
+          		<h1 id="page-title">
+			      	{% if page.name == "iOS2" %}<span class="label label-info">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS3" %}<span class="label label-info">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS4" %}<span class="label label-info">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS5" %}<span class="label label-warning">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS6" %}<span class="label label-danger">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS7" %}<span class="label label-success">{{page.name}}</span>{% endif %}
+			      	{% if page.name == "iOS8" %}<span class="label label-primary">{{page.name}}</span>{% endif %}
+				</h1>
+				<p>&nbsp;</p>
+				<ol>
+				{% for kit in kits %}
+					<li>
+						<a href="#{{ kit.id }}">{{ kit.name }}</a>
+						{% if kit.status %}
+							&nbsp;<small><small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
+						{% endif %}	
+						&nbsp;<a href="/{{ kit.id }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
+					</li>
+				{% endfor %}
+				<ol>
+        	</div>
+        	<div class="col-lg-8">
+				{% for kit in kits %}
+					<div id="{{ kit.id }}"><p>&nbsp;</p></div>
+					<div class="row">
+						<h2>
+							{{ kit.name }}
+							{% if kit.status %}
+								&nbsp;<small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small>
+							{% endif %}
+						</h2>
+						{{ kit.abstract }}
+						<br />
+						<a href="#top">top</a>&nbsp;&bull;&nbsp;<a href="/{{ kit.id }}">more</a>
+					</div>
+				{% endfor %}
+        	</div>
+      	</div>
+    </div>
+</div>
