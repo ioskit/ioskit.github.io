@@ -39,8 +39,20 @@ layout: default
         <div class="col-lg-12">
 			{{ content }}
 
+			<p>&nbsp;</p>
+
+			{% if page.kits %}
+				<h3>Kits</h3>
+				<ul>
+					{% for kit in page.kits %}
+						<li>
+							<a href="/{{ kit }}">{{ kit }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
 			{% if page.links %}
-				<p>&nbsp;</p>
 				<h3>Resources</h3>
 				<ul>
 					{% for l in page.links %}

@@ -7,6 +7,9 @@ since: iOS8
 prefixe: 'AV'
 link: https://developer.apple.com/videos/wwdc/2013/#606
 abstract: "The AVKit framework (AVKit.framework) previously introduced on OS X is available on iOS. Use it instead of Media Player framework when you need to display a video."
+kits:
+ - MediaPlayer
+ - AVFoundation
 links:
  - link:
      name: 'Moving to AV Kit and AV Foundation'
