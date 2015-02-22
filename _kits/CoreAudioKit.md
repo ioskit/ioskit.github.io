@@ -2,11 +2,11 @@
 layout: kit
 name: 'CoreAudioKit'
 id: coreaudiokit
-status: TODO
+status:
 since: iOS8
 prefixe: 'CA'
 link: 
-abstract: "Provides the data types used throughout Core Audio. See CoreAudioKit Framework."
+abstract: "Provides the data types used throughout Core Audio."
 links__:
  - link:
      name: 'aaa'
@@ -14,4 +14,4 @@ links__:
      description: 'ccc'
 ---
 
-Provides the data types used throughout Core Audio. See CoreAudioKit Framework.
+The *CoreAudioKit framework* (`CoreAudioKit.framework`) provides standard views for managing connections between apps that support inter-app audio. One view provides a switcher that displays the icons of other connected apps and the other view displays the transport controls that the user can use to manipulate the audio provided by the host app.
