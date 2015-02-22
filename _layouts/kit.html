@@ -57,7 +57,7 @@ layout: default
 				<ul>
 					{% for l in page.links %}
 						<li>
-							{{ l.link.description }}<a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>
+							<a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}
 						</li>
 					{% endfor %}
 				</ul>
