@@ -11,19 +11,19 @@ links:
  - link:
      name: 'AV Foundation for iOS and OS X'
      url: https://developer.apple.com/av-foundation/
-     description: 'Apple Developer: '
+     description: ' - Apple Developer'
  - link:
      name: 'AV Foundation Programming Guide'
      url: https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html
-     description: 'For more information about how to use AV Foundation: '
+     description: ' - For more information about how to use AV Foundation'
  - link:
      name: 'AV Foundation Framework Reference'
      url: https://developer.apple.com/library/ios/documentation/AVFoundation/Reference/AVFoundationFramework/index.html
-     description: 'For information about the classes of the AV Foundation framework: '
+     description: ' - For information about the classes of the AV Foundation framework'
  - link:
      name: 'Moving to AV Kit and AV Foundation'
      url: https://developer.apple.com/videos/wwdc/2013/#606
-     description: 'WWDC 2013: '
+     description: ' - WWDC 2013'
 ---
 
 The **AV Foundation framework** (`AVFoundation.framework`) provides a set of Objective-C classes for playing, recording, and managing audio and video content. Use this framework when you want to integrate media capabilities seamlessly into your app’s user interface. You can also use it for more advanced media handling. For example, you use this framework to play multiple sounds simultaneously and control numerous aspects of the playback and recording process.
