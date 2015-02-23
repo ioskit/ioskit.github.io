@@ -2,16 +2,16 @@
 layout: kit
 name: 'AssetsLibrary'
 id: assetslibrary
-status: TODO
+type: kit
+status:
 since: iOS4
 prefixe: 'AL'
-link: 
-abstract: "Contains classes for accessing the user’s photos and videos. See Assets Library Framework."
-links__:
+abstract: "Contains classes for accessing the user’s photos and videos."
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'Assets Library Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/AssetsLibrary/Reference/AssetsLibraryFramework/index.html
+     description: ''
 ---
 
-Contains classes for accessing the user’s photos and videos. See Assets Library Framework.
+The *Assets Library* framework (`AssetsLibrary.framework`) provides access to the photos and videos managed by the Photos app on a user’s device. Use this framework to access items in the user’s saved photos album or in any albums imported onto the device. You can also save new photos and videos back to the user’s saved photos album.
