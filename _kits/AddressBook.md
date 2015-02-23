@@ -5,6 +5,8 @@ name: 'Address Book'
 since: iOS2
 link: https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
 abstract: "The Address Book technology for iOS provides a way to store people’s contact information and other personal information in a centralized database, and to share this information between applications."
+kits:
+ - AddressBookUI
 links:
  - link:
      name: 'Address Book Programming Guide for iOS'
