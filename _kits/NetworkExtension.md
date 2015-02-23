@@ -2,7 +2,7 @@
 layout: kit
 name: 'NetworkExtension'
 id: networkextension
-status: TODO
+status:
 since: iOS8
 prefixe: 'NE'
 link: 
@@ -14,4 +14,4 @@ links__:
      description: 'ccc'
 ---
 
-Provides interfaces for configuring and controlling VPN support. See Network Extension Framework.
+The *Network Extension* framework (`NetworkExtension.framework`) provides support for configuring and controlling Virtual Private Network (VPN) tunnels. Use this framework to create VPN configurations. You can then start VPN tunnels manually or supply on-demand rules to start the VPN tunnel in response to specific events.
