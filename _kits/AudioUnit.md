@@ -5,8 +5,9 @@ id: audiounit
 status: TODO
 since: iOS2
 prefixe: 'AU,Audio'
-link: 
 abstract: "Contains the interfaces for loading and using audio units. See Core Audio."
+kits:
+ - CoreAudio
 links__:
  - link:
      name: 'aaa'

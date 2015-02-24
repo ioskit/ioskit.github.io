@@ -5,8 +5,9 @@ id: mediatoolbox
 status: TODO
 since: iOS6
 prefixe: 'MT'
-link: 
 abstract: "Contains interfaces for playing audio content."
+kits:
+ - CoreAudio
 links__:
  - link:
      name: 'aaa'
