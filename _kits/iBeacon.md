@@ -7,6 +7,7 @@ type: technology
 since: iOS7
 kits:
  - CoreLocation
+ - CoreBluetooth
 links:
  - link:
      name: 'iBeacon for Developers'
