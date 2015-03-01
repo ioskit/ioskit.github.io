@@ -6,8 +6,8 @@ status:
 type: technology
 since: iOS8
 abstract: "A way for you to share your app’s functionality with other apps, with to the OS itself."
-kits__:
- - AddressBookUI
+kits:
+ - NotificationCenter
 links:
  - link:
      name: 'App extensions'
@@ -21,4 +21,4 @@ links:
 
 iOS 8 introduces a new concept called App Extensions: a way for you to share your app’s functionality with other apps, with to the OS itself.
 
-One of these types of extensions are Today Extensions, also known as Widgets. These allow you to present information in the Notification Center, which can be a great way to provide immediate and up-to-date information that the user is interested in.
+One of these types of extensions are Today Extensions, also known as Widgets. These allow you to present information in the [NotificationCenter](/NotificationCenter), which can be a great way to provide immediate and up-to-date information that the user is interested in.
