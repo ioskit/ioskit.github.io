@@ -21,14 +21,16 @@ layout: default
 				<p>&nbsp;</p>
 				<ol>
 					{% if page.xcode %}
-						<li><a href="/{{page.xcode}}"><span class="label 
+					{% assign xcodes = site.xcodes | where: "id", page.xcode %}
+					{% assign xcode = xcodes[0] %}
+						<li><a href="{{xcode.url}}"><span class="label 
 						{% if page.xcode == "xcode6" %}label-primary
 						{% elsif page.xcode == "xcode5" %}label-success
 						{% elsif page.xcode == "xcode45" %}label-danger
 						{% elsif page.xcode == "xcode42" %}label-warning
 						{% else %}label-info
 						{% endif %}
-						">{{page.xcode}}</span></a></li>
+						">{{xcode.name}}</span></a></li>
 					{% endif %}
 				{% for kit in kits %}
 					<li>

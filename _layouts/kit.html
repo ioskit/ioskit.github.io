@@ -31,14 +31,16 @@ layout: default
   		">{{page.since}}</span></a>
 
 		{% if page.xcode %}&nbsp;&bull;&nbsp;
-			<a href="/{{page.xcode}}"><span class="label 
+			{% assign xcodes = site.xcodes | where: "id", page.xcode %}
+			{% assign xcode = xcodes[0] %}
+			<a href="{{xcode.url}}"><span class="label 
 				{% if page.xcode == "xcode6" %}label-primary
 				{% elsif page.xcode == "xcode5" %}label-success
 				{% elsif page.xcode == "xcode45" %}label-danger
 				{% elsif page.xcode == "xcode42" %}label-warning
 				{% else %}label-info
 				{% endif %}
-			">{{page.xcode}}</span></a>
+			">{{xcode.name}}</span></a>
 		{% endif %}
 
 		{% if page.link %}&nbsp;&bull;&nbsp;<a href="{{page.link}}" target="_blank">more</a>{% endif %}
