@@ -48,13 +48,17 @@ layout: default
 		<div class="row">
 	        <div class="col-lg-12">
 				<p>
-		      	{% if page.ios == "iOS2" %}<span class="label label-info">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS3" %}<span class="label label-info">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS4" %}<span class="label label-info">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS5" %}<span class="label label-warning">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS6" %}<span class="label label-danger">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS7" %}<span class="label label-success">{{page.ios}}</span>{% endif %}
-		      	{% if page.ios == "iOS8" %}<span class="label label-primary">{{page.ios}}</span>{% endif %}
+			      	{% if page.ios %}
+			  		<a href="/{{page.ios}}"><span class="label 
+					{% if page.ios == "iOS8" %}label-primary
+					{% elsif page.ios == "iOS7" %}label-success
+					{% elsif page.ios == "iOS6" %}label-danger
+					{% elsif page.ios == "iOS5" %}label-warning
+					{% else %}label-info
+					{% endif %}
+			  		">{{page.ios}}</span></a>
+					{% endif %}
+					
 				&nbsp;&bull;&nbsp;
 				{{ page.releaseDate }}
 				</p>
