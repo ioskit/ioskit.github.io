@@ -14,6 +14,9 @@ collections:
     kits:
             output: true
             permalink: /:path/index:output_ext
+    xcodes:
+            output: true
+            permalink: /:path/index:output_ext
 
 versions:
 - iOS2

@@ -7,8 +7,7 @@ type: language
 since: iOS8
 kits:
  - InteractivePlaygrounds
-xcode:
- - Xcode6
+xcode: xcode6
 links:
  - link:
      name: 'The Swift Programming Language: About Swift'

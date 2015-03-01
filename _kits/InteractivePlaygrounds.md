@@ -7,8 +7,7 @@ type: technology
 since: iOS8
 kits:
  - Swift
-xcode:
- - Xcode6
+xcode: xcode6
 links:
  - link:
      name: 'Exploring and Evaluating Swift Code in a Playground'

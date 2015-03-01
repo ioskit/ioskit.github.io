@@ -20,6 +20,16 @@ layout: default
 				</h1>
 				<p>&nbsp;</p>
 				<ol>
+					{% if page.xcode %}
+						<li><a href="/{{page.xcode}}"><span class="label 
+						{% if page.xcode == "xcode6" %}label-primary
+						{% elsif page.xcode == "xcode5" %}label-success
+						{% elsif page.xcode == "xcode45" %}label-danger
+						{% elsif page.xcode == "xcode42" %}label-warning
+						{% else %}label-info
+						{% endif %}
+						">{{page.xcode}}</span></a></li>
+					{% endif %}
 				{% for kit in kits %}
 					<li>
 						<a href="#{{ kit.id }}">{{ kit.name }}</a>

@@ -67,7 +67,11 @@ layout: default
 			</td>
           <td>
 			<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
-				<a href="{{ kit.url }}" >{{ kit.name }}</a>
+				<a href="{{ kit.url }}" >
+					{% if kit.shortName %}{{ kit.shortName }}
+					{% else %}{{ kit.name }}
+					{% endif %}
+				</a>
 			</span>
 		  </td>
         </tr>
