@@ -5,7 +5,7 @@ id: cloudkit
 status: 
 since: iOS8
 prefixe: 'CK'
-link: https://developer.apple.com/icloud/index.html
+icon: /resources/images/kits/CloudKit/cloudkit-icon_2x.png
 abstract: "Contains Objective-C interfaces for fetching and saving iCloud data."
 kits:
  - CoreData

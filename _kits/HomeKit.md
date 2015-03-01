@@ -2,8 +2,11 @@
 layout: kit
 id: homekit
 name: 'Home Kit'
+status: 
+type: kit
 since: iOS8
-link: https://developer.apple.com/homekit/
+prefixe: 'HM'
+icon: /resources/images/kits/HomeKit/homekit-icon_2x.png
 abstract: "This is a new framework for communicating with and controlling connected devices in a user’s home. Your apps can enable users to discover devices in their home and configure them, or you can create actions to control those devices. Users can group actions together and trigger them using Siri."
 links:
  - link:

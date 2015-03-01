@@ -5,6 +5,8 @@ name: 'WatchKit'
 status:
 type: kit
 since: iOS8
+icon: /resources/images/kits/WatchKit/watchkit_2x.png
+abstract: "WatchKit provides three opportunities to extend your iPhone app to Apple Watch: WatchKit apps, Glances, and actionable notifications."
 kits__:
  - AddressBookUI
 links:
@@ -16,7 +18,6 @@ links:
      name: 'Apple Watch'
      url: http://www.apple.com/watch/
      description: ' - Apple'
-abstract: "WatchKit provides three opportunities to extend your iPhone app to Apple Watch: WatchKit apps, Glances, and actionable notifications."
 ---
 
 Starting early 2015, you will be able to deliver innovative new experiences on Apple Watch that reimagine and enhance the functionality of your iPhone apps. WatchKit provides three opportunities to extend your iPhone app to Apple Watch: WatchKit apps, Glances, and actionable notifications.

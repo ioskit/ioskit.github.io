@@ -5,6 +5,7 @@ name: 'Handoff'
 status:
 type: technology
 since: iOS8
+icon: /resources/images/kits/Handoff/handoff-icon_2x.png
 kits__:
  - AddressBookUI
 links:

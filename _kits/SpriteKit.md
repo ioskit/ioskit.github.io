@@ -9,6 +9,8 @@ since: iOS7
 updates: iOS8
 prefixe: 'SK'
 abstract: "provides a hardware-accelerated animation system optimized for creating 2D and 2.5D games."
+kits:
+ - SceneKit
 links:
  - link:
      name: 'SpriteKit Programming Guide'

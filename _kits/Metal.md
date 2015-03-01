@@ -3,10 +3,11 @@ layout: kit
 name: 'Metal'
 id: metal
 status: 
+type: kit
 since: iOS8
 prefixe: 'MTL'
-link: 
-abstract: "Provides a low-overhead graphics rendering engine for apps. See Metal Framework."
+icon: /resources/images/kits/Metal/metal-icon_2x.png
+abstract: "Provides a low-overhead graphics rendering engine for apps."
 links:
  - link:
      name: 'Metal Programming Guide'

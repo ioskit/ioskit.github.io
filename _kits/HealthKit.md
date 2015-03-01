@@ -2,9 +2,19 @@
 layout: kit
 id: healthkit
 name: 'HealthKit'
+status: 
+type: kit
 since: iOS8
-link: https://developer.apple.com/healthkit/
+prefixe: 'HK'
+icon: /resources/images/kits/HealthKit/healthkit-icon_2x.png
 abstract: "HealthKit allows apps providing health and fitness services to access shared health-related information in one place. A user’s health information is stored in a centralized and secure location and the user decides which data should be shared with your app."
+kits__:
+ - Foo
+links__:
+ - link:
+     name: 'aaa'
+     url: bbb
+     description: ''
 ---
 
 HealthKit allows apps providing health and fitness services to access shared health-related information in one place. A user’s health information is stored in a centralized and secure location and the user decides which data should be shared with your app.
