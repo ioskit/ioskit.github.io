@@ -7,6 +7,8 @@ status:
 since: iOS4
 prefixe: 'AL'
 abstract: "Contains classes for accessing the user’s photos and videos."
+kits:
+ - Photos
 links:
  - link:
      name: 'Assets Library Framework Reference'

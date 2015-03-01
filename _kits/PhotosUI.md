@@ -2,16 +2,20 @@
 layout: kit
 name: 'PhotosUI'
 id: photosui
-status: TODO
+status: 
+type: kit
 since: iOS8
 prefixe: 'PH'
 link: 
-abstract: "Contains interfaces for creating app extensions that manipulate photo and video assets. See Photos UI Framework."
-links__:
+abstract: "Contains interfaces for creating app extensions that manipulate photo and video assets."
+kits:
+ - Photos
+ - AppExtensions
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'App Extension Programming Guide'
+     url: https://developer.apple.com/library/ios/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214
+     description: ' (for more information about how to create photo editing extensions)'
 ---
 
-Contains interfaces for creating app extensions that manipulate photo and video assets. See Photos UI Framework.
+The *Photos UI* framework (`PhotosUI.framework`) lets you create app extensions for editing image and video assets in the Photos app.
