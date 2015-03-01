@@ -7,7 +7,6 @@ type: kit
 since: iOS8
 prefixe: 'PH'
 icon: /resources/images/kits/Photos/photokit-icon_2x.png
-link: 
 abstract: "Contains interfaces for accessing and manipulating photo and videos."
 kits:
  - PhotosUI

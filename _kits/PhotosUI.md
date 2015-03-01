@@ -6,7 +6,6 @@ status:
 type: kit
 since: iOS8
 prefixe: 'PH'
-link: 
 abstract: "Contains interfaces for creating app extensions that manipulate photo and video assets."
 kits:
  - Photos
