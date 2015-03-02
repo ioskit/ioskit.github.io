@@ -2,16 +2,25 @@
 layout: kit
 name: 'WebKit'
 id: webkit
-status: TODO
+type: kit
+status:
+icon:
+xcode:
 since: iOS8
 prefixe: 'WK'
-link: 
-abstract: "Provides support for integrating web content into your apps. See WebKit Framework."
-links__:
+abstract: "Provides support for integrating web content into your apps"
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'WebKit Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/Cocoa/Reference/WebKit/ObjC_classic/index.html
+     description: ' - Apple Developer'
+ - link:
+     name: 'WebKit Objective-C Programming Guide'
+     url: https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html
+     description: ' - Apple Developer'
 ---
 
-Provides support for integrating web content into your apps. See WebKit Framework.
+Apple has finally replaced `UIWebView`. 
+
+The *WebKit* framework (`WebKit.framework`) lets you display HTML content in your app. In addition to displaying HTML, you can provide basic editing support so that users can replace text and manipulate document text and attributes, including CSS properties. WebKit also supports creating and editing content at the DOM level of an HTML document. For example, you could extract the list of links on a page, modify them, and replace them prior to displaying the document in a web view.
+
