@@ -7,6 +7,7 @@ type: language
 since: iOS8
 kits:
  - InteractivePlaygrounds
+ - AutomaticReferenceCounting
 xcode: xcode6
 links:
  - link:
