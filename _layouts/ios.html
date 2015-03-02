@@ -10,6 +10,10 @@ layout: default
     	<div class="row">
         	<div class="col-lg-4">
           		<h1 id="page-title">
+			      	{% if page.icon %}
+						<img src="{{page.icon}}" width="100"/>&nbsp;
+					{% endif %}
+	
 			      	{% if page.name == "iOS2" %}<span class="label label-info">{{page.name}}</span>{% endif %}
 			      	{% if page.name == "iOS3" %}<span class="label label-info">{{page.name}}</span>{% endif %}
 			      	{% if page.name == "iOS4" %}<span class="label label-info">{{page.name}}</span>{% endif %}
