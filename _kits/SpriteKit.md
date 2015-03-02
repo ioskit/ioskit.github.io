@@ -11,6 +11,7 @@ prefixe: 'SK'
 abstract: "provides a hardware-accelerated animation system optimized for creating 2D and 2.5D games."
 kits:
  - SceneKit
+ - GameController
 links:
  - link:
      name: 'SpriteKit Programming Guide'
