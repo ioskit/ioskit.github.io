@@ -2,16 +2,23 @@
 layout: kit
 name: 'CoreGraphics'
 id: coregraphics
-status: TODO
+status:
+type: kit
 since: iOS2
+icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 prefixe: 'CG'
-link: 
-abstract: "Contains the interfaces for Quartz 2D. See Core Graphics Framework."
-links__:
+abstract: "Contains the interfaces for Quartz 2D"
+kits__:
+ - Foo
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'Quartz 2D Programming Guide'
+     url: https://developer.apple.com/library/ios/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html
+     description: ' - Apple Developer'
+ - link:
+     name: 'Core Graphics Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/CoreGraphics/Reference/CoreGraphics_Framework/_index.html
+     description: ' - Apple Developer'
 ---
 
-Contains the interfaces for Quartz 2D. See Core Graphics Framework.
+The *Core Graphics* framework (`CoreGraphics.framework`) contains the interfaces for the Quartz 2D drawing API. Quartz is the same advanced, vector-based drawing engine that is used in OS X. It supports path-based drawing, antialiased rendering, gradients, images, colors, coordinate-space transformations, and PDF document creation, display, and parsing. Although the API is C based, it uses object-based abstractions to represent fundamental drawing objects, making it easy to store and reuse your graphics content.
