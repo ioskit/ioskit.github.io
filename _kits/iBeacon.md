@@ -5,6 +5,7 @@ name: 'iBeacon'
 status:
 type: technology
 since: iOS7
+icon: /resources/images/kits/iBeacon/ibeacon-logo-300x300.png
 kits:
  - CoreLocation
  - CoreBluetooth
