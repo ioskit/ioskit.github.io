@@ -5,7 +5,6 @@ id: addressbookui
 status: 
 since: iOS2
 prefixe: 'AB'
-link: 
 abstract: "Contains classes for displaying the system-defined people picker and editor interfaces."
 kits:
  - AddressBook
