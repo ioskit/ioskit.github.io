@@ -1,12 +1,15 @@
 ---
 layout: kit
-name: 'SafariServices'
+name: 'Safari Services'
 id: safariservices
-status: TODO
+status:
+type: kit
 since: iOS7
+icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'SS'
-link: 
-abstract: "Supports the creation of reading list items in Safari. See Safari Services Framework."
+abstract: "Supports the creation of reading list items in Safari."
+kits__:
+ - Foo
 links__:
  - link:
      name: 'aaa'
@@ -14,4 +17,4 @@ links__:
      description: 'ccc'
 ---
 
-Supports the creation of reading list items in Safari. See Safari Services Framework.
+The *Safari Services* framework (`SafariServices.framework`) provides support for programmatically adding URLs to the user’s Safari reading list. For information about the class provided by this framework, see the framework header files.
