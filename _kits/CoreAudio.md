@@ -1,10 +1,11 @@
 ---
 layout: kit
-name: 'CoreAudio'
+name: 'Core Audio'
 id: coreaudio
 status:
 type: kit
 since: iOS2
+icon: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'Audio'
 abstract: "Provides the data types used throughout Core Audio. See Core Audio."
 kits:
@@ -17,22 +18,27 @@ links:
      name: 'Core Audio Overview'
      url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/CoreAudioOverview/Introduction/Introduction.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Core Audio Overview - What Is Core Audio?'
      url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/CoreAudioOverview/WhatisCoreAudio/WhatisCoreAudio.html
      description: ' (OS X Core Audio architecture) - Apple Developer'
+     type: reference
  - link:
      name: 'Core Audio Overview - Core Audio Services'
      url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/CoreAudioOverview/WhatsinCoreAudio/WhatsinCoreAudio.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Audio Queue Services Programming Guide'
      url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/AudioQueueProgrammingGuide/Introduction/Introduction.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Audio Tutorial for iOS: Playing Audio Programatically'
      url: http://www.raywenderlich.com/69369/audio-tutorial-ios-playing-audio-programatically-2014-edition
      description: ' - Ray Wenderlich (and other CoreAudio tutorials)'
+     type: tutorial
 ---
 
 ## The family
