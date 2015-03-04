@@ -1,6 +1,6 @@
 ---
 layout: kit
-name: 'CoreBluetooth'
+name: 'Core Bluetooth'
 id: corebluetooth
 status: 
 type: kit
@@ -9,6 +9,7 @@ prefixe: 'CB'
 abstract: "Provides access to low-power Bluetooth hardware."
 kits:
  - iBeacon
+ - CoreLocation
 links:
  - link:
      name: 'Bluetooth for Developers'
