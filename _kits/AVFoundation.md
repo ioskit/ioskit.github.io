@@ -5,8 +5,9 @@ id: avfoundation
 status:
 since: iOS2
 prefixe: 'AV'
-link: https://developer.apple.com/library/ios/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/00_Introduction.html
-abstract: "AV Foundation framework provides essential services for working with time-based audiovisual media on iOS and OS X. Through a modern Objective-C interface, you can easily play, capture, edit, or encode media formats such as QuickTime movies and MPEG-4 files."
+abstract: "AV Foundation framework provides essential services for working with time-based audiovisual media on iOS and OS X."
+kits:
+ - CoreMedia
 links:
  - link:
      name: 'AV Foundation for iOS and OS X'
