@@ -1,17 +1,32 @@
 ---
 layout: kit
-name: 'CoreMotion'
+name: 'Core Motion'
 id: coremotion
-status: TODO
+status:
+type: kit
 since: iOS4
+icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'CM'
-link: 
-abstract: "Contains interfaces for accessing accelerometer and gyro data. See Core Motion Framework."
-links__:
+abstract: "Contains interfaces for accessing accelerometer and gyro data."
+kits:
+ - HealthKit
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'Core Motion Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/CoreMotion/Reference/CoreMotion_Reference/index.html
+     description: ' - Apple Developer'
+     type: reference
+ - link:
+     name: 'Motion Tracking with the Core Motion Framework'
+     url: https://developer.apple.com/videos/wwdc/2014/?id=612
+     description: ' - WWDC 2014'
+     type: reference
+ - link:
+     name: 'Tutorials about Core Motion'
+     url: http://www.raywenderlich.com/?s=Core+Motion&cof=FORID%3A10
+     description: ' - Ray Wenderlich'
+     type: tutorial
 ---
 
-Contains interfaces for accessing accelerometer and gyro data. See Core Motion Framework.
+The **Core Motion** framework (`CoreMotion.framework`) provides a single set of interfaces for accessing all motion-based data available on a device. The framework supports accessing both raw and processed accelerometer data using a new set of block-based interfaces. For devices with a built-in gyroscope, you can retrieve the raw gyro data as well as processed data reflecting the attitude and rotation rates of the device.
+You can use both the accelerometer and the gyro-based data for games or other apps that use motion as input or as a way to enhance the overall user experience. For devices with step-counting hardware, you can access that data and use it to track fitness-related activities.
