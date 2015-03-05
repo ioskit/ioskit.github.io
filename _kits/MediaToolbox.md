@@ -2,7 +2,7 @@
 layout: kit
 name: 'MediaToolbox'
 id: mediatoolbox
-status: TODO
+status:
 since: iOS6
 prefixe: 'MT'
 icon: /resources/images/kits/CoreAudio/core-audio.png
@@ -12,11 +12,12 @@ kits:
  - AudioToolbox
  - AudioUnit
  - CoreMIDI
-links__:
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'Core Audio Overview'
+     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/CoreAudioOverview/Introduction/Introduction.html
+     description: ' - Apple Developer'
+     type: reference
 ---
 
 ## The family
@@ -32,4 +33,4 @@ Core Audio is a family of frameworks that provides native support for handling a
 
 ### The framework
 
-Contains interfaces for playing audio content.
+The *Media Toolbox* framework (`MediaToolbox.framework`) contains interfaces for playing audio content.
