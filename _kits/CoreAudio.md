@@ -45,13 +45,14 @@ links:
 
 Core Audio is a family of frameworks (listed below) that provides native support for handling audio. These frameworks support the generation, recording, mixing, and playing of audio in your apps. You can also use these interfaces to work with MIDI content and to stream audio and MIDI content to other apps.
 
+* [CoreAudio](/CoreAudio) (*CoreAudio.framework*) - Defines the audio data types used throughout Core Audio. For more information, see below.
+* [AudioToolbox](/AudioToolbox) (*AudioToolbox.framework*) - Provides playback and recording services for audio files and streams. This framework also provides support for managing audio files, playing system alert sounds, and triggering the vibrate capability on some devices.
+* [AudioUnit](/AudioUnit) (*AudioUnit.framework*) - Provides services for using the built-in audio units, which are audio processing modules. This framework also supports vending your app’s audio content as an audio component that is visible to other apps.
+* [CoreMIDI](/CoreMIDI) (*CoreMIDI.framework*) - Provides a standard way to communicate with MIDI devices, including hardware keyboards and synthesizers. You use this framework to send and receive MIDI messages and to interact with MIDI peripherals connected to an iOS-based device using the dock connector or network.
+* [MediaToolbox](/MediaToolbox) (*MediaToolbox.framework*) - Provides access to the audio tap interfaces.
+
 <img src="/resources/images/kits/CoreAudio/iphone_os_audio_architecture_2x.png" width="600" alt="iOS Core Audio architecture">
 
-* `CoreAudio.framework` - Defines the audio data types used throughout Core Audio. For more information, see below.
-* `AudioToolbox.framework`- Provides playback and recording services for audio files and streams. This framework also provides support for managing audio files, playing system alert sounds, and triggering the vibrate capability on some devices. For more information, see [AudioToolbox](/AudioToolbox).
-* `AudioUnit.framework` - Provides services for using the built-in audio units, which are audio processing modules. This framework also supports vending your app’s audio content as an audio component that is visible to other apps. For more information, see [AudioUnit](/AudioUnit).
-* `CoreMIDI.framework` - Provides a standard way to communicate with MIDI devices, including hardware keyboards and synthesizers. You use this framework to send and receive MIDI messages and to interact with MIDI peripherals connected to an iOS-based device using the dock connector or network. For more information, see [CoreMIDI](/CoreMIDI).
-* `MediaToolbox.framework` - Provides access to the audio tap interfaces. For more information, see [MediaToolbox](/MediaToolbox).
 
 ## The framework
 
