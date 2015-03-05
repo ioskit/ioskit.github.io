@@ -7,6 +7,8 @@ since: iOS5
 prefixe: 'TW'
 link: 
 abstract: "Contains interfaces for sending tweets via the Twitter service. See Twitter Framework."
+kits:
+ - Social
 links__:
  - link:
      name: 'aaa'
