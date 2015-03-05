@@ -9,6 +9,7 @@ icon: /resources/images/kits/ApplePay/apple-pay_2x.png
 abstract: "Allows users to use Touch ID to easily and securely pay for physical goods and services such as groceries, clothing, tickets, and reservations in your app."
 kits:
  - TouchID
+ - ApplePay
 links:
  - link:
      name: 'Apple Pay'
