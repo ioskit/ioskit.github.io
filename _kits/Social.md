@@ -8,7 +8,7 @@ since: iOS6
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 abstract: "Contains interfaces for interacting with social media accounts."
 kits:
- - TwitterFramework
+ - Twitter
 links:
  - link:
      name: 'Social Framework Reference'
@@ -19,7 +19,7 @@ links:
 
 The *Social framework* (`Social.framework`) provides a simple interface for accessing the user’s social media accounts. This framework:
 
-* supplants the [TwitterFramework](/TwitterFramework) (`TWTweetComposeViewController`) that was introduced in [iOS5](/iOS5) 
+* supplants the [Twitter](/Twitter) framework (`TWTweetComposeViewController`) that was introduced in [iOS5](/iOS5) 
 * and adds support for other social accounts, including Facebook 
 * and Sina’s Weibo service. 
 

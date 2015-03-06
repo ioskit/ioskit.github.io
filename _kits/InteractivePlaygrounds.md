@@ -11,7 +11,7 @@ xcode: xcode6
 links:
  - link:
      name: 'Exploring and Evaluating Swift Code in a Playground'
-     url: https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-source_editor/chapters/ExploringandEvaluatingSwiftCodeinaPlayground.html#//apple_ref/doc/uid/TP40009975-CH26
+     url: https://developer.apple.com/library/ios/recipes/xcode_help-source_editor/chapters/ExploringandEvaluatingSwiftCodeinaPlayground.html
      description: ' - Apple Developer'
  - link:
      name: 'Swift Playgrounds'

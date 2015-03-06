@@ -36,4 +36,4 @@ Core Audio is a family of frameworks that provides native support for handling a
 
 The *Audio Toolbox* framework (`AudioToolbox.framework`) provides playback and recording services for audio files and streams. This framework also provides support for managing audio files, playing system alert sounds, and triggering the vibrate capability on some devices.
 
-It deals with [CoreAudio](/Core Audio) objects.
+It deals with [CoreAudio](/CoreAudio) objects.
