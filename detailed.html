@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+
+
+<div class="page-header" ><!-- id="banner" -->
+	<div class="row">
+	  <div class="col-lg-8 col-md-7 col-sm-6">
+	    <h1>iOS-K.it&nbsp;<sup><sup><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;ioskit.io</sup></sup></h1>
+	    <p class="lead">Which iOS Kit in which iOS version?</p>
+	  </div>
+	  <div class="col-lg-4 col-md-5 col-sm-6">
+	    <div class="sponsor">
+		<!--
+	      <a href="http://www.shopify.com/?ref=bootswatch" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="../assets/img/shopify.png" alt="Shopify" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);"></a>
+	-->
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<!--
+<h3>
+	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+		<span class="octicon octicon-link"></span>
+	</a>
+	List of available Apple frameworks
+</h3>
+-->
+
+<div class="col-lg-1">
+</div>
+
+<div class="col-lg-10">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+		  <th>#</th>
+          <th>Since</th>
+          <th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+          <th>Framework</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+		{% assign count = '0' %}
+		{% for kit in site.kits %}
+			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+        <tr>
+			<td>{{ count }}</td>
+          	<td>
+          		<a href="/{{kit.since}}"><span class="label 
+				{% if kit.since == "iOS8" %}
+	          		label-primary
+				{% elsif kit.since == "iOS7" %}
+          			label-success
+				{% elsif kit.since == "iOS6" %}
+					label-danger
+				{% elsif kit.since == "iOS5" %}
+					label-warning
+				{% else %}
+					label-info
+				{% endif %}
+          		">{{kit.since}}</span></a>
+			</td>
+        	<td>
+				{% if kit.status == "TODO" %}
+					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+				{% endif %}
+			</td>
+          <td>
+				<a href="{{ kit.url }}" >
+					{% if kit.shortName %}{{ kit.shortName }}
+					{% else %}{{ kit.name }}
+					{% endif %}
+				</a>
+		  </td>
+          <td>
+			{{ kit.abstract }}"
+		  </td>
+        </tr>
+		  {% endfor %}
+      </tbody>
+    </table>
+</div>
+
+<div class="col-lg-1">
+</div>
