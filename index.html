@@ -3,7 +3,6 @@ layout: default
 ---
 
 
-
 <div class="page-header" ><!-- id="banner" -->
 	<div class="row">
 	  <div class="col-lg-8 col-md-7 col-sm-6">
@@ -12,22 +11,10 @@ layout: default
 	  </div>
 	  <div class="col-lg-4 col-md-5 col-sm-6">
 	    <div class="sponsor">
-		<!--
-	      <a href="http://www.shopify.com/?ref=bootswatch" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="../assets/img/shopify.png" alt="Shopify" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);"></a>
-	-->
 	    </div>
 	  </div>
 	</div>
 </div>
-
-<!--
-<h3>
-	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
-		<span class="octicon octicon-link"></span>
-	</a>
-	List of available Apple frameworks
-</h3>
--->
 
 <div class="col-lg-1">
 </div>
@@ -50,25 +37,27 @@ layout: default
 			<td>{{ count }}</td>
           	<td>
           		<a href="/{{kit.since}}"><span class="label 
-				{% if kit.since == "iOS8" %}
-	          		label-primary
-				{% elsif kit.since == "iOS7" %}
-          			label-success
-				{% elsif kit.since == "iOS6" %}
-					label-danger
-				{% elsif kit.since == "iOS5" %}
-					label-warning
-				{% else %}
-					label-info
-				{% endif %}
-          		">{{kit.since}}</span></a>
+				{% if kit.since == "iOS8" %}label-primary
+				{% elsif kit.since == "iOS7" %}label-success
+				{% elsif kit.since == "iOS6" %}label-danger
+				{% elsif kit.since == "iOS5" %}label-warning
+				{% else %}label-info
+				{% endif %}">{{kit.since}}</span></a>
 			</td>
         	<td>
 				{% if kit.status == "TODO" %}
-					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+				<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+					<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+				</span>
 				{% endif %}
 			</td>
           <td>
+			{% if kit.type == 'technology' %}
+				<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
+					<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+				</span>
+				&nbsp;
+			{% endif %}
 			<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
 				<a href="{{ kit.url }}" >
 					{% if kit.shortName %}{{ kit.shortName }}
@@ -105,10 +94,18 @@ layout: default
 	          <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
         	<td>
 				{% if kit.status == "TODO" %}
-					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+					<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+						<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+					</span>
 				{% endif %}
 			</td>
 	          <td>
+				{% if kit.type == 'technology' %}
+					<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
+						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+					</span>
+					&nbsp;
+				{% endif %}
 				<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
 					<a href="{{ kit.url }}" >{{ kit.name }}</a>
 				</span>

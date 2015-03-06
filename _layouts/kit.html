@@ -13,7 +13,11 @@ layout: default
 					{% endif %}
 					{{ page.name }}
 			      	{% if page.status %}
-						<small><small><span class="label label-primary"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;{{page.status}}</span></small></small>
+						<small><small>
+							<span class="label label-primary">
+								<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;{{page.status}}
+							</span>
+						</small></small>
 					{% endif %}
 				</h1>
         	</div>
@@ -21,6 +25,15 @@ layout: default
     </div>
 
 	<p>
+		<span class="label label-default" aria-hidden="true">
+			{% if page.type == 'technology' %}
+			technology
+			{% else %}
+			kit
+			{% endif %}
+		</span>
+		&nbsp;&nbsp;&bull;&nbsp;
+
   		<a href="/{{page.since}}"><span class="label 
 		{% if page.since == "iOS8" %}label-primary
 		{% elsif page.since == "iOS7" %}label-success

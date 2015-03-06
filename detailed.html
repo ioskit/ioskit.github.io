@@ -39,6 +39,7 @@ layout: default
 		  <th>#</th>
           <th>Since</th>
           <th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+		  <th>T</t>
           <th>Framework</th>
           <th>Description</th>
         </tr>
@@ -51,22 +52,25 @@ layout: default
 			<td>{{ count }}</td>
           	<td>
           		<a href="/{{kit.since}}"><span class="label 
-				{% if kit.since == "iOS8" %}
-	          		label-primary
-				{% elsif kit.since == "iOS7" %}
-          			label-success
-				{% elsif kit.since == "iOS6" %}
-					label-danger
-				{% elsif kit.since == "iOS5" %}
-					label-warning
-				{% else %}
-					label-info
-				{% endif %}
-          		">{{kit.since}}</span></a>
+				{% if kit.since == "iOS8" %}label-primary
+				{% elsif kit.since == "iOS7" %}label-success
+				{% elsif kit.since == "iOS6" %}label-danger
+				{% elsif kit.since == "iOS5" %}label-warning
+				{% else %}label-info
+				{% endif %}">{{kit.since}}</span></a>
 			</td>
         	<td>
 				{% if kit.status == "TODO" %}
+				<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
 					<span class="glyphicon glyphicon-fire" aria-hidden="true">
+				</span>
+				{% endif %}
+			</td>
+			<td>
+				{% if kit.type == 'technology' %}
+					<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
+						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+					</span>
 				{% endif %}
 			</td>
           <td>
@@ -77,7 +81,7 @@ layout: default
 				</a>
 		  </td>
           <td>
-			{{ kit.abstract }}"
+			{{ kit.abstract }}
 		  </td>
         </tr>
 		  {% endfor %}

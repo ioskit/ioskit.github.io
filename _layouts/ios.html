@@ -40,8 +40,15 @@ layout: default
 					<li>
 						<a href="#{{ kit.id }}">{{ kit.name }}</a>
 						{% if kit.status %}
-							&nbsp;<small><small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
+							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+								<small><small>&nbsp;<span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
+							</span>
 						{% endif %}	
+						{% if kit.type == 'technology' %}
+							<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
+								<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
+							</span>
+						{% endif %}
 						&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 					</li>
 				{% endfor %}
@@ -54,7 +61,14 @@ layout: default
 						<h2>
 							{{ kit.name }}
 							{% if kit.status %}
-								&nbsp;<small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small>
+								<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+									<small>&nbsp;<span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small>
+								</span>
+							{% endif %}
+							{% if kit.type == 'technology' %}
+								<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
+									<small>&nbsp;<span class="glyphicon glyphicon-grain" aria-hidden="true"></span></small>
+								</span>
 							{% endif %}
 						</h2>
 						{{ kit.abstract }}
