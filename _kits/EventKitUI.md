@@ -1,17 +1,26 @@
 ---
 layout: kit
-name: 'EventKitUI'
+name: 'EventKit UI'
 id: eventkitui
-status: TODO
+status:
+type: kit
 since: iOS4
+icon: /resources/images/kits/Calendar/Apple-Calendar-Icon.png
 prefixe: 'EK'
-link: 
-abstract: "Contains classes for displaying the standard system calendar interfaces. See EventKit UI Framework."
-links__:
+abstract: "Contains classes for displaying the standard system calendar interfaces."
+kits:
+ - EventKit
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'EventKit UI Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/EventKitUI/Reference/EventKitUIFrameworkRef/index.html
+     description: ' - Apple Developer'
+     type: reference
+ - link:
+     name: 'Cookbook: Making a Calendar Reminder'
+     url: http://www.raywenderlich.com/64513/cookbook-making-calendar-reminder
+     description: ' - Ray Wenderlich'
+     type: tutorial
 ---
 
-Contains classes for displaying the standard system calendar interfaces. See EventKit UI Framework.
+The **EventKit UI** framework (`EventKitUI.framework`) provides view controllers for presenting the standard system interfaces for viewing and editing calendar-related events. This framework builds upon the event-related data in the [EventKit](/EventKit) framework.
