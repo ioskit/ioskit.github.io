@@ -5,6 +5,7 @@ id: coremotion
 status:
 type: kit
 since: iOS4
+updates: iOS8
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'CM'
 abstract: "Contains interfaces for accessing accelerometer and gyro data."

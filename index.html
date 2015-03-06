@@ -113,13 +113,20 @@ layout: default
 					<a href="{{ kit.url }}" >{{ kit.name }}</a>
 				</span>
 			  </td>
-	          	<td>{% if kit.since == "iOS2" %}<a href="/{{kit.since}}"><span class="label label-info">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS3" %}<a href="/{{kit.since}}"><span class="label label-info">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS4" %}<a href="/{{kit.since}}"><span class="label label-info">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS5" %}<a href="/{{kit.since}}"><span class="label label-warning">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS6" %}<a href="/{{kit.since}}"><span class="label label-danger">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS7" %}<a href="/{{kit.since}}"><span class="label label-success">{{kit.since}}</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS8" %}<a href="/{{kit.since}}"><span class="label label-primary">{{kit.since}}</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS2" or kit.updates contains "iOS2" %}
+					<a href="/{{kit.since}}"><span class="label label-info">iOS2</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS3" or kit.updates contains "iOS3" %}
+					<a href="/{{kit.since}}"><span class="label label-info">iOS3</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS4" or kit.updates contains "iOS4" %}
+					<a href="/{{kit.since}}"><span class="label label-info">iOS4</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS5" or kit.updates contains "iOS5" %}
+					<a href="/{{kit.since}}"><span class="label label-warning">iOS5</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS6" or kit.updates contains "iOS6" %}
+					<a href="/{{kit.since}}"><span class="label label-danger">iOS6</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS7" or kit.updates contains "iOS7" %}
+					<a href="/{{kit.since}}"><span class="label label-success">iOS7</span></a>{% endif %}</td>
+	          	<td>{% if kit.since == "iOS8" or kit.updates contains "iOS8" %}
+					<a href="/{{kit.since}}"><span class="label label-primary">iOS8</span></a>{% endif %}</td>
 	        </tr>
 			  {% endfor %}
 	

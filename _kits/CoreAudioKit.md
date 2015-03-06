@@ -4,9 +4,11 @@ name: 'CoreAudioKit'
 id: coreaudiokit
 status:
 since: iOS8
+updates: 
 prefixe: 'CA'
-link: 
 abstract: "Provides the data types used throughout Core Audio."
+kits__:
+ - Foo
 links__:
  - link:
      name: 'aaa'

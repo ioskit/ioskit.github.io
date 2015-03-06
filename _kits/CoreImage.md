@@ -5,6 +5,7 @@ name: 'Core Image'
 status:
 type: kit
 since: iOS5
+updates: iOS8
 icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'CI'
 abstract: "Contains interfaces for manipulating video and still images."

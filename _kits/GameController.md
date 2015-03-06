@@ -1,11 +1,12 @@
 ---
 layout: kit
-name: 'GameController'
+name: 'Game Controller'
 id: gamecontroller
 status:
 type: kit
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 since: iOS7
+updates: iOS8
 prefixe: 'GC'
 abstract: "Contains interfaces for communicating with Made-for-iPhone/iPod/iPad (MFi) game-related hardware."
 kits:

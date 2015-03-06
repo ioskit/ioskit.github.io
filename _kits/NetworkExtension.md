@@ -1,6 +1,6 @@
 ---
 layout: kit
-name: 'NetworkExtension'
+name: 'Network Extension'
 id: networkextension
 status:
 since: iOS8
