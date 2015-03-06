@@ -1,17 +1,22 @@
 ---
 layout: kit
-name: 'VideoToolbox'
+name: 'Video Toolbox'
 id: videotoolbox
-status: TODO
+status:
+type: kit
 since: iOS6
+updates: iOS8
+icon__: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'N/A'
-link: 
 abstract: "Contains interfaces used by the device. Do not include this framework directly."
+kits__:
+ - Foo
 links__:
  - link:
      name: 'aaa'
      url: bbb
      description: 'ccc'
+     type: reference
 ---
 
-Contains interfaces used by the device. Do not include this framework directly.
+The **Video Toolbox** framework (`VideoToolbox.framework`) includes direct access to hardware video encoding and decoding.
