@@ -78,6 +78,7 @@ layout: default
       <thead>
         <tr>
 			<th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+          <th>T</th>
           <th>Framework</th>
 		  	{% for ios in site.versions %}
           		<th>{{ ios }}</th>
@@ -104,8 +105,9 @@ layout: default
 					<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
 						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
 					</span>
-					&nbsp;
 				{% endif %}
+			</td>
+	          <td>
 				<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
 					<a href="{{ kit.url }}" >{{ kit.name }}</a>
 				</span>
