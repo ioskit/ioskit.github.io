@@ -22,20 +22,32 @@ layout: default
 			      	{% if page.name == "iOS7" %}<span class="label label-success">{{page.name}}</span>{% endif %}
 			      	{% if page.name == "iOS8" %}<span class="label label-primary">{{page.name}}</span>{% endif %}
 				</h1>
+				
 				<p>&nbsp;</p>
-				<ol>
-					{% if page.xcode %}
-					{% assign xcodes = site.xcodes | where: "id", page.xcode %}
-					{% assign xcode = xcodes[0] %}
-						<li><a href="{{xcode.url}}"><span class="label 
-						{% if page.xcode == "xcode6" %}label-primary
-						{% elsif page.xcode == "xcode5" %}label-success
-						{% elsif page.xcode == "xcode45" %}label-danger
-						{% elsif page.xcode == "xcode42" %}label-warning
-						{% else %}label-info
-						{% endif %}
-						">{{xcode.name}}</span></a></li>
+				
+				{% if page.xcode %}
+				{% assign xcodes = site.xcodes | where: "id", page.xcode %}
+				{% assign xcode = xcodes[0] %}
+					<a href="{{xcode.url}}"><span class="label 
+					{% if page.xcode == "xcode6" %}label-primary
+					{% elsif page.xcode == "xcode5" %}label-success
+					{% elsif page.xcode == "xcode45" %}label-danger
+					{% elsif page.xcode == "xcode42" %}label-warning
+					{% else %}label-info
 					{% endif %}
+					">{{xcode.name}}</span></a>
+				{% endif %}
+				
+				{% if page.releaseDate %}
+					&nbsp;&bull;&nbsp;
+					<span data-toggle="tooltip" data-placement="top" data-original-title="Release Date">
+						<span class="label label-default">{{ page.releaseDate }}</span>
+					</span>
+				{% endif %}
+				
+				<p>&nbsp;</p>
+				
+				<ol>
 				{% for kit in kits %}
 					<li>
 						<a href="#{{ kit.id }}">{{ kit.name }}</a>
