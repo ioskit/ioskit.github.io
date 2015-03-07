@@ -2,20 +2,25 @@
 layout: kit
 name: 'Media Player'
 id: mediaplayer
-status: TODO
+status:
 type: kit
-icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 since: iOS2
+updates:
+ - update:
+     ios: iOS8
+     brief: "Two Media Player framework (MediaPlayer.framework) classes are extended with new metadata information."
 updates: iOS7,iOS8
+icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'MP'
-abstract: "Contains interfaces for playing full-screen video. See Media Player Framework."
-kits__:
- - Foo
-links__:
+abstract: "Contains interfaces for playing full-screen video."
+kits:
+ - AVKit
+links:
  - link:
-     name: 'aaa'
-     url: bbb
-     description: 'ccc'
+     name: 'Media Player Framework Reference'
+     url: https://developer.apple.com/library/prerelease/ios/documentation/MediaPlayer/Reference/MediaPlayer_Framework/index.html
+     description: ' - Apple Developer'
+     type: reference
 ---
 
-Contains interfaces for playing full-screen video. See Media Player Framework.
+The *Media Player* framework provides facilities for playing movie, music, audio podcast, and audio book files. This framework also gives your application access to the iPod library, letting you find and play audio-based media items synced from iTunes on the desktop. iPod library access is read-only.
