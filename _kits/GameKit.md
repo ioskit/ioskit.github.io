@@ -6,7 +6,7 @@ status:
 type: kit
 icon: /resources/images/kits/GameCenter/game-center.png
 since: iOS3
-updates: iOS8
+updates: iOS7,iOS8
 prefixe: 'GK'
 abstract: "Contains interfaces for managing peer-to-peer connectivity."
 kits:

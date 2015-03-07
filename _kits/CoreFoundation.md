@@ -5,6 +5,7 @@ id: corefoundation
 status:
 type: kit
 since: iOS2
+updates: iOS7
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 prefixe: 'CF'
 abstract: "Provides fundamental software services, including abstractions for common data types, string utilities, collection utilities, resource management, and preferences."

@@ -6,7 +6,7 @@ status:
 type: technology
 icon: /resources/images/kits/GameCenter/game-center.png
 since: iOS3
-updates:
+updates: iOS7
 prefixe:
 abstract: "Enables your users to track their best scores on a leaderboard, compare their achievements, invite friends to play a game, and start a multiplayer game through auto-matching."
 kits:

@@ -4,7 +4,7 @@ name: 'iAd'
 id: iad
 status:
 since: iOS4
-updates: iOS8
+updates: iOS7,iOS8
 prefixe: 'AD'
 link: https://developer.apple.com/iad/resources/
 abstract: "Contains classes for displaying advertisements in your application. See iAd Framework."

@@ -4,7 +4,7 @@ name: 'AVFoundation'
 id: avfoundation
 status:
 since: iOS2
-updates: iOS8
+updates: iOS7, iOS8
 prefixe: 'AV'
 abstract: "AV Foundation framework provides essential services for working with time-based audiovisual media on iOS and OS X."
 kits:

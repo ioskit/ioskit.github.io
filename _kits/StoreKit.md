@@ -4,6 +4,7 @@ name: 'StoreKit'
 id: storekit
 status: TODO
 since: iOS3
+updates: iOS7
 prefixe: 'SK'
 link: 
 abstract: "Contains interfaces for handling the financial transactions associated with in-app purchases. SeeStoreKit Framework."

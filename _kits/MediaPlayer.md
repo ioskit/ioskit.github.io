@@ -6,7 +6,7 @@ status: TODO
 type: kit
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 since: iOS2
-updates: iOS8
+updates: iOS7,iOS8
 prefixe: 'MP'
 abstract: "Contains interfaces for playing full-screen video. See Media Player Framework."
 kits__:

@@ -4,6 +4,7 @@ name: 'MessageUI'
 id: messageui
 status: TODO
 since: iOS3
+updates: iOS7
 prefixe: 'MF'
 link: 
 abstract: "Contains interfaces for composing and queuing email messages. See Message UI Framework."

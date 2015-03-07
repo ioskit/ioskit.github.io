@@ -5,6 +5,7 @@ id: coretelephony
 status:
 type: kit
 since: iOS4
+updates: iOS7
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'CT'
 abstract: "Contains routines for accessing telephony-related information."

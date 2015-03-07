@@ -5,7 +5,7 @@ name: 'Core Location'
 status:
 type: kit
 since: iOS2
-updates: iOS8
+updates: iOS7,iOS8
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 abstract: "lets you determine the current location or heading associated with a device. "
 kits:

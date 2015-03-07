@@ -4,6 +4,7 @@ name: 'Accelerate'
 id: accelerate
 status: 
 since: iOS4
+updates: iOS7
 prefixe: 'cblas,vDSP'
 link: https://developer.apple.com/library/ios/documentation/Accelerate/Reference/AccelerateFWRef/_index.html
 abstract: "Contains interfaces for performing digital signal processing (DSP), linear algebra, and image-processing calculations."

@@ -5,6 +5,7 @@ id: corebluetooth
 status: 
 type: kit
 since: iOS5
+updates: iOS7
 prefixe: 'CB'
 abstract: "Provides access to low-power Bluetooth hardware."
 kits:

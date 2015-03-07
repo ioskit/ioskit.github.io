@@ -5,6 +5,7 @@ id: passkit
 status:
 type: kit
 since: iOS6
+updates: iOS7
 icon: /resources/images/kits/Passbook/passbook.png
 prefixe: 'PK'
 abstract: "Contains interfaces for creating digital passes to replace things like tickets, boarding passes, member cards, and more."
