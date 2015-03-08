@@ -4,9 +4,11 @@ name: 'ImageIO'
 id: imageio
 status: TODO
 since: iOS4
-updates: iOS7
+detailedUpdates:
+ - update:
+     ios: iOS7
+     brief: "The Image I/O framework (ImageIO.framework) now has interfaces for getting and setting image metadata."
 prefixe: 'CG'
-link: 
 abstract: "Contains classes for reading and writing image data. See Image I/O Framework."
 links__:
  - link:

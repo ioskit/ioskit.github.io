@@ -5,7 +5,10 @@ id: corefoundation
 status:
 type: kit
 since: iOS2
-updates: iOS7
+detailedUpdates:
+ - update:
+     ios: iOS7
+     brief: "The Core Foundation framework (CoreFoundation.framework) now lets you schedule stream objects on dispatch queues."
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 prefixe: 'CF'
 abstract: "Provides fundamental software services, including abstractions for common data types, string utilities, collection utilities, resource management, and preferences."

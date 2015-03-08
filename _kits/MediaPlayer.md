@@ -7,6 +7,9 @@ type: kit
 since: iOS2
 detailedUpdates:
  - update:
+     ios: iOS7
+     brief: "In the Media Player framework, the MPVolumeView class provides support for determining whether wireless routes such as AirPlay and Bluetooth are available for the user to select. You can also determine whether one of these wireless routes is currently active. For information about the new interfaces, see the framework header files."
+ - update:
      ios: iOS8
      brief: "Two Media Player framework (MediaPlayer.framework) classes are extended with new metadata information."
 icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png

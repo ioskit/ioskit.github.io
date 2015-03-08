@@ -8,6 +8,7 @@ since: iOS2
 detailedUpdates:
  - update:
      ios: iOS7
+     brief: "The Core Location framework (CoreLocation.framework) supports region monitoring and ranging using Bluetooth devices. Region monitoring lets you determine whether the iOS device enters a specific area, and ranging lets you determine the relative range of nearby Bluetooth devices. For example, an art museum might use region monitoring to determine whether a person is inside a particular gallery, and then place iBeacons near each painting. When the person is standing by a painting, the app would display information about it."
  - update:
      ios: iOS8
      brief: "The Core Location framework (CoreLocation.framework) has the following changes: 1) You can determine which floor the device is on, if the device is in a multistory building. 2) The visit service provides an alternative to the significant location change service for apps that need location information about interesting places visited by the user."

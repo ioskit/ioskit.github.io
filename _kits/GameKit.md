@@ -9,6 +9,7 @@ since: iOS3
 detailedUpdates:
  - update:
      ios: iOS7
+     brief: "The Game Kit framework (GameKit.framework) includes numerous changes: see page content."
  - update:
      ios: iOS8
      brief: "The GameKit framework has many changes: 1) The new GKSavedGame class and new methods in GKLocalPlayer make it easy to save and restore a user’s progress (iCloud). 2) Methods and properties that use player identifier strings are now deprecated. Instead, use GKPlayer objects to identify players. See the page for more details."
@@ -39,3 +40,13 @@ The GameKit framework has the following changes:
 * Features that were added in iOS 7 are available on OS X 10.10, making it easier to use these features in a cross-platform game.
 * The new `GKSavedGame` class and new methods in `GKLocalPlayer` make it easy to save and restore a user’s progress. The data is stored on iCloud; GameKit does the necessary work to synchronize the files between the device and iCloud.
 * Methods and properties that use player identifier strings are now deprecated. Instead, use GKPlayer objects to identify players. Replacement properties and methods have been added that take `GKPlayer` objects.
+
+
+### iOS 7
+
+Game Center includes the following improvements:
+
+* Turn-based matches now support a new feature known as exchanges. Exchanges let players initiate actions with other players, even when it is not their turn. You can use this feature to implement simultaneous turns, player chats, and trading between players.
+* The limit on per-app leaderboards has been raised from 25 to 100. You can also organize your leaderboards using a GKLeaderboardSet object, which increases the limit to 500.
+* You can add conditions to challenges that define when the challenge has been met. For example, a challenge to beat a time in a driving game might stipulate that other players must use the same vehicle.
+* The framework has improved its authentication support and added other features to prevent cheating.

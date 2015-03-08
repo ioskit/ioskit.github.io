@@ -5,7 +5,10 @@ id: coretelephony
 status:
 type: kit
 since: iOS4
-updates: iOS7
+detailedUpdates:
+ - update:
+     ios: iOS7
+     brief: "The Core Telephony framework (CoreTelephony.framework) lets you get information about the type of radio technology in use by the device. Apps developed in conjunction with a carrier can also authenticate against a particular subscriber for that carrier."
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'CT'
 abstract: "Contains routines for accessing telephony-related information."

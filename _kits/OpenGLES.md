@@ -5,7 +5,10 @@ id: opengles
 status:
 type: kit
 since: iOS2
-updates: iOS7
+detailedUpdates:
+ - update:
+     ios: iOS7
+     brief: "iOS 7 adds support for OpenGL ES 3.0 and adds new features to OpenGL ES 2.0."
 icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'EAGL, GL'
 abstract: "Contains the interfaces for OpenGL ES, which is an embedded version of the OpenGL cross-platform 2D and 3D graphics rendering library."

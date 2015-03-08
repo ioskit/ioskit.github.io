@@ -5,7 +5,10 @@ id: corebluetooth
 status: 
 type: kit
 since: iOS5
-updates: iOS7
+detailedUpdates:
+ - update:
+     ios: iOS7
+     brief: "The Core Bluetooth framework (CoreBluetooth.framework) includes many enhancements: see page content."
 prefixe: 'CB'
 abstract: "Provides access to low-power Bluetooth hardware."
 kits:
@@ -60,3 +63,12 @@ The *Core Bluetooth* framework (`CoreBluetooth.framework`) allows developers to 
     -   `CBService`
     -   `CBCharacteristic`
 -   Particle Detector app
+
+
+### iOS 7
+
+The Core Bluetooth framework (CoreBluetooth.framework) includes the following enhancements:
+
+* The framework supports saving state information for central and peripheral objects and restoring that state at app launch time. You can use this feature to support long-term actions involving Bluetooth devices.
+* The central and peripheral classes now use an NSUUID object to store unique identifiers.
+* You can now retrieve peripheral objects from a central manager synchronously.

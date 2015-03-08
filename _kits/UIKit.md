@@ -7,6 +7,7 @@ since: iOS2
 detailedUpdates:
  - update:
      ios: iOS7
+     brief: "The UIKit framework (UIKit.framework) includes many enhancements: see the content of the page."
  - update:
      ios: iOS8
      brief: "The UIKit framework (UIKit.framework) includes many enhancements: see the content of the page."
@@ -42,3 +43,33 @@ The UIKit framework (UIKit.framework) includes the following enhancements:
 * The new `UIAlertController` class replaces the `UIActionSheet` and `UIAlertView` classes as the preferred way to display alerts in your app.
 * The new `UIPrinterPickerController` class offers a view controller-based way to display a list of printers and to select one to use during printing. Printers are represented by instances of the new `UIPrinter` class.
 * You can take the user directly to your app-related settings in the Settings app. Pass the `UIApplicationOpenSettingsURLString` constant to the `openURL:` method of the `UIApplication` class.
+
+
+### iOS 7
+
+The UIKit framework (UIKit.framework) includes the following enhancements:
+
+* All UI elements have been updated to present the new look associated with iOS 7.
+* UIKit Dynamics lets you mimic real-world effects such as gravity in your animations; see Dynamic Behaviors for Views.
+* Text Kit provides sophisticated text editing and display capabilities; see Text Kit.
+* The UIView class defines the following additions:
+  * The tintColor property applies a tint color to both the view and its subviews. For information on how to apply tint colors, see iOS 7 UI Transition Guide.
+  * You can create keyframe-based animations using views. You can also make changes to your views and specifically prevent any animations from being performed.
+* The UIViewController class defines the following additions:
+  * View controller transitions can be customized, driven interactively, or replaced altogether with ones you designate.
+  * View controllers can now specify their preferred status bar style and visibility. The system uses the provided information to manage the status bar style as new view controllers appear. You can also control how this behavior is applied using the UIViewControllerBasedStatusBarAppearance key in your app’s Info.plist file.
+* The UIMotionEffect class defines the basic behavior for motion effects, which are objects that define how a view responds to device-based motion.
+* Collection views add support for intermediate layout transitions and invalidation contexts (invalidation contexts help you improve the performance of your custom layout code). You can also apply UIKit Dynamics to collection view layout attributes to animate the items in the collection.
+* The imageNamed: method of UIImage supports retrieving images stored in asset catalogs, which are a way to manage and optimize assets that have multiple sizes and resolutions. You create asset catalogs in Xcode.
+* There are methods on UIView and UIScreen for creating a snapshot of their contents. Generating snapshots using these new interfaces is significantly faster than rendering the view or screen contents yourself.
+* Gesture recognizers can specify dependencies dynamically to ensure that one gesture recognizer fails before another is considered.
+* The UIKeyCommand class wraps keyboard events received from an external hardware keyboard. These events are delivered to the app’s responder chain for processing.
+* A UIFontDescriptor object describes a font using a dictionary of attributes. Use font descriptors to interoperate with other platforms.
+* The UIFont and UIFontDescriptor classes support dynamic text sizing, which improves legibility for text in apps. With this feature, the user controls the desired font size that all apps in the system should use.
+* The UIActivity class now supports new activity types, including activities for sending items via AirDrop, adding items to a Safari reading list, and posting content to Flickr, Tencent Weibo, and Vimeo.
+* The UIApplicationDelegate protocol adds methods for handling background fetch behaviors.
+The UIScreenEdgePanGestureRecognizer class is a new gesture recognizer that tracks pan gestures that originate near an edge of the screen.
+* UIKit adds support for running in a guided-access mode, which allows an app to lock itself to prevent modification by the user. This mode is intended for institutions such as schools, where users bring their own devices but need to run apps provided by the institution.
+* State restoration now allows the saving and restoration of any object. Objects adopting the UIStateRestoring protocol can write out state information when the app moves to the background and have that state restored during subsequent launches.
+* Table views now support estimating the height of rows and other elements, which improves scrolling performance.
+* You can now more easily configure a UISearchDisplayController object to work with a UINavigationBar object.

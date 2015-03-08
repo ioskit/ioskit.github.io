@@ -8,6 +8,7 @@ since: iOS4
 detailedUpdates:
  - update:
      ios: iOS7
+     brief: "The Core Motion framework (CoreMotion.framework) adds support for step counting and motion tracking. With step counting, the framework detects movements that correspond to user motion and uses that information to report the number of steps to your app. Because the system detects the motion, it can continue to gather step data even when your app is not running. Alongside this feature, the framework can also distinguish different types of motion, including different motions reflective of travel by walking, by running, or by automobile. Navigation apps might use that data to change the type of directions they give to users."
  - update:
      ios: iOS8
      brief: "Core Motion provides two new classes (CMAltimeter and CMAltitudeData) which allow you to access the barometer on the iPhone 6 and iPhone 6 Plus. On these two devices, you can also use a CMMotionActivity object to determine whether the user is on a bicycle."

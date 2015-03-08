@@ -7,6 +7,7 @@ since: iOS4
 detailedUpdates:
  - update:
      ios: iOS7
+     brief: "The iAd framework (iAd.framework) includes two extensions to other frameworks that make it easier to incorporate ads into your app’s content: 1) The framework introduces new methods on the MPMoviePlayerController class that let you run ads before a movie. 2) The framework extends the UIViewController class to make it easier to create ad-supported content. You can now configure your view controllers to display ads before displaying the actual content they manage."
  - update:
      ios: iOS8
      brief: "The iAd framework (iAd.framework) adds the following new features: 1) If you are using AV Kit to play a video, you can play preroll advertisements before the video is played. 2) You can look up more information about the the effectiveness of advertisements for your app."
