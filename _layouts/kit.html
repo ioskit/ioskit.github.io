@@ -8,9 +8,7 @@ layout: default
     	<div class="row">
         	<div class="col-lg-12">
           		<h1 id="page-title">
-			      	{% if page.icon %}
-						<img src="{{page.icon}}" width="100"/>&nbsp;
-					{% endif %}
+			      	{% if page.icon %}<img src="{{page.icon}}" width="100"/>&nbsp;{% endif %}
 					{{ page.name }}
 			      	{% if page.status %}
 						<small><small>
@@ -26,22 +24,13 @@ layout: default
 
 	<p>
 		<span class="label label-default" aria-hidden="true">
-			{% if page.type == 'technology' %}
-			technology
-			{% else %}
-			kit
+			{% if page.type == 'technology' %}technology
+			{% else %}kit
 			{% endif %}
 		</span>
 		&nbsp;&nbsp;&bull;&nbsp;
 
-  		<a href="/{{page.since}}"><span class="label 
-		{% if page.since == "iOS8" %}label-primary
-		{% elsif page.since == "iOS7" %}label-success
-		{% elsif page.since == "iOS6" %}label-danger
-		{% elsif page.since == "iOS5" %}label-warning
-		{% else %}label-info
-		{% endif %}
-  		">{{page.since}}</span></a>
+  		{% include ios-link.html ios=page.since %}
 
 		{% if page.xcode %}&nbsp;&bull;&nbsp;
 			{% assign xcodes = site.xcodes | where: "id", page.xcode %}
@@ -65,13 +54,20 @@ layout: default
 
 			<p>&nbsp;</p>
 
+			{% if page.detailedUpdates %}
+				<h3>Updates</h3>
+				<ul>
+					{% for u in page.detailedUpdates %}
+						<li>{% include ios-link.html ios=u.update.ios %}&nbsp;{{u.update.brief}}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
 			{% if page.kits %}
 				<h3>Kits</h3>
 				<ul>
 					{% for kit in page.kits %}
-						<li>
-							<a href="/{{ kit }}">{{ kit }}</a>
-						</li>
+						<li><a href="/{{ kit }}">{{ kit }}</a></li>
 					{% endfor %}
 				</ul>
 			{% endif %}
@@ -80,9 +76,7 @@ layout: default
 				<h3>Resources</h3>
 				<ul>
 					{% for l in page.links %}
-						<li>
-							<a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}
-						</li>
+						<li><a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}</li>
 					{% endfor %}
 				</ul>
 			{% endif %}
