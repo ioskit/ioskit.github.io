@@ -1,0 +1,11 @@
+{% if kit.since == include.ios or kit.updates contains include.ios %}
+	{% include ios-link.html ios=include.ios %}
+{% endif %}
+
+{% for u in kit.detailedUpdates %}
+	{% if u.update.ios == include.ios %}
+		<span data-toggle="tooltip" data-placement="top" data-original-title="{{u.update.brief}}">
+			{% include ios-link.html ios=include.ios %}
+		</span>
+	{% endif %}
+{% endfor %}

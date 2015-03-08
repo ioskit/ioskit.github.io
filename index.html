@@ -36,37 +36,18 @@ layout: default
 			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
         <tr>
 			<td>{{ count }}</td>
+          	<td>{% include ios-link.html ios=kit.since %}</td>
+        	<td>{% include mark-todo.html status=kit.status %}</td>
           	<td>
-          		<a href="/{{kit.since}}"><span class="label 
-				{% if kit.since == "iOS8" %}label-primary
-				{% elsif kit.since == "iOS7" %}label-success
-				{% elsif kit.since == "iOS6" %}label-danger
-				{% elsif kit.since == "iOS5" %}label-warning
-				{% else %}label-info
-				{% endif %}">{{kit.since}}</span></a>
-			</td>
-        	<td>
-				{% if kit.status == "TODO" %}
-				<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-					<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+				{% include mark-technology.html type=kit.type %} 
+				<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
+					<a href="{{ kit.url }}" >
+						{% if kit.shortName %}{{ kit.shortName }}
+						{% else %}{{ kit.name }}
+						{% endif %}
+					</a>
 				</span>
-				{% endif %}
-			</td>
-          <td>
-			{% if kit.type == 'technology' %}
-				<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
-					<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-				</span>
-				&nbsp;
-			{% endif %}
-			<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
-				<a href="{{ kit.url }}" >
-					{% if kit.shortName %}{{ kit.shortName }}
-					{% else %}{{ kit.name }}
-					{% endif %}
-				</a>
-			</span>
-		  </td>
+		  	</td>
         </tr>
 		  {% endfor %}
       </tbody>
@@ -93,40 +74,20 @@ layout: default
 			{% assign kits = site.kits | where: "since", ios %}
 			  {% for kit in kits %}
 	        <tr>
-	          <!-- th scope="row"><a href="{{ kit.url }}">{{ kit.name }}</a></th -->
-        	<td>
-				{% if kit.status == "TODO" %}
-					<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-						<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+        		<td>{% include mark-todo.html status=kit.status %}</td>
+	          	<td>{% include mark-technology.html type=kit.type %}</td>
+	          	<td>
+					<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
+						<a href="{{ kit.url }}" >{{ kit.name }}</a>
 					</span>
-				{% endif %}
-			</td>
-	          <td>
-				{% if kit.type == 'technology' %}
-					<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
-						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-					</span>
-				{% endif %}
-			</td>
-	          <td>
-				<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
-					<a href="{{ kit.url }}" >{{ kit.name }}</a>
-				</span>
-			  </td>
-	          	<td>{% if kit.since == "iOS2" or kit.updates contains "iOS2" %}
-					<a href="/{{kit.since}}"><span class="label label-info">iOS2</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS3" or kit.updates contains "iOS3" %}
-					<a href="/{{kit.since}}"><span class="label label-info">iOS3</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS4" or kit.updates contains "iOS4" %}
-					<a href="/{{kit.since}}"><span class="label label-info">iOS4</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS5" or kit.updates contains "iOS5" %}
-					<a href="/{{kit.since}}"><span class="label label-warning">iOS5</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS6" or kit.updates contains "iOS6" %}
-					<a href="/{{kit.since}}"><span class="label label-danger">iOS6</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS7" or kit.updates contains "iOS7" %}
-					<a href="/{{kit.since}}"><span class="label label-success">iOS7</span></a>{% endif %}</td>
-	          	<td>{% if kit.since == "iOS8" or kit.updates contains "iOS8" %}
-					<a href="/{{kit.since}}"><span class="label label-primary">iOS8</span></a>{% endif %}</td>
+			  	</td>
+				<td>{% include kit-with-ios-update.html ios="iOS2" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS3" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS4" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS5" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS6" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS7" %}</td>
+				<td>{% include kit-with-ios-update.html ios="iOS8" %}</td>
 	        </tr>
 			  {% endfor %}
 	

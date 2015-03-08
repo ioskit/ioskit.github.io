@@ -5,11 +5,10 @@ id: mediaplayer
 status:
 type: kit
 since: iOS2
-updates:
+detailedUpdates:
  - update:
      ios: iOS8
      brief: "Two Media Player framework (MediaPlayer.framework) classes are extended with new metadata information."
-updates: iOS7,iOS8
 icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'MP'
 abstract: "Contains interfaces for playing full-screen video."
