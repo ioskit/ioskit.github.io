@@ -10,32 +10,16 @@ layout: default
     	<div class="row">
         	<div class="col-lg-4">
           		<h1 id="page-title">
-			      	{% if page.icon %}
-						<img src="{{page.icon}}" width="100"/>&nbsp;
-					{% endif %}
-	
-			      	{% if page.name == "iOS2" %}<span class="label label-info">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS3" %}<span class="label label-info">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS4" %}<span class="label label-info">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS5" %}<span class="label label-warning">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS6" %}<span class="label label-danger">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS7" %}<span class="label label-success">{{page.name}}</span>{% endif %}
-			      	{% if page.name == "iOS8" %}<span class="label label-primary">{{page.name}}</span>{% endif %}
+			      	{% if page.icon %}<img src="{{page.icon}}" width="100"/>&nbsp;{% endif %}
+			      	{% include ios.html ios=page.name %}
 				</h1>
 				
 				<p>&nbsp;</p>
 				
 				{% if page.xcode %}
-				{% assign xcodes = site.xcodes | where: "id", page.xcode %}
-				{% assign xcode = xcodes[0] %}
-					<a href="{{xcode.url}}"><span class="label 
-					{% if page.xcode == "xcode6" %}label-primary
-					{% elsif page.xcode == "xcode5" %}label-success
-					{% elsif page.xcode == "xcode45" %}label-danger
-					{% elsif page.xcode == "xcode42" %}label-warning
-					{% else %}label-info
-					{% endif %}
-					">{{xcode.name}}</span></a>
+					{% assign xcodes = site.xcodes | where: "id", page.xcode %}
+					{% assign xcode = xcodes[0] %}
+		      		{% include xcode-link.html url=xcode.url name=xcode.name %}
 				{% endif %}
 				
 				{% if page.releaseDate %}
@@ -44,49 +28,77 @@ layout: default
 						<span class="label label-default">{{ page.releaseDate }}</span>
 					</span>
 				{% endif %}
-				
 				<p>&nbsp;</p>
 				
+				<p>News:</p>
 				<ol>
 				{% for kit in kits %}
 					<li>
 						<a href="#{{ kit.id }}">{{ kit.name }}</a>
-						{% if kit.status %}
-							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-								<small><small>&nbsp;<span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
-							</span>
-						{% endif %}	
-						{% if kit.type == 'technology' %}
-							<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
-								<span class="glyphicon glyphicon-grain" aria-hidden="true"></span>
-							</span>
-						{% endif %}
+						
+						 {% include mark-todo.html status=kit.status %}
+						 {% include mark-technology.html type=kit.type %}
 						&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 					</li>
 				{% endfor %}
+				</ol>
+
+				
+				<p>Updates:</p>
 				<ol>
+				{% for kit in site.kits %}
+					{% for u in kit.detailedUpdates %}
+						{% if u.update.ios == page.name %}
+							<li>
+								<a href="#{{ kit.id }}">{{ kit.name }}</a>
+							 	{% include mark-todo.html status=kit.status %}
+							 	{% include mark-technology.html type=kit.type %}
+								&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				{% endfor %}
+				</ol>
         	</div>
+
         	<div class="col-lg-8">
 				{% for kit in kits %}
 					<div id="{{ kit.id }}"><p>&nbsp;</p></div>
 					<div class="row">
 						<h2>
 							{{ kit.name }}
-							{% if kit.status %}
-								<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-									<small>&nbsp;<span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small>
-								</span>
-							{% endif %}
-							{% if kit.type == 'technology' %}
-								<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">
-									<small>&nbsp;<span class="glyphicon glyphicon-grain" aria-hidden="true"></span></small>
-								</span>
-							{% endif %}
+						 	<small>{% include mark-todo.html status=kit.status %}</small>
+						 	<small>{% include mark-technology.html type=kit.type %}</small>
 						</h2>
 						{{ kit.abstract }}
 						<br />
 						<a href="#top">top</a>&nbsp;&bull;&nbsp;<a href="{{ kit.url }}">more</a>
 					</div>
+				{% endfor %}
+
+
+				<div id="updates"><p>&nbsp;</p></div>
+				<div class="row"><h2>Updates</h2></div>
+
+				{% for kit in site.kits %}
+					{% for u in kit.detailedUpdates %}
+						{% if u.update.ios == page.name %}
+						<div id="{{ kit.id }}"><p>&nbsp;</p></div>
+						<div class="row">
+							<h4>
+								<span data-toggle="tooltip" data-placement="top" data-original-title="Update">
+									<span class="glyphicon glyphicon-check"></span>
+								</span>&nbsp;
+								{{ kit.name }}
+							 	<small>{% include mark-todo.html status=kit.status %}</small>
+							 	<small>{% include mark-technology.html type=kit.type %}</small>
+							</h4>
+							{{ u.update.brief }}
+							<br />
+							<a href="#top">top</a>&nbsp;&bull;&nbsp;<a href="{{ kit.url }}">more</a>
+						</div>
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
         	</div>
       	</div>

@@ -1,0 +1,8 @@
+<a href="{{include.url}}"><span class="label 
+{% if page.xcode == "xcode6" %}label-primary
+{% elsif page.xcode == "xcode5" %}label-success
+{% elsif page.xcode == "xcode45" %}label-danger
+{% elsif page.xcode == "xcode42" %}label-warning
+{% else %}label-info
+{% endif %}
+">{{include.name}}</span></a>

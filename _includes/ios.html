@@ -1,0 +1,7 @@
+<span class="label 
+{% if include.ios == "iOS8" %}label-primary
+{% elsif include.ios == "iOS7" %}label-success
+{% elsif include.ios == "iOS6" %}label-danger
+{% elsif include.ios == "iOS5" %}label-warning
+{% else %}label-info
+{% endif %}">{{include.ios}}</span>
