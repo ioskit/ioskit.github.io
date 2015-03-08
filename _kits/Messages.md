@@ -6,7 +6,10 @@ status: TODO
 type: technology
 icon: /resources/images/kits/Messages/icon_messages_large.png
 since: iOS3
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: ""
 prefixe:
 abstract: "TODO"
 kits:

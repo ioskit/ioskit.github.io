@@ -5,7 +5,12 @@ id: coremotion
 status:
 type: kit
 since: iOS4
-updates: iOS7,iOS8
+detailedUpdates:
+ - update:
+     ios: iOS7
+ - update:
+     ios: iOS8
+     brief: "Core Motion provides two new classes (CMAltimeter and CMAltitudeData) which allow you to access the barometer on the iPhone 6 and iPhone 6 Plus. On these two devices, you can also use a CMMotionActivity object to determine whether the user is on a bicycle."
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 prefixe: 'CM'
 abstract: "Contains interfaces for accessing accelerometer and gyro data."

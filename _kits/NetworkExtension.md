@@ -6,7 +6,7 @@ status:
 since: iOS8
 prefixe: 'NE'
 link: 
-abstract: "Provides interfaces for configuring and controlling VPN support. See Network Extension Framework."
+abstract: "Provides interfaces for configuring and controlling VPN support."
 links__:
  - link:
      name: 'aaa'

@@ -5,7 +5,10 @@ id: notificationcenter
 status: TODO
 type: kit
 since: iOS5
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: ""
 prefixe: 'NK'
 abstract: "provides support for creating widgets that display information in Notification Center"
 kits:

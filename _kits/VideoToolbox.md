@@ -5,7 +5,10 @@ id: videotoolbox
 status:
 type: kit
 since: iOS6
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: "The Video Toolbox framework (VideoToolbox.framework) includes direct access to hardware video encoding and decoding."
 icon__: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'N/A'
 abstract: "Contains interfaces used by the device. Do not include this framework directly."

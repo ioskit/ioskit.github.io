@@ -4,7 +4,12 @@ name: 'AVFoundation'
 id: avfoundation
 status:
 since: iOS2
-updates: iOS7, iOS8
+detailedUpdates:
+ - update:
+     ios: iOS7
+ - update:
+     ios: iOS8
+     brief: "Arbitrary types of metadata can be embedded with a video recording at various points in time. For example, you might record the current physical location in a video created by a moving camera device."
 prefixe: 'AV'
 abstract: "AV Foundation framework provides essential services for working with time-based audiovisual media on iOS and OS X."
 kits:

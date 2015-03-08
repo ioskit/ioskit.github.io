@@ -7,6 +7,10 @@ status:
 icon:
 xcode:
 since: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: "A number of new classes have been added to make it easier to create high-performance native apps that utilize web content."
 prefixe: 'WK'
 abstract: "Provides support for integrating web content into your apps"
 links:

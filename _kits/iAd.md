@@ -4,7 +4,12 @@ name: 'iAd'
 id: iad
 status:
 since: iOS4
-updates: iOS7,iOS8
+detailedUpdates:
+ - update:
+     ios: iOS7
+ - update:
+     ios: iOS8
+     brief: "The iAd framework (iAd.framework) adds the following new features: 1) If you are using AV Kit to play a video, you can play preroll advertisements before the video is played. 2) You can look up more information about the the effectiveness of advertisements for your app."
 prefixe: 'AD'
 link: https://developer.apple.com/iad/resources/
 abstract: "Contains classes for displaying advertisements in your application. See iAd Framework."

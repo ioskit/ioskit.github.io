@@ -5,7 +5,12 @@ name: 'Core Location'
 status:
 type: kit
 since: iOS2
-updates: iOS7,iOS8
+detailedUpdates:
+ - update:
+     ios: iOS7
+ - update:
+     ios: iOS8
+     brief: "The Core Location framework (CoreLocation.framework) has the following changes: 1) You can determine which floor the device is on, if the device is in a multistory building. 2) The visit service provides an alternative to the significant location change service for apps that need location information about interesting places visited by the user."
 icon__: /resources/images/kits/CoreAudio/core-audio.png
 abstract: "lets you determine the current location or heading associated with a device. "
 kits:

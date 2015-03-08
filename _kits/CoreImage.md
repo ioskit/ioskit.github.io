@@ -5,7 +5,10 @@ name: 'Core Image'
 status:
 type: kit
 since: iOS5
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: "The Core Image framework (CoreImage.framework) has the following changes: 1) You can create custom image kernels in iOS. 2) Core image detectors can detect rectangles and QR codes in an image."
 icon: /resources/images/kits/CoreAnimation/graphics_coreanimation.png
 prefixe: 'CI'
 abstract: "Contains interfaces for manipulating video and still images."

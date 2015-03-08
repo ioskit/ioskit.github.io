@@ -6,7 +6,10 @@ status:
 type: kit
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 since: iOS7
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: "The Game Controller framework (GameController.framework) has the following changes: 1) If the controller is attached to a device, you can now receive device motion data directly from the Game Controller framework. 2) If you are working with button inputs and do not care about pressure sensitivity, a new handler can call your game only when the button’s pressed state changes."
 prefixe: 'GC'
 abstract: "Contains interfaces for communicating with Made-for-iPhone/iPod/iPad (MFi) game-related hardware."
 kits:

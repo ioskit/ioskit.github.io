@@ -6,7 +6,10 @@ status:
 type: kit
 icon: /resources/images/kits/SpriteKit/spritekit-icon_2x.png
 since: iOS7
-updates: iOS8
+detailedUpdates:
+ - update:
+     ios: iOS8
+     brief: "The SpriteKit framework (SpriteKit.framework) adds many new features: see the content of the page."
 prefixe: 'SK'
 abstract: "provides a hardware-accelerated animation system optimized for creating 2D and 2.5D games."
 kits:
@@ -36,6 +39,21 @@ Using SpriteKit frees you from creating these things yourself and lets you focus
 ### iOS8
 
 The *SpriteKit* framework adds new features to make it easier to create high-performance, battery-efficient 2D games. With support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games. Xcode 6 also incorporates new shader and scene editors that save you time as you create your game. Create a scene’s contents, specifying which nodes appear in the scene and characteristics of those nodes, including physics effects. The scene is then serialized to a file that your game can easily load.
+
+* An `SKShapeNode` object can specify textures to be used when the shape is either stroked or filled.
+* The `SKSpriteNode`, `SKShapeNode`, `SKEmitterNode`, and `SKEffectNode` classes include support for custom rendering. Use the `SKShader` and `SKUniform` classes to compile an OpenGL ES 2.0-based fragment shader and provide input data to the shader.
+* `SKSpriteNode` objects can provide lighting information so that SpriteKit automatically generates lighting effects and shadows. Add `SKLightNode` objects to the scene to specify the lights, and then customize the properties on these lights and any sprites to determine how the scene is lit.
+* The `SKFieldNode` class provides physics special effects you can apply to a scene. For example, create magnetic fields, add drag effects, or even generate randomized motion. All effects are constrained to a specific region of the scene, and you can carefully tune both the effect’s strength and how quickly the effect is weakened by distance. Field nodes make it easy to drop in an effect without having to search the entire list of physics bodies and apply forces to them.
+* A new `SK3DNode` class is used to integrate a SceneKit scene into your game as a sprite. Each time that SpriteKit renders your scene, it renders the 3D scene node first to generate a texture, then uses that texture to render a sprite in SpriteKit. Creating 3D sprites can help you avoid creating dozens of frames of animation to produce an effect.
+* New actions have been added, including support for inverse kinematic animations.
+* A new system of constraints has been added to scene processing. SpriteKit applies constraints after physics is simulated, and you use them to specify a set of rules for how a node is positioned and oriented. For example, you can use a constraint to specify that a particular node in the scene always points at another node in the scene. Constraints make it easier to implement rendering rules in your game without having to tweak the scene manually in your event loop.
+* A scene can implement all of the run-loop stages in a delegate instead of subclassing the `SKScene` class. Using a delegate often means that you can avoid needing to subclass the `SKScene` class.
+* The SKView class provides more debugging information. You can also provide more performance hints to the renderer.
+* You can create normal map textures for use in lighting and physics calculations (or inside your own custom shaders). Use the new `SKMutableTexture` class when you need to create textures whose contents are dynamically updated.
+* You can generate texture atlases dynamically at runtime from a collection of textures.
+
+[Xcode6](/Xcode6) also incorporates many new SpriteKit editors. Create or edit the contents of scenes directly, specifying the nodes that appear in the scene as well as their physics bodies and other characteristics. The scene is serialized to a file and can be loaded directly by your game. The editors save you time because often you don’t need to implement your own custom editors to create your game’s assets.
+
 
 
 
