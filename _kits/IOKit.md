@@ -2,16 +2,24 @@
 layout: kit
 name: 'IOKit'
 id: iokit
-status: TODO
+status: 
+type: kit
 since: iOS2
-prefixe: 'N/A'
-link: 
+detailedUpdates__:
+ - update:
+     ios: iOS8
+     brief: "..."
+icon__: /resources/images/kits/CoreAudio/core-audio.png
+prefixe__: 'N/A'
 abstract: "Contains interfaces used by the device. Do not use this framework directly."
+kits__:
+ - CoreFoundation
 links__:
  - link:
      name: 'aaa'
      url: bbb
-     description: 'ccc'
+     description: ' - Apple Developer'
+     type: reference
 ---
 
 Contains interfaces used by the device. Do not use this framework directly.
