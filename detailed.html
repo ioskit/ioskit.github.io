@@ -75,13 +75,18 @@ layout: default
 			</td>
           <td>
 				<a href="{{ kit.url }}" >
+					{% if kit.deprecated %}<strike>{% endif %}
 					{% if kit.shortName %}{{ kit.shortName }}
 					{% else %}{{ kit.name }}
 					{% endif %}
+					{% if kit.deprecated %}</strike>{% endif %}
 				</a>
 		  </td>
           <td>
-			{{ kit.abstract }}
+				{% if kit.deprecated %}
+					[DEPRECATED: {{ kit.deprecated }}]<br/>
+				{% endif %}
+				{{ kit.abstract }}
 		  </td>
         </tr>
 		  {% endfor %}

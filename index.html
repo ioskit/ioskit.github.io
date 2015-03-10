@@ -40,11 +40,19 @@ layout: default
         	<td>{% include mark-todo.html status=kit.status %}</td>
           	<td>
 				{% include mark-technology.html type=kit.type %} 
-				<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
+
+				{% capture tooltip %}{% endcapture %}
+				{% if kit.deprecated %}
+					{% capture tooltip %}[DEPRECATED: {{ kit.deprecated }}] {% endcapture %}
+				{% endif %}
+				{% capture tooltip %}{{ tooltip }}{{ kit.abstract }}{% endcapture %}
+				<span data-toggle="tooltip" data-placement="top" data-original-title="{{tooltip}}">
 					<a href="{{ kit.url }}" >
+						{% if kit.deprecated %}<strike>{% endif %}
 						{% if kit.shortName %}{{ kit.shortName }}
 						{% else %}{{ kit.name }}
 						{% endif %}
+						{% if kit.deprecated %}</strike>{% endif %}
 					</a>
 				</span>
 		  	</td>
@@ -77,8 +85,15 @@ layout: default
         		<td>{% include mark-todo.html status=kit.status %}</td>
 	          	<td>{% include mark-technology.html type=kit.type %}</td>
 	          	<td>
-					<span data-toggle="tooltip" data-placement="top" data-original-title="{{ kit.abstract }}">
+					{% capture tooltip %}{% endcapture %}
+					{% if kit.deprecated %}
+						{% capture tooltip %}[DEPRECATED: {{ kit.deprecated }}] {% endcapture %}
+					{% endif %}
+					{% capture tooltip %}{{ tooltip }}{{ kit.abstract }}{% endcapture %}
+					<span data-toggle="tooltip" data-placement="top" data-original-title="{{ tooltip }}">
+						{% if kit.deprecated %}<strike>{% endif %}
 						<a href="{{ kit.url }}" >{{ kit.name }}</a>
+						{% if kit.deprecated %}</strike>{% endif %}
 					</span>
 			  	</td>
 				<td>{% include kit-with-ios-update.html ios="iOS2" %}</td>
