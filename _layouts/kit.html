@@ -9,7 +9,9 @@ layout: default
         	<div class="col-lg-12">
           		<h1 id="page-title">
 			      	{% if page.icon %}<img src="{{page.icon}}" width="100"/>&nbsp;{% endif %}
+					{% if page.deprecated %}<strike>{% endif %}
 					{{ page.name }}
+					{% if page.deprecated %}</strike>{% endif %}
 			      	{% if page.status %}
 						<small><small>
 							<span class="label label-primary">
@@ -21,6 +23,14 @@ layout: default
         	</div>
       	</div>
     </div>
+
+	{% if page.deprecated %}
+		<p>
+			<span class="label label-danger" aria-hidden="true">DEPRECATED&nbsp;
+				<span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>&nbsp;
+			<a href="/{{ page.deprecated }}">{{ page.deprecated }}</a>
+		</p>
+	{% endif %}
 
 	<p>
 		<span class="label label-default" aria-hidden="true">
