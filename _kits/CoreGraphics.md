@@ -8,8 +8,8 @@ since: iOS2
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 prefixe: 'CG'
 abstract: "Contains the interfaces for Quartz 2D"
-kits__:
- - Foo
+kits:
+ - ImageIO
 links:
  - link:
      name: 'Quartz 2D Programming Guide'
