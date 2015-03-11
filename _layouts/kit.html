@@ -24,13 +24,7 @@ layout: default
       	</div>
     </div>
 
-	{% if page.deprecated %}
-		<p>
-			<span class="label label-danger" aria-hidden="true">DEPRECATED&nbsp;
-				<span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>&nbsp;
-			<a href="/{{ page.deprecated }}">{{ page.deprecated }}</a>
-		</p>
-	{% endif %}
+ 	{% include deprecated.html deprecated=page.deprecated %}
 
 	<p>
 		<span class="label label-default" aria-hidden="true">

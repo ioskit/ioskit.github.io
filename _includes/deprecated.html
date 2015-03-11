@@ -1,0 +1,7 @@
+{% if include.deprecated %}
+	<p>
+		<span class="label label-danger" aria-hidden="true">DEPRECATED&nbsp;
+			<span class="glyphicon glyphicon-play" aria-hidden="true"></span></span>&nbsp;
+		<a href="/{{ include.deprecated }}">{{ include.deprecated }}</a>
+	</p>
+{% endif %}
