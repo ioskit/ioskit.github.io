@@ -18,7 +18,8 @@ links:
      type: reference
  - link:
      name: 'Core Text Reference Collection'
-     url: https://developer.apple.com/library/ios/documentation/Carbon/Reference/CoreText_Framework_Ref/_index.html
+     url: https://developer.apple.com/library/ios/documentation/Carbon/Reference/CoreText_Framework_Ref/index.html
+     was: https://developer.apple.com/library/ios/documentation/Carbon/Reference/CoreText_Framework_Ref/_index.html
      description: ' - Apple Developer'
      type: reference
  - link:

@@ -11,15 +11,19 @@ links:
  - link:
      name: 'Address Book Programming Guide for iOS'
      url: https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
-     description: ''
+     description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Address Book Framework Reference for iOS'
-     url: https://developer.apple.com/library/ios/documentation/AddressBook/Reference/AddressBook_iPhoneOS_Framework/_index.html
-     description: ''
+     url: https://developer.apple.com/library/ios/documentation/AddressBook/Reference/AddressBook_iPhoneOS_Framework/index.html
+     was: https://developer.apple.com/library/ios/documentation/AddressBook/Reference/AddressBook_iPhoneOS_Framework/_index.html
+     description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Address Book Tutorial in iOS'
      url: http://www.raywenderlich.com/63885/address-book-tutorial-in-ios
      description: ' - Ray Wenderlich'
+     type: tutorial
 ---
 
 The *Address Book framework* (`AddressBook.framework`) provides programmatic access to a user’s contacts database. If your app uses contact information, you can use this framework to access and modify that information. 

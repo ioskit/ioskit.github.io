@@ -17,7 +17,8 @@ kits:
 links:
  - link:
      name: 'Core Foundation Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/CoreFoundation/Reference/CoreFoundation_Collection/_index.html
+     url: https://developer.apple.com/library/ios/documentation/CoreFoundation/Reference/CoreFoundation_Collection/index.html
+     was: https://developer.apple.com/library/ios/documentation/CoreFoundation/Reference/CoreFoundation_Collection/_index.html
      description: ' - Apple Developer'
      type: reference
 ---

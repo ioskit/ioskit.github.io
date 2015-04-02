@@ -16,7 +16,8 @@ kits:
 links:
  - link:
      name: 'Audio Toolbox Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/_index.html
+     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/index.html
+     was: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/_index.html
      description: ' - Apple Developer'
      type: reference
 ---

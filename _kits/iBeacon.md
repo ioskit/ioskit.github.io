@@ -14,14 +14,17 @@ links:
      name: 'iBeacon for Developers'
      url: https://developer.apple.com/ibeacon/
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Getting Started with iBeacon'
      url: https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf
      description: ' (PDF, 11 pages)'
+     type: reference
  - link:
      name: 'Taking Core Location Indoors'
      url: https://developer.apple.com/videos/wwdc/2014/#708
      description: ' - WWDC 2014'
+     type: reference
  - link:
      name: 'Developing iOS 7 Applications with iBeacons Tutorial'
      url: http://www.raywenderlich.com/66584/ios7-ibeacons-tutorial

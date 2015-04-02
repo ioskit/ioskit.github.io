@@ -16,7 +16,8 @@ kits:
 links:
  - link:
      name: 'Audio Unit Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/_index.html
+     url: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/index.html
+     was: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/_index.html
      description: ' - Apple Developer'
      type: reference
  - link:

@@ -13,7 +13,8 @@ kits:
 links:
  - link:
      name: 'Core Media Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/CoreMedia/Reference/CoreMediaFramework/_index.html
+     url: https://developer.apple.com/library/ios/documentation/CoreMedia/Reference/CoreMediaFramework/index.html
+     was: https://developer.apple.com/library/ios/documentation/CoreMedia/Reference/CoreMediaFramework/_index.html
      description: ' - Apple Developer'
      type: reference
 ---

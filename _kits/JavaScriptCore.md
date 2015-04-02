@@ -13,8 +13,10 @@ kits__:
 links:
  - link:
      name: 'JavaScriptCore Framework Reference'
-     url: https://developer.apple.com/library/mac/documentation/Carbon/Reference/WebKit_JavaScriptCore_Ref/_index.html
+     url: https://developer.apple.com/library/mac/documentation/Carbon/Reference/WebKit_JavaScriptCore_Ref/index.html
+     was: https://developer.apple.com/library/mac/documentation/Carbon/Reference/WebKit_JavaScriptCore_Ref/_index.html
      description: ' - Apple Developer'
+     type: reference
 ---
 
 The *JavaScript Core* framework (JavaScriptCore.framework) provides Objective-C wrapper classes for many standard JavaScript objects. Use this framework to evaluate JavaScript code and to parse JSON data.

@@ -3,7 +3,14 @@ layout: kit
 id: security
 name: 'Security'
 since: iOS2
-link: https://developer.apple.com/library/ios/documentation/Security/Reference/SecurityFrameworkReference/_index.html
+status: TODO
+links:
+ - link:
+     name: 'Security Framework Reference'
+     url: https://developer.apple.com/library/ios/documentation/Security/Reference/SecurityFrameworkReference/index.html
+     was: https://developer.apple.com/library/ios/documentation/Security/Reference/SecurityFrameworkReference/_index.html
+     description: ' - Apple Developer'
+     type: reference
 abstract: "In addition to its built-in security features, iOS also provides an explicit Security framework (Security.framework) that you can use to guarantee the security of the data your app manages. This framework provides interfaces for managing certificates, public and private keys, and trust policies. It supports the generation of cryptographically secure pseudorandom numbers. It also supports the storage of certificates and cryptographic keys in the keychain, which is a secure repository for sensitive user data."
 ---
 

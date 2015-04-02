@@ -13,7 +13,8 @@ abstract: "Contains interfaces for performing digital signal processing (DSP), l
 links:
  - link:
      name: 'Accelerate Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/Accelerate/Reference/AccelerateFWRef/_index.html
+     url: https://developer.apple.com/library/ios/documentation/Accelerate/Reference/AccelerateFWRef/index.html
+     was: https://developer.apple.com/library/ios/documentation/Accelerate/Reference/AccelerateFWRef/_index.html
      description: ' - Apple Developer'
      type: reference
 ---

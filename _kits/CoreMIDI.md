@@ -16,7 +16,8 @@ kits:
 links:
  - link:
      name: 'Core MIDI Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CACoreMIDIRef/_index.html
+     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CACoreMIDIRef/index.html
+     was: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CACoreMIDIRef/_index.html
      description: ' - Apple Developer'
      type: reference
 ---
