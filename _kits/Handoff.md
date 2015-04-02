@@ -13,10 +13,12 @@ links:
      name: 'Handoff for Developers'
      url: https://developer.apple.com/handoff/
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'iOS 8 Handoff Tutorial'
      url: http://www.raywenderlich.com/84174/ios-8-handoff-tutorial
      description: ' - Ray Wenderlich'
+     type: tutorial
 abstract: "	Using a simple API in Foundation, your app can participate in Handoff to let users start an activity on one device and seamlessly resume the activity on another device."
 ---
 

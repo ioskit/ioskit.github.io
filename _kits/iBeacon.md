@@ -22,6 +22,11 @@ links:
      name: 'Taking Core Location Indoors'
      url: https://developer.apple.com/videos/wwdc/2014/#708
      description: ' - WWDC 2014'
+ - link:
+     name: 'Developing iOS 7 Applications with iBeacons Tutorial'
+     url: http://www.raywenderlich.com/66584/ios7-ibeacons-tutorial
+     description: ' - Ray Wenderlich'
+     type: tutorial
 abstract: "Give your iOS apps the ability to determine its proximity to iBeacon-enabled hardware with Core Location APIs."
 ---
 
