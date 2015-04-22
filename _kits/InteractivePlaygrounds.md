@@ -9,18 +9,26 @@ kits:
  - Swift
 xcode: xcode6
 links:
- - link:
+ - link_:
      name: 'Exploring and Evaluating Swift Code in a Playground'
      url: https://developer.apple.com/library/ios/recipes/xcode_help-source_editor/chapters/ExploringandEvaluatingSwiftCodeinaPlayground.html
      description: ' - Apple Developer'
+     type: reference
+ - link_:
+     name: 'About Playgrounds'
+     url: https://developer.apple.com/library/ios/recipes/Playground_Help/Chapters/AboutPlaygrounds.html
+     description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Swift Playgrounds'
      url: https://developer.apple.com/videos/wwdc/2014/#408
      description: ' - WWDC 2014'
+     type: reference
  - link:
      name: 'iOS 8: Interactive Playgrounds'
      url: http://www.bignerdranch.com/blog/ios-8-interactive-playgrounds/
      description: ' - Big Nerd Ranch'
+     type: resource
 abstract: "Playgrounds make writing Swift code productive and easy. Enter a line of code, and the result appears immediately."
 ---
 
