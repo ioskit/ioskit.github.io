@@ -8,13 +8,14 @@ since: iOS8
 kits:
  - Swift
 xcode: xcode6
+links__:
+- was:
+    name: 'Exploring and Evaluating Swift Code in a Playground'
+    url: https://developer.apple.com/library/ios/recipes/xcode_help-source_editor/chapters/ExploringandEvaluatingSwiftCodeinaPlayground.html
+    description: ' - Apple Developer'
+    type: reference
 links:
- - link_:
-     name: 'Exploring and Evaluating Swift Code in a Playground'
-     url: https://developer.apple.com/library/ios/recipes/xcode_help-source_editor/chapters/ExploringandEvaluatingSwiftCodeinaPlayground.html
-     description: ' - Apple Developer'
-     type: reference
- - link_:
+ - link:
      name: 'About Playgrounds'
      url: https://developer.apple.com/library/ios/recipes/Playground_Help/Chapters/AboutPlaygrounds.html
      description: ' - Apple Developer'
