@@ -21,6 +21,11 @@ links:
     url: https://developer.apple.com/researchkit/
     description: ' - Apple Developer'
     type: reference
+- link:
+    name: 'ResearchKit'
+    url: http://researchkit.github.io/
+    description: ' - On Github'
+    type: resource
 ---
 
 **ResearchKit** is an open source framework introduced by Apple that enables your iOS app to become a powerful tool for medical research. Easily create visual consent flows, real-time dynamic active tasks, and surveys using a variety of customizable modules that you can build upon and share with the community. And since ResearchKit works seamlessly with [HealthKit](/HealthKit), researchers can access even more relevant data for their studies — like daily step counts, calorie use, and heart rate.
