@@ -44,11 +44,12 @@ The *Core Bluetooth* framework (`CoreBluetooth.framework`) allows developers to 
 
 ##Details
 
--   Bluetooth protocol:
+-   **Bluetooth protocol**:
     -   Devices
     -   Services
     -   Characteristics
--   Since [iOS2](/iOS2), and Bluetooth Low Energy since [iOS5](/iOS5)
+-   **Bluetooth Low Energy** (BLE) has the advantage that it is low energy and is ‘native’ to most modern phones and tablets (This is the specification for one type of signal that beacons transmit: see [iBeacon](/iBeacon)).
+-   Bluetooth since [iOS2](/iOS2), and Bluetooth Low Energy since [iOS5](/iOS5)
 -   Since iPhone 4s and iPad 3rd generation (since iPad 2)
 -   Slow speed (100k bytes / minute)
 -   See also [iBeacon](/iBeacon)
