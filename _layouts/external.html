@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="bs-docs-section">
+
+	<div class="page-header">
+    	<div class="row">
+        	<div class="col-lg-12">
+          		<h1 id="page-title">
+			      	{{ page.name }}
+				</h1>
+				{% if page.link %}
+					<a href="{{ page.link.url }}" target="_blank">{{ page.link.name }}</a>
+				{% endif %}
+        	</div>
+      	</div>
+    </div>
+
+	<div class="row">
+        <div class="col-lg-12">
+			<h3>{{ page.abstract }}</h3>
+      	</div>
+        <div class="col-lg-12">
+			{{ content }}
+      	</div>
+    </div>
+	<div class="row">
+        <div class="col-lg-12">
+			{% if page.links %}
+				<h3>Resources</h3>
+				<ul>
+					{% for l in page.links %}
+						<li><a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+      	</div>
+    </div>
+
+</div>

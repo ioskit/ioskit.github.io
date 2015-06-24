@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+
+{% assign cvs = site.cvs | where: "visibility", "public" %}
+
+<div class="bs-docs-section">
+
+	<div class="page-header">
+    	<div class="row">
+        	<div class="col-lg-12">
+          		<h1 id="page-title">Public CVs</h1>
+        	</div>
+      	</div>
+    </div>
+
+	<div class="row">
+		<p>&nbsp;</p>
+		<div class="col-lg-1"></div>
+
+		<div class="col-lg-10">
+			<p>List of CVs put here by their author (You can add your own here: see at the bottom for more details):</p>
+			<ol>
+			{% for cv in cvs %}
+				<li>
+					<a href="{{cv.url}}">{{cv.firstName}}&nbsp;{{cv.lastName}}</a>
+					{% if cv.subtitle %}&nbsp;&bull;&nbsp;<i>{{cv.subtitle}}</i>{% endif %}
+				</li>
+			{% endfor %}
+			</ol>
+			<p>&nbsp;</p>
+			<h2>Add your CVs here!</h2>
+			<p>You can add your own CVs on this website in order to take advantage of the list of iOS Features, Apple and External Frameworks provided here: your CVs will become dynamic by showing witch ones you used.</p>
+			<p>Your CVs can be "<i>public</i>" (visible in the list above) or not (only people having the URL can read it... and those going to the Github repository). You can create both a public and a private CVs. For example, the public CVs of John DOE is automatically listed on this page, but not his private one: if you want to see the private CVs of John DOE you had to know <a href="/cvs/johndoe-private.html">its URL here.</a></p>
+			<p>To add your CVs here you have to:
+				<ol>
+					<li>Get a local copy of the Github repo <a href="https://github.com/ioskit/ioskit.github.io">https://github.com/ioskit/ioskit.github.io</a></li>
+					<li>Duplicate the file <code>/_cvs/template.md</code> and name it like that: <code>firstnamelastname.md</code> or <code>firstnamelastname-private.md</code>.</li>
+					<li>Edit this file</li>
+					<li>Commit and create a Pull Request</li>
+				</ol>
+			</p>
+		</div>
+
+		<div class="col-lg-1"></div>
+	</div>
+
+</div>

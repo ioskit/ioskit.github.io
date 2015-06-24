@@ -17,6 +17,14 @@ collections:
     xcodes:
             output: true
             permalink: /:path/index:output_ext
+    features:
+            output: true
+            permalink: /:path/index:output_ext
+    externals:
+            output: true
+            permalink: /:path/index:output_ext
+    cvs:
+            output: true
 
 versions:
 - iOS2
