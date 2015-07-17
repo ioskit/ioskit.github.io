@@ -1,0 +1,23 @@
+/*******************************************************************************
+ioskit Custom CSS
+*******************************************************************************/
+
+.apple {
+  /* 
+  display: block;
+  float: left;
+  */
+  width: 12px;
+  height: 14px;
+  background-size: 12px 14px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAoCAYAAACb3CikAAABP0lEQVRYw92XYRGEIBCFL4IRiEAEIhDBCDYgAhGMQAQiGIEINpCDmcVhPAQ8vYU5Z96/U79b971lX69/vrZtG5yE0+KkW0FMTquTBekWEHMEECRaVMImRDEhyAmE7uGT4FYDQEwCYmzRpDHA2gQCQDTIZ8fwq2AaoQfCy6QTLzSud5CK7gmQ9BsIcQimowxA0QhYZX6/O6kKCB66VDzwrsYeIIL4GYhChPB/mKQgGCKEPnUXYjVMDmJArEa2STkSxFqTGRggqgQikUBEzazoAgTLMbKXHll6AbHJNG2UqnNp2Nnmww5gMKeuP+ewHvpkt/PH3MnsJviWRgy2vIuQ3ZPfBJGrwnrIFFVzkpcI9iU9rBT8yoJFCwvW8xF/E8ZEa+XzEAcYnXj5lPrOcP5ViZ4QTy3kFBxFLtzDshaNrje7kZXfmM9gJwAAAABJRU5ErkJggg==);
+  /*background-image: url("/resources/images/apple-14x14.png");*/
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*
+a .label {
+	color: white;
+}
+*/

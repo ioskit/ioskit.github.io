@@ -13,7 +13,7 @@ socials:
      value: "johndoe@ios-k.it"
  - social:
      name: twitter
-     value: "@ioskit"
+     value: "ioskit"
 sites:
  - site:
      title: "iOS-K.it"

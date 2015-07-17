@@ -83,33 +83,41 @@ layout: default
 				<!-- EXTERNALS -->
 				<thead>
 					<tr>
-  						<th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
-  						<th>External Frameworks</th>
-  						<th width="80%">Application</th>
+  						<th>#<!-- span class="glyphicon glyphicon-check" aria-hidden="true"></span --></th>
+  						<th>External Framework</th>
+  						<th width="80%">Applications</th>
 					</tr>
 				</thead>
 				<tbody>
+					{% assign usedExternals = ',' %}
+					{% for a in page.applications %}
+						{% capture usedExternals %}{{ usedExternals }}{{ a.application.externals }},{% endcapture %}
+					{% endfor %}
+					
 					{% for e in externals %}
-						{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-						<tr>
-							<td>{{ count }}</td>
-  							<td>
-  								<a href="{{e.url}}">{{e.name}}</a>
-							</td>
-							<td>
-								{% for a in page.applications %}
-									{% if a.application.externals contains e.id %}
-									<a href="#{{a.application.id}}">
-										<span class="label label-primary">
-											{{a.application.name}}
-											{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-										</span>
-									</a>
-									&nbsp;&bull; 
-									{% endif %}
-								{% endfor %}
-							</td>
-						</tr>
+						{% assign externalName = ',' | append: e.id | append: ',' %}
+						{% if usedExternals contains externalName %}
+							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+							<tr>
+								<td>{{ count }}</td>
+  								<td>
+  									<a href="{{e.url}}">{{e.name}}</a>
+								</td>
+								<td>
+									{% for a in page.applications %}
+										{% if a.application.externals contains e.id %}
+											<a href="#{{a.application.id}}">
+												<span class="label label-primary">
+													{{a.application.name}}
+													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
+												</span>
+											</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;
+										{% endif %}
+									{% endfor %}
+								</td>
+							</tr>
+						{% endif %}
   					{% endfor %}
 				</tbody>
 		
@@ -122,13 +130,12 @@ layout: default
   						<th></th>
 					</tr>
 	        		<tr>
-	          			<th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
-			  			<th>Features</th>
-	          			<th>Application</th>
+  						<th>#<!-- span class="glyphicon glyphicon-check" aria-hidden="true"></span --></th>
+			  			<th>Feature</th>
+	          			<th>Applications</th>
 	        		</tr>
 	      		</thead>
 	      		<tbody>
-					
 					{% assign usedFeatures = ',' %}
 					{% for a in page.applications %}
 						{% capture usedFeatures %}{{ usedFeatures }}{{ a.application.features }},{% endcapture %}
@@ -153,7 +160,7 @@ layout: default
 													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
 												</span>
 											</a>
-											&nbsp;&bull; 
+											&nbsp;&nbsp;&nbsp;&nbsp;
 										{% endif %}
 									{% endfor %}
 								</td>
@@ -177,27 +184,34 @@ layout: default
 	        		</tr>
 	      		</thead>
 	      		<tbody>
+					{% assign usedKits = ',' %}
+					{% for a in page.applications %}
+						{% capture usedKits %}{{ usedKits }}{{ a.application.kits }},{% endcapture %}
+					{% endfor %}
 					{% for k in kits %}
-						{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-	        			<tr>
-							<td>{{ count }}</td>
-	          				<td>
-	          					<a href="{{k.url}}">{{k.name}}</a>
-							</td>
-							<td>
-								{% for a in page.applications %}
-									{% if a.application.kits contains k.id %}
-									<a href="#{{a.application.id}}">
-										<span class="label label-primary">
-											{{a.application.name}}
-											{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-										</span>
-									</a>
-									&nbsp;&bull; 
-									{% endif %}
-								{% endfor %}
-							</td>
-	        			</tr>
+						{% assign kitName = ',' | append: k.id | append: ',' %}
+						{% if usedKits contains kitName %}
+							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+	        				<tr>
+								<td>{{ count }}</td>
+	          					<td>
+	          						<a href="{{k.url}}">{{k.name}}</a>
+								</td>
+								<td>
+									{% for a in page.applications %}
+										{% if a.application.kits contains k.id %}
+											<a href="#{{a.application.id}}">
+												<span class="label label-primary">
+													{{a.application.name}}
+													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
+												</span>
+											</a>
+											&nbsp;&nbsp;&nbsp;&nbsp;
+										{% endif %}
+									{% endfor %}
+								</td>
+	        				</tr>
+						{% endif %}
 			  		{% endfor %}
 	      		</tbody>
 	    	</table>
@@ -220,8 +234,8 @@ layout: default
 					</h2>
 					<p>
 						{% if a.application.startDate %}
-							<span data-toggle="tooltip" data-placement="top" data-original-title="Release Date">
-								<span class="label label-default">
+							<span data-toggle="tooltip" data-placement="top" data-original-title="Project Dates (Begin > End)">
+								<span class="label label-primary">
 									{{ a.application.startDate }}
 									&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;
 									{% if a.application.endDate %}
@@ -231,7 +245,7 @@ layout: default
 									{% endif %}
 								</span>
 							</span>
-							&nbsp;
+							&nbsp;&nbsp;
 						{% endif %}
 						{% if a.application.publishDate %}
 							<span data-toggle="tooltip" data-placement="top" data-original-title="Release Date">
@@ -240,7 +254,18 @@ layout: default
 									{{ a.application.publishDate }}
 								</span>
 							</span>
-							&nbsp;
+							&nbsp;&nbsp;
+						{% endif %}
+						{% if a.application.itunesUrl %}
+							<span data-toggle="tooltip" data-placement="top" data-original-title="iTunes URL">
+								<a href="{{ a.application.itunesUrl }}">
+								<span class="label label-success">
+									<span class="apple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;
+									iTunes
+								</span>
+								</a>
+							</span>
+							&nbsp;&nbsp;
 						{% endif %}
 						{% if a.application.url %}<a href="{{ a.application.url }}">{{ a.application.url }}</a>{% endif %}
 					</p>

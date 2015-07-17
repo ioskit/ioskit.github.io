@@ -13,7 +13,7 @@ socials:
      value: "johndoe@ios-k.it"
  - social:
      name: twitter
-     value: "@ioskit"
+     value: "ioskit"
 sites:
  - site:
      title: "iOS-K.it"
@@ -33,7 +33,7 @@ applications:
      ios: ios8
      xcode: xcode6
      kits: coredata,swift,storyboard
-     features: BarCode,SearchBar
+     features: BarCode,SearchBar,MethodsTypeSwift
      externals: kif,testflight,shipio
  - application:
      name: "My Private Banking App"
@@ -46,6 +46,7 @@ applications:
      startDate: "01/02/2015"
      endDate: "27/02/2015"
      publishDate: "15/05/2015"
+     itunesUrl: https://itunes.apple.com/gb/app/seeti.me/id505840209?mt=8
      ios: ios8
      xcode: xcode6
      kits: coredata,objectivec
