@@ -19,13 +19,14 @@ applications:
  - application:
      name: <name of the App or Project, for example "My Killer App">
      id: <id of the App or Project, for example "mykillerapp">
-     url: <URL of the App or Project, for example "http://mykillerapp.com", optional = can be blank>
+     url: <URL of the App or Project (see also itunesUrl), for example "http://mykillerapp.com", optional = can be blank>
      abstract: <short description, pitch of the project, for example "My implementation of this killer idea!">
      detail: <long description of the project, optional = can be blank>
      mission: <description of your actions, optional = can be blank>
      startDate: <start date of the project, for example "31/12/2014", optional = can be blank>
      endDate: <end date of the project, for example "31/12/2015", optional = can be blank>
      publishDate: <publication date of the App, optional = can be blank>
+	 itunesUrl: <URL of the App on the iTunes Store>, for example https://itunes.apple.com/gb/app/harvard-business-review-international/id553943087?mt=8>
      ios: <id of used iOS version (should exists in iOS-K.it), for example 'ios8', optional = can be blank>
      xcode: <id of used iOXcode version (should exists in iOS-K.it), for example 'xcode6', optional = can be blank>
      kits: <id of used Apple Frameworks (should exists in iOS-K.it), with comma, for example 'coredata,swift', optional = can be blank>

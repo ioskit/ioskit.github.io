@@ -85,7 +85,8 @@ layout: default
 					<tr>
   						<th>#<!-- span class="glyphicon glyphicon-check" aria-hidden="true"></span --></th>
   						<th>External Framework</th>
-  						<th width="80%">Applications</th>
+  						<th width="75%">Applications</th>
+  						<th width="1%">{% include page-link-to-top.html %}</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -133,6 +134,7 @@ layout: default
   						<th>#<!-- span class="glyphicon glyphicon-check" aria-hidden="true"></span --></th>
 			  			<th>Feature</th>
 	          			<th>Applications</th>
+  						<th width="1%">{% include page-link-to-top.html %}</th>
 	        		</tr>
 	      		</thead>
 	      		<tbody>
@@ -180,7 +182,8 @@ layout: default
 	        		<tr>
 	          			<th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
 			  			<th>iOS Frameworks</th>
-	          			<th>Application</th>
+	          			<th>Applications</th>
+  						<th width="1%">{% include page-link-to-top.html %}</th>
 	        		</tr>
 	      		</thead>
 	      		<tbody>
@@ -230,7 +233,7 @@ layout: default
 				<div id="{{ a.application.id }}"><p>&nbsp;</p></div>
 				<div class="row">
 					<h2>
-						{{ a.application.name }}
+						{% include page-link-to-top.html %}&nbsp;&nbsp;{{ a.application.name }}
 					</h2>
 					<p>
 						{% if a.application.startDate %}
