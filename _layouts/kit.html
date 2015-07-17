@@ -58,6 +58,17 @@ layout: default
 
 			<p>&nbsp;</p>
 
+			{% if page.id == 'swift' or page.id == 'objectivec' %}
+				<h3>Features</h3>
+				<ul>
+					{% for f in site.features %}
+						{% if page.id == f.language %}
+							<li><a href="{{ f.url }}">{{ f.name }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			{% endif %}
+
 			{% if page.detailedUpdates %}
 				<h3>Updates</h3>
 				<ul>
@@ -76,14 +87,8 @@ layout: default
 				</ul>
 			{% endif %}
 
-			{% if page.links %}
-				<h3>Resources</h3>
-				<ul>
-					{% for l in page.links %}
-						<li><a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}</li>
-					{% endfor %}
-				</ul>
-			{% endif %}
+		  	{% include page-links.html %}
+
 		</div>
 	</div>
 

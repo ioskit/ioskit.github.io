@@ -33,7 +33,7 @@ applications:
      ios: ios8
      xcode: xcode6
      kits: coredata,swift,storyboard
-     features: barcode,searchbar
+     features: BarCode,SearchBar
      externals: kif,testflight,shipio
  - application:
      name: "My Private Banking App"
@@ -49,7 +49,7 @@ applications:
      ios: ios8
      xcode: xcode6
      kits: coredata,objectivec
-     features: tableviewcell,segue
+     features: TableViewCell,Segue
      externals: kif,instabug,cocoapods
 ---
 

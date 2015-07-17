@@ -8,8 +8,8 @@ since: iOS1
 xcode:
 icon: 
 abstract: "TODO"
-kits__:
- - NotificationCenter
+kits:
+ - Swift
 links:
  - link:
      name: 'Beginning Adaptive Layout Tutorial'

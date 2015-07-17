@@ -33,7 +33,7 @@ applications:
      ios: ios8
      xcode: xcode6
      kits: coredata,swift,storyboard
-     features: barcode,tableviewcell,segue,searchbar
+     features: BarCode,TableViewCell,Segue,MethodsTypeSwift
      externals: kif,testflight,flurry,instabug,shipio
 ---
 

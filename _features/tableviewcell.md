@@ -1,8 +1,8 @@
 ---
 layout: feature
 name: 'UITableView Custom Cell'
-id: tableviewcell
-status: 
+id: TableViewCell
+status: TODO
 abstract: ""
 links_:
  - link:

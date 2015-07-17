@@ -1,0 +1,8 @@
+{% if page.links %}
+	<h3>Resources</h3>
+	<ul>
+		{% for l in page.links %}
+			<li><a href="{{ l.link.url }}" target="_blank">{{ l.link.name }}</a>{{ l.link.description }}</li>
+		{% endfor %}
+	</ul>
+{% endif %}

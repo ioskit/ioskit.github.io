@@ -128,28 +128,37 @@ layout: default
 	        		</tr>
 	      		</thead>
 	      		<tbody>
+					
+					{% assign usedFeatures = ',' %}
+					{% for a in page.applications %}
+						{% capture usedFeatures %}{{ usedFeatures }}{{ a.application.features }},{% endcapture %}
+					{% endfor %}
+					
 					{% assign count = '0' %}
 					{% for f in features %}
-						{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-	        			<tr>
-							<td>{{ count }}</td>
-	          				<td>
-	          					<a href="{{f.url}}">{{f.name}}</a>
-							</td>
-							<td>
-								{% for a in page.applications %}
-									{% if a.application.features contains f.id %}
-									<a href="#{{a.application.id}}">
-										<span class="label label-primary">
-											{{a.application.name}}
-											{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-										</span>
-									</a>
-									&nbsp;&bull; 
-									{% endif %}
-								{% endfor %}
-							</td>
-	        			</tr>
+						{% assign featureName = ',' | append: f.id | append: ',' %}
+						{% if usedFeatures contains featureName %}
+							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+	        				<tr>
+								<td>{{ count }}</td>
+	          					<td>
+	          						<a href="{{f.url}}">{{f.name}}</a>
+								</td>
+								<td>
+									{% for a in page.applications %}
+										{% if a.application.features contains f.id %}
+											<a href="#{{a.application.id}}">
+												<span class="label label-primary">
+													{{a.application.name}}
+													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
+												</span>
+											</a>
+											&nbsp;&bull; 
+										{% endif %}
+									{% endfor %}
+								</td>
+	        				</tr>
+						{% endif %}
 			  		{% endfor %}
 	      		</tbody>
 	

@@ -1,0 +1,9 @@
+{% if include.language == 'swift' %}
+	<span class="label label-primary">Swift</span>
+{% elsif include.language == 'objectivec' %}
+	{% if include.size == 'small' %}
+		<span class="label label-warning">Obj-C</span>
+	{% else %}
+		<span class="label label-warning">Objective-C</span>
+	{% endif %}
+{% endif %}

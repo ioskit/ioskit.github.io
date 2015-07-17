@@ -8,6 +8,7 @@ since: iOS8
 kits:
  - InteractivePlaygrounds
  - AutomaticReferenceCounting
+ - ObjectiveC
 xcode: xcode6
 links:
  - link:

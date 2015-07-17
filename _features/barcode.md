@@ -1,8 +1,8 @@
 ---
 layout: feature
 name: 'Bar Code'
-id: barcode
-status: 
+id: BarCode
+status: TODO
 abstract: ""
 links_:
  - link:
