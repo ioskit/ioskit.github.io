@@ -1,7 +1,7 @@
 ---
 layout: feature
-name: 'Type methods'
-id: MethodsTypeSwift
+name: 'Type Method'
+id: TypeMethodSwift
 status: 
 language: swift
 abstract: "Instance methods are methods that are called on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called Type methods."
@@ -13,16 +13,19 @@ links:
      description: ' - Apple Developer'
      type: reference
 features:
- - MethodsClassObjectiveC
+ - ClassMethodObjectiveC
  - MethodsVisibilitySwift
 ---
 
 Instance methods are methods that are called on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called type methods.
 
-Type methods are like [Class methods in Objective-C](/MethodsClassObjectiveC).
+Type methods are like [Class Methods in Objective-C](/ClassMethodObjectiveC).
 
 To define a Type method you have to use the `class` selector:
 
+{% gist addac16a79d100bdb6f0 %}
+
+<!--
 <pre>
   <code class="swift">class SomeClass {
   
@@ -38,4 +41,4 @@ Then you can call the method like that:
 <pre>
   <code class="swift">SomeClass.someTypeMethod()</code>
 </pre>
-
+-->

@@ -50,27 +50,29 @@ layout: default
       <tbody>
 		{% assign count = '0' %}
 		{% for feature in site.features %}
-			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-        <tr>
-			<td>{{ count }}</td>
-        	<td>
-				{% if feature.status == "TODO" %}
-				<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-					<span class="glyphicon glyphicon-fire" aria-hidden="true">
-				</span>
-				{% endif %}
-			</td>
-			<td>
-				{% include language.html language=feature.language size="small" %}
-			</td>
-          <td>
-		    	<a href="{{ feature.id }}">{{ feature.name }}</a></li>
-		  </td>
-          <td>
-				{{ feature.abstract }}
-		  </td>
-        </tr>
-		  {% endfor %}
+			{% if feature.status != "TODO" %}
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+	        	<tr>
+					<td>{{ count }}</td>
+	        		<td>
+						{% if feature.status == "DOING" %}
+							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+								<span class="glyphicon glyphicon-fire" aria-hidden="true">
+							</span>
+						{% endif %}
+					</td>
+					<td>
+						{% include language.html language=feature.language size="small" %}
+					</td>
+	          		<td>
+			    		<a href="{{ feature.id }}">{{ feature.name }}</a></li>
+			  		</td>
+	          		<td>
+						{{ feature.abstract }}
+			  		</td>
+	        	</tr>
+			{% endif %}
+		{% endfor %}
       </tbody>
     </table>
 </div>

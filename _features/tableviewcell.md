@@ -2,7 +2,7 @@
 layout: feature
 name: 'UITableView Custom Cell'
 id: TableViewCell
-status: TODO
+status: DOING
 abstract: ""
 links_:
  - link:

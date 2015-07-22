@@ -1,7 +1,7 @@
 ---
 layout: feature
-name: 'Class methods'
-id: MethodsClassObjectiveC
+name: 'Class Method'
+id: ClassMethodObjectiveC
 status: 
 language: objectivec
 abstract: "In Objective-C, a class is itself an object with an opaque type called Class. Classes can’t have properties defined using the declaration syntax shown earlier for instances, but they can receive messages: they are called Class methods."
@@ -12,17 +12,20 @@ links:
      description: ' - Apple Developer'
      type: reference
 features:
- - MethodsTypeSwift
+ - TypeMethodSwift
 ---
 
 In Objective-C, a class is itself an object with an opaque type called Class. Classes can’t have properties defined using the declaration syntax shown earlier for instances, but they can receive messages.
 
 The typical use for a class method is as a factory method, which is an alternative to the object allocation and initialization procedure described in Objects Are Created Dynamically.
 
-Class methods are like [Type methods in Swift](/MethodsTypeSwift).
+Class methods are like [Type Methods in Swift](/TypeMethodSwift).
 
-Class methods are denoted by the use of a `+` sign, which differentiates them from instance methods using a `-` sign.
+Class methods are denoted by the use of a `+` sign, which differentiates them from instance methods using a `-` sign:
 
+{% gist cb8b5ac63d0a782e84a1 %}
+
+<!--
 <pre>
   <code class="swift">@interface SomeClass : NSObject
   
@@ -38,3 +41,4 @@ Then you can call the method like that:
   <code class="swift">[SomeClass someClassMethod];</code>
 </pre>
 
+-->

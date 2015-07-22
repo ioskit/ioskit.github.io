@@ -2,7 +2,7 @@
 layout: feature
 name: 'Bar Code'
 id: BarCode
-status: TODO
+status: DOING
 abstract: ""
 links_:
  - link:

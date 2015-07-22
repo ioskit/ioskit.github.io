@@ -1,9 +1,28 @@
+{% if include.withLink == 'yes' %}
+	{% for kit in site.kits %}
+		{% if kit.id == include.language %}
+			<a href="{{kit.url}}">
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
 {% if include.language == 'swift' %}
-	<span class="label label-primary">Swift</span>
+	<span class="label label-success">
+		{% if include.size != 'small' and include.withLink == 'yes' %}
+			<span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;
+		{% endif %}
+	Swift</span>
 {% elsif include.language == 'objectivec' %}
-	{% if include.size == 'small' %}
-		<span class="label label-warning">Obj-C</span>
-	{% else %}
-		<span class="label label-warning">Objective-C</span>
-	{% endif %}
+	<span class="label label-warning">
+		{% if include.size == 'small' %}
+			Obj-C
+		{% else %}
+			{% if include.withLink == 'yes' %}<span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;{% endif %}
+			Objective-C
+		{% endif %}
+	</span>
+{% endif %}
+
+{% if include.withLink == 'yes' %}
+	</a>
 {% endif %}
