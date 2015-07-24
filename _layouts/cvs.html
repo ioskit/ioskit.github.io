@@ -27,6 +27,7 @@ layout: default
 		<div class="col-lg-12">
 			{% for s in page.socials %}
 				{% include cvs-social.html name=s.social.name value=s.social.value %}
+		      	{% if s != page.socials.last %}&nbsp;&bull;&nbsp;{% endif %}
 			{% endfor %}
 		</div>
 	</div>
@@ -34,7 +35,8 @@ layout: default
 	<div class="row">
 		<div class="col-lg-12">
 			{% for s in page.sites %}
-  				<a href="{{s.site.url}}">{{s.site.title}}</a>&nbsp;&bull;&nbsp;
+  				<a href="{{s.site.url}}">{{s.site.title}}</a>
+		      	{% if s != page.sites.last %}&nbsp;&bull;&nbsp;{% endif %}
 			{% endfor %}
 		</div>
 	</div>
