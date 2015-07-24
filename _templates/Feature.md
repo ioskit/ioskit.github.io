@@ -38,7 +38,7 @@ To define a Type method you have to use the `class` selector:
 
 Then you can call the method like that:
 
-<pre>
-  <code class="swift">SomeClass.someTypeMethod()</code>
-</pre>
+{% highlight swift linenos %}
+<code class="swift">SomeClass.someTypeMethod()</code>
+{% endhighlight %}
 -->

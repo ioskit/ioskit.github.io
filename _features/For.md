@@ -21,10 +21,11 @@ TODO.
 
 ## For-in
 
-<pre><code>for index in 1...5 {
+{% highlight swift linenos %}
+for index in 1...5 {
     println("\(index) times 5 is \(index * 5)")
 }
-</code></pre>
+{% endhighlight %}
 
 <pre><code>let base = 3
 let power = 10

@@ -25,6 +25,9 @@ collections:
             permalink: /:path/index:output_ext
     cvs:
             output: true
+    devices:
+            output: true
+            permalink: /:path/index:output_ext
 
 versions:
 - iOS2

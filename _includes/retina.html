@@ -1,0 +1,5 @@
+<span class="label 
+{% if include.retina == "@3x" %}label-primary
+{% elsif include.retina == "@2x" %}label-success
+{% else %}label-info
+{% endif %}">{{include.retina}}</span>

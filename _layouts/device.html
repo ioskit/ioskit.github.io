@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="bs-docs-section">
+
+	<div class="page-header">
+    	<div class="row">
+        	<div class="col-lg-12">
+          		<h1 id="page-title">
+			      	{{ page.name }}
+				</h1>
+        	</div>
+      	</div>
+    </div>
+
+	<div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
+			<h3>Tech Specs</h3>
+			<ul>
+				<li><span class="label label-default">Year</span>&nbsp;&nbsp;{{ page.year }}</li>
+				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{{ page.os }}</li>
+				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' | ' }}</li>
+				<li><span class="label label-default">Chips</span>&nbsp;&nbsp;{{ page.chip }}</li>
+				<li><span class="label label-default">Finish</span>&nbsp;&nbsp;{{ page.finish | join: ' | ' }}</li>
+				<li><span class="label label-default">Camera (Megapixel)</span>&nbsp;&nbsp;{{ page.camera }}</li>
+				<li><span class="label label-default">Video</span>&nbsp;&nbsp;{{ page.video }}</li>
+				<li><span class="label label-default">Cellular</span>&nbsp;&nbsp;{{ page.cellular }}</li>
+				<li><span class="label label-default">Wireless</span>&nbsp;&nbsp;{{ page.wireless }}</li>
+				<li><span class="label label-default">Location</span>&nbsp;&nbsp;{{ page.location }}</li>
+				<li><span class="label label-default">Sensors</span>&nbsp;&nbsp;{{ page.sensors }}</li>
+				<li><span class="label label-default">Sim</span>&nbsp;&nbsp;{{ page.sim }}</li>
+				<li><span class="label label-default">Connector</span>&nbsp;&nbsp;{{ page.connector }}</li>
+			</ul>
+      	</div>
+    </div>
+
+	<div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
+			<h3>Dimensions</h3>
+		    <table class="table table-striped table-hover">
+		      <thead>
+		        <tr>
+		          <th>Dimensions (WxHxT, mm)</th>
+		          <th>Weight (g)</th>
+		          <th>Screen</th>
+		          <th>Resolution (p)</th>
+		          <th>Retina</th>
+		          <th>Launch Image</th>
+		          <th>AppIcon</th>
+		          <th>Spotlight</th>
+		          <th>Settings</th>
+		          <th>AppStore</th>
+		        </tr>
+		      </thead>
+		      <tbody>
+		        	<tr>
+		          		<td>{{ page.dimensions.width }} x {{ page.dimensions.height }} x {{ page.dimensions.thickness }}</td>
+
+		          		<td>{{ page.weight }}</td>
+
+						{% assign screen = page.resolutions.Screen %}
+		          		<td>{{ screen.info }}"</td>
+		          		<td>{{ screen.height }}x{{ screen.width }}</td>
+
+		          		<td>{% include retina.html retina=page.retina %}</td>
+
+						{% assign LaunchImage = page.resolutions.LaunchImage %}
+		          		<td>{{ LaunchImage.height }}x{{ LaunchImage.width }}</td>
+
+						{% assign AppIcon = page.resolutions.AppIcon %}
+		          		<td>{{ AppIcon.height }}x{{ AppIcon.width }}</td>
+
+						{% assign Spotlight = page.resolutions.Spotlight %}
+		          		<td>{{ Spotlight.height }}x{{ Spotlight.width }}</td>
+
+						{% assign Settings = page.resolutions.Settings %}
+		          		<td>{{ Settings.height }}x{{ Settings.width }}</td>
+
+						{% assign AppStore = page.resolutions.AppStore %}
+		          		<td>{{ AppStore.height }}x{{ AppStore.width }}</td>
+		        	</tr>
+		      </tbody>
+		    </table>
+      	</div>
+    </div>
+
+	<div class="row">
+        <div class="col-lg-12">
+			{{ content }}
+      	</div>
+    </div>
+
+</div>

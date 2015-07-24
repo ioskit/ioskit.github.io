@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+<div class="page-header" ><!-- id="banner" -->
+	<div class="row">
+	  <div class="col-lg-8 col-md-7 col-sm-6">
+	    <h1>iOS-K.it&nbsp;<sup><sup><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;ioskit.io</sup></sup></h1>
+	    <p class="lead">Which iOS Kit in which iOS version?</p>
+	  </div>
+	  <div class="col-lg-4 col-md-5 col-sm-6">
+	    <div class="sponsor">
+		<!--
+	      <a href="http://www.shopify.com/?ref=bootswatch" target="_blank" onclick="_gaq.push(['_trackEvent', 'banner', 'click', 'shopify']);"><img src="../assets/img/shopify.png" alt="Shopify" onload="_gaq.push(['_trackEvent', 'banner', 'impression', 'shopify']);"></a>
+	-->
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<h3>
+	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+		<span class="octicon octicon-link"></span>
+	</a>
+	Devices
+</h3>
+
+<div class="col-lg-1">
+</div>
+
+<div class="col-lg-11">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+		  <th>#</th>
+          <th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+		  <th>Name</t>
+	      <th>Dimensions (mm)</th>
+	      <th>Weight (g)</th>
+          <th>Screen</th>
+          <th>Resolution (p)</th>
+          <th>Retina</th>
+          <th>Launch Image</th>
+          <th>AppIcon</th>
+          <th>Spotlight</th>
+          <th>Settings</th>
+          <th>AppStore</th>
+        </tr>
+      </thead>
+      <tbody>
+		{% assign count = '0' %}
+		{% for device in site.devices %}
+			{% if device.status != "TODO" %}
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+	        	<tr>
+					<td>{{ count }}</td>
+	        		<td>
+						{% if device.status == "DOING" %}
+							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+								<span class="glyphicon glyphicon-fire" aria-hidden="true">
+							</span>
+						{% endif %}
+					</td>
+	          		<td>
+			    		<a href="{{ device.url }}">{{ device.name }}</a></li>
+			  		</td>
+			
+	          		<td>{{ device.dimensions.width }} x {{ device.dimensions.height }} x {{ device.dimensions.thickness }}</td>
+	        
+	  				<td>{{ device.weight }}</td>
+
+					{% assign screen = device.resolutions.Screen %}
+	          		<td>{{ screen.info }}</td>
+	          		<td>{{ screen.height }}x{{ screen.width }}</td>
+
+	          		<td>{% include retina.html retina=device.retina %}</td>
+
+					{% assign LaunchImage = device.resolutions.LaunchImage %}
+	          		<td>{{ LaunchImage.height }}x{{ LaunchImage.width }}</td>
+
+					{% assign AppIcon = device.resolutions.AppIcon %}
+	          		<td>{{ AppIcon.height }}x{{ AppIcon.width }}</td>
+
+					{% assign Spotlight = device.resolutions.Spotlight %}
+	          		<td>{{ Spotlight.height }}x{{ Spotlight.width }}</td>
+
+					{% assign Settings = device.resolutions.Settings %}
+	          		<td>{{ Settings.height }}x{{ Settings.width }}</td>
+
+					{% assign AppStore = device.resolutions.AppStore %}
+	          		<td>{{ AppStore.height }}x{{ AppStore.width }}</td>
+	        	</tr>
+			{% endif %}
+		{% endfor %}
+      </tbody>
+    </table>
+</div>
