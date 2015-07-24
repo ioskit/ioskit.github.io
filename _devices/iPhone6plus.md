@@ -2,7 +2,7 @@
 layout: device
 name: 'iPhone 6 Plus'
 id: iPhone6plus
-status: DOING
+status: 
 abstract: ""
 year: 2014
 finish: ["Silver", "Gold", "Space Gray"]
