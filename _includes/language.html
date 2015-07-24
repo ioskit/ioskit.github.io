@@ -1,18 +1,30 @@
-{% if include.withLink == 'yes' %}
-	{% for kit in site.kits %}
-		{% if kit.id == include.language %}
-			<a href="{{kit.url}}">
-		{% endif %}
-	{% endfor %}
-{% endif %}
+{% if include.language contains 'swift' %}
+	{% if include.withLink == 'yes' %}
+ 		{% for kit in site.kits %}
+			{% if kit.id == 'swift' %}
+				<a href="{{kit.url}}">
+			{% endif %}
+		{% endfor %}
+	{% endif %}
 
-{% if include.language == 'swift' %}
 	<span class="label label-success">
 		{% if include.size != 'small' and include.withLink == 'yes' %}
 			<span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;
 		{% endif %}
-	Swift</span>
-{% elsif include.language == 'objectivec' %}
+	Swift</span>{% if include.withLink == 'yes' %}</a>{% endif %}
+{% endif %}
+
+
+
+{% if include.language contains 'objectivec' %}
+	{% if include.withLink == 'yes' %}
+		{% for kit in site.kits %}
+			{% if kit.id == 'objectivec' %}
+				<a href="{{kit.url}}">
+			{% endif %}
+		{% endfor %}
+	{% endif %}
+
 	<span class="label label-warning">
 		{% if include.size == 'small' %}
 			Obj-C
@@ -21,8 +33,8 @@
 			Objective-C
 		{% endif %}
 	</span>
-{% endif %}
 
-{% if include.withLink == 'yes' %}
-	</a>
+	{% if include.withLink == 'yes' %}
+		</a>
+	{% endif %}
 {% endif %}

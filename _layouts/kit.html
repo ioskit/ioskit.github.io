@@ -62,7 +62,7 @@ layout: default
 				<h3>Features</h3>
 				<ul>
 					{% for f in site.features %}
-						{% if page.id == f.language %}
+						{% if f.language contains page.id %}
 							<li><a href="{{ f.url }}">{{ f.name }}</a></li>
 						{% endif %}
 					{% endfor %}

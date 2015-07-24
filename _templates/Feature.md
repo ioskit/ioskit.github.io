@@ -13,13 +13,13 @@ links:
      description: ' - Apple Developer'
      type: reference
 features:
- - ClassMethodObjectiveC
- - MethodsVisibilitySwift
+ - ClassMethod
+ - MethodsVisibility
 ---
 
 Instance methods are methods that are called on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called type methods.
 
-Type methods are like [Class Methods in Objective-C](/ClassMethodObjectiveC).
+Type methods are like [Class Methods in Objective-C](/ClassMethod).
 
 To define a Type method you have to use the `class` selector:
 
