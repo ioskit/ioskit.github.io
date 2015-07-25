@@ -2,12 +2,111 @@
 layout: default-headed
 ---
 
-<h3>
-	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
-		<span class="octicon octicon-link"></span>
-	</a>
-	Devices
-</h3>
+<div class="row">
+	<div class="col-lg-12">
+		<h1>
+			<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
+				<span class="octicon octicon-link"></span>
+			</a>
+			Devices
+		</h1>
+
+		<h3>
+			Tech Specs
+		</h3>
+	</div>
+</div>
+
+
+
+<div class="row">
+	<div class="col-lg-12">
+	    <table class="table table-striped table-hover">
+	      <thead>
+	        <tr>
+			  <th>#</th>
+	          <th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+			  <th>Name</t>
+			  <th>Release</t>
+		      <th>Dimensions (mm)</th>
+		      <th>Weight (g)</th>
+	          <th>Screen (")</th>
+	          <th>Resolution (p)</th>
+
+	          <th>Capacity (Go)</th>
+	          <th>RAM</th>
+	          <th>Chips</th>
+	          <th>Cam. <sup>(1)</sup></th>
+	          <th>Video</th>
+	          <th>OS</th>
+        </tr>
+      </thead>
+      <tbody>
+		{% assign count = '0' %}
+		{% for device in site.devices %}
+			{% if device.status != "TODO" %}
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+	        	<tr>
+					<td>{{ count }}</td>
+	        		<td>
+						{% if device.status == "DOING" %}
+							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
+								<span class="glyphicon glyphicon-fire" aria-hidden="true">
+							</span>
+						{% endif %}
+					</td>
+	          		<td>
+			    		<a href="{{ device.url }}">{{ device.name }}</a></li>
+			  		</td>
+    
+					<td>{% include year-from-date.html date=device.release %}</td>
+			
+	          		<td>{{ device.dimensions.width }}x{{ device.dimensions.height }}x{{ device.dimensions.thickness }}</td>
+	        
+	  				<td>{{ device.weight }}</td>
+
+					{% assign screen = device.resolutions.Screen %}
+	          		<td>{{ screen.info }}</td>
+
+	          		<td>{% include retina.html retina=device.retina %}&nbsp;{{ screen.height }}x{{ screen.width }}</td>
+
+	  				<td>{{ device.capacity | join : ", " }}</td>
+	  				<td>{{ device.ram.size }} {{ device.ram.unit }}</td>
+	  				<td>{{ device.chip }}</td>
+	  				<td>{{ device.camera }}</td>
+	  				<td>{{ device.video }}</td>
+	  				<td>
+						{% if device.os.size > 1 %}
+							{% if device.os.first.size > 1 %}
+								{% include ios-link.html ios=device.os.first %}&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;{% include ios-link.html ios=device.os.last %}
+							{% else %}
+								{% include ios-link.html ios=device.os %}
+							{% endif %}
+						{% else %}
+							{% include ios-link.html ios=device.os.first %}
+						{% endif %}
+					</td>
+	        	</tr>
+			{% endif %}
+		{% endfor %}
+      </tbody>
+    </table>
+	<p><sup>(1)</sup> Cam. : Camera (megapixels)</p>
+</div>
+
+</div>
+
+
+
+<div class="row">
+	<div class="col-lg-12">
+		<h3>
+			Resolutions
+		</h3>
+	</div>
+</div>
+
+<div class="row">
 
 <div class="col-lg-1">
 </div>
@@ -19,8 +118,6 @@ layout: default-headed
 		  <th>#</th>
           <th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
 		  <th>Name</t>
-	      <th>Dimensions (mm)</th>
-	      <th>Weight (g)</th>
           <th>Screen</th>
           <th>Resolution (p)</th>
           <th>Retina</th>
@@ -48,14 +145,10 @@ layout: default-headed
 	          		<td>
 			    		<a href="{{ device.url }}">{{ device.name }}</a></li>
 			  		</td>
-			
-	          		<td>{{ device.dimensions.width }} x {{ device.dimensions.height }} x {{ device.dimensions.thickness }}</td>
-	        
-	  				<td>{{ device.weight }}</td>
-
+    
 					{% assign screen = device.resolutions.Screen %}
 	          		<td>{{ screen.info }}</td>
-	          		<td>{{ screen.height }}x{{ screen.width }}</td>
+	          		<td>{{ screen.height }} x {{ screen.width }}</td>
 
 	          		<td>{% include retina.html retina=device.retina %}</td>
 
@@ -78,4 +171,6 @@ layout: default-headed
 		{% endfor %}
       </tbody>
     </table>
+</div>
+
 </div>

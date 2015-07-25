@@ -3,8 +3,7 @@ layout: device
 name: 'iPhone 6 Plus'
 id: iPhone6plus
 status: 
-abstract: ""
-year: 2014
+release: 2014
 finish: ["Silver", "Gold", "Space Gray"]
 dimensions:
   height: 158.1

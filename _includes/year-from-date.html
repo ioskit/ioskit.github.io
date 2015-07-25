@@ -1,0 +1,8 @@
+{% capture stringDate %}{{ include.date }}{% endcapture %}
+{% assign components = stringDate | split: '/' %}
+
+{% if components.size > 2  %}
+	{{ components[2] }}
+{% else %}
+	{{ include.date }}
+{% endif %}

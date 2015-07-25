@@ -19,11 +19,12 @@ layout: default
         <div class="col-lg-11">
 			<h3>Tech Specs</h3>
 			<ul>
-				<li><span class="label label-default">Year</span>&nbsp;&nbsp;{{ page.year }}</li>
-				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{{ page.os }}</li>
-				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' | ' }}</li>
+				<li><span class="label label-default">Release</span>&nbsp;&nbsp;{{ page.release }}</li>
+				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{{ page.os | join: ' &bull; ' }}</li>
+				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' &bull; ' }}</li>
+				<li><span class="label label-default">RAM</span>&nbsp;&nbsp;{{ page.ram.size }} {{ page.ram.unit }} ({{ page.ram.type }})</li>
 				<li><span class="label label-default">Chips</span>&nbsp;&nbsp;{{ page.chip }}</li>
-				<li><span class="label label-default">Finish</span>&nbsp;&nbsp;{{ page.finish | join: ' | ' }}</li>
+				<li><span class="label label-default">Finish</span>&nbsp;&nbsp;{{ page.finish | join: ' &bull; ' }}</li>
 				<li><span class="label label-default">Camera (Megapixel)</span>&nbsp;&nbsp;{{ page.camera }}</li>
 				<li><span class="label label-default">Video</span>&nbsp;&nbsp;{{ page.video }}</li>
 				<li><span class="label label-default">Cellular</span>&nbsp;&nbsp;{{ page.cellular }}</li>
