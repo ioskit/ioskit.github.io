@@ -22,6 +22,11 @@ layout: default
 				<li><span class="label label-default">Release</span>&nbsp;&nbsp;{{ page.release }}</li>
 				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{% include ios-link-list.html ios=page.os %}</li>
 				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' &bull; ' }}</li>
+				<li>
+					<span class="label label-default">Prices ($)</span>&nbsp;
+					<span class="label label-default"><i class="fa fa-wifi"></i></span>&nbsp;
+					<span class="label label-default">&nbsp;<i class="fa fa-mobile-phone"></i>&nbsp;</span>
+					&nbsp;&nbsp;{{ page.prices | join: ' &bull; ' }}</li>
 				<li><span class="label label-default">RAM</span>&nbsp;&nbsp;{{ page.ram.size }} {{ page.ram.unit }} ({{ page.ram.type }})</li>
 				<li><span class="label label-default">Chips</span>&nbsp;&nbsp;{{ page.chip }}</li>
 				<li><span class="label label-default">Finish</span>&nbsp;&nbsp;{{ page.finish | join: ' &bull; ' }}</li>

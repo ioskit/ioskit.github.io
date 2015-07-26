@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Launches iPad"
+  date: "27/01/2010"
+  url: https://www.apple.com/pr/library/2010/01/27Apple-Launches-iPad.html
 name: 'iPad (1st Gen.)'
 id: iPad1
 status: 
 release: "30/04/2010"
 finish: ["Black"]
 capacity: [16,32,64]
+prices: [499, 599, 699, 629, 729, 829]
 dimensions:
   height: 242.8
   width: 189.7

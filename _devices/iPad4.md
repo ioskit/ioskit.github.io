@@ -1,12 +1,18 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Introduces iPad mini"
+  date: "23/10/2012"
+  url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
+  url2: https://www.apple.com/pr/library/2013/01/29Apple-Increases-iPad-with-Retina-Display-to-128GB.html
 name: 'iPad 4 (4th Gen.)'
 id: iPad4
 status:
 release: "02/11/2012"
 finish: ["Black", "White"]
 capacity: [16,32,64,128]
+prices: [499, 599, 699, 799, 629, 729, 829, 929]
 dimensions:
   height: 241.2
   width: 185.7

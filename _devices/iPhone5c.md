@@ -7,6 +7,7 @@ status:
 release: "18/03/2014"
 finish: ["White", "Pink", "Yellow", "Blue", "Green polycarbonate"]
 capacity: [8, 16, 32]
+prices: [559, 599, 699]
 dimensions:
   height: 124.4
   width: 59.2

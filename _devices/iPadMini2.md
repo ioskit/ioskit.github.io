@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://fr.wikipedia.org/wiki/IPad_mini
+press:
+  title: "Apple Announces iPad Air - Dramatically Thinner, Lighter & More Powerful iPad"
+  date: "23/10/2013"
+  url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad mini 2 (2nd Gen.)'
 id: iPadMini2
 status:
 release: "01/11/2013"
 finish: ["Silver", "Space Gray"]
 capacity: [16,32,64,128]
+prices: [399, 499, 599, 699, 529, 629, 729, 829]
 dimensions:
   height: 200.0
   width: 134.7

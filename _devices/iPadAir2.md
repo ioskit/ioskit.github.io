@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Introduces iPad Air 2—The Thinnest, Most Powerful iPad Ever"
+  date: "16/10/2014"
+  url: https://www.apple.com/pr/library/2014/10/16Apple-Introduces-iPad-Air-2-The-Thinnest-Most-Powerful-iPad-Ever.html
 name: 'iPad Air 2 (6th Gen.)'
 id: iPadAir2
 status: 
-release: 2014
+release: "22/10/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]
+prices: [499, 599, 699]
 dimensions:
   height: 240.0
   width: 169.5

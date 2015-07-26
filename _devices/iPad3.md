@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Launches New iPad"
+  date: "07/03/2012"
+  url: https://www.apple.com/pr/library/2012/03/07Apple-Launches-New-iPad.html
 name: 'iPad 3 (3rd Gen.)'
 id: iPad3
 status: 
 release: "16/03/2012"
 finish: ["Black", "White"]
 capacity: [16,32,64]
+prices: [499, 599, 699, 629, 729, 829]
 dimensions:
   height: 241.2
   width: 185.7

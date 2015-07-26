@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Launches iPad 2"
+  date: "02/03/2011"
+  url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad 2 (2nd Gen.)'
 id: iPad2
 status: 
 release: "11/03/2011"
 finish: ["Black", "White"]
 capacity: [16,32,64]
+prices: [499, 599, 699, 629, 729, 829]
 dimensions:
   height: 241.2
   width: 185.7

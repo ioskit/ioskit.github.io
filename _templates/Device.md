@@ -1,12 +1,18 @@
 ---
 layout: device
 source: https://fr.wikipedia.org/wiki/IPad_mini
+press:
+  title: "Apple Introduces iPad mini"
+  date: "23/10/2012"
+  url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
 name: 'iPad mini 2 (2nd Gen.)'
 id: iPadMini2
 status:
 release: "01/11/2013"
+price: "500 USD"
 finish: ["Silver", "Space Gray"]
 capacity: [16,32,64,128]
+prices: [809, 919, 1019]
 dimensions:
   height: 200.0
   width: 134.7

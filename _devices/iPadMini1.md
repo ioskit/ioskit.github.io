@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://fr.wikipedia.org/wiki/IPad_mini
+press:
+  title: "Apple Introduces iPad mini"
+  date: "23/10/2012"
+  url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
 name: 'iPad mini (1st Gen.)'
 id: iPadMini1
 status:
 release: "01/11/2012"
 finish: ["Silver", "Space Gray"]
 capacity: [16,32,64]
+prices: [329, 429, 529, 459, 559, 659]
 dimensions:
   height: 200.0
   width: 134.7

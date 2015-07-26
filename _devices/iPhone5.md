@@ -7,6 +7,7 @@ status:
 release: "21/09/2012"
 finish: ["Black", "White"]
 capacity: [16, 32, 64]
+prices: [679, 789, 899]
 dimensions:
   height: 123.8
   width: 58.6

@@ -7,6 +7,7 @@ status:
 release: "19/09/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]
+prices: [809, 919, 1019]
 dimensions:
   height: 158.1
   width: 77.8

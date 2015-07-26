@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
+press:
+  title: "Apple Announces iPad Air - Dramatically Thinner, Lighter & More Powerful iPad"
+  date: "23/10/2013"
+  url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad Air (5th Gen.)'
 id: iPadAir
 status:
 release: "01/11/2013"
 finish: ["Black", "White"]
 capacity: [16,32,64,128]
+prices: [499, 599, 699, 799, 629, 729, 829, 929]
 dimensions:
   height: 240.0
   width: 169.5

@@ -1,12 +1,17 @@
 ---
 layout: device
 source: https://fr.wikipedia.org/wiki/IPad_mini
+press:
+  title: "Apple Introduces iPad Air 2—The Thinnest, Most Powerful iPad Ever"
+  date: "16/10/2014"
+  url: https://www.apple.com/pr/library/2014/10/16Apple-Introduces-iPad-Air-2-The-Thinnest-Most-Powerful-iPad-Ever.html
 name: 'iPad mini 3 (3rd Gen.)'
 id: iPadMini3
 status:
 release: "01/10/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]
+prices: [399, 499, 599]
 dimensions:
   height: 200.0
   width: 134.7
