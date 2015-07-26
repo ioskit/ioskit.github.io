@@ -67,6 +67,20 @@ layout: default
 					{% endfor %}
 				{% endfor %}
 				</ol>
+
+				
+				<p>Devices:</p>
+				<ol>
+					{% for d in page.devices %}
+						{% for device in site.devices %}
+							{% if d == device.id %}
+								<li>
+									<a href="{{ device.url }}">{{ device.name }}</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</ol>
         	</div>
 
         	<div class="col-lg-8">

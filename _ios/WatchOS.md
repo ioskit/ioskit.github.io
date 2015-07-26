@@ -5,6 +5,9 @@ name: WatchOS
 releaseDate: 24.04.2015
 xcode: xcode6
 icon:
+devices:
+ - Watch138
+ - Watch142
 ---
 
 Watch faces:

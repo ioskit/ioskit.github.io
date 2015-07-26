@@ -2,7 +2,7 @@
 layout: device
 source: https://fr.wikipedia.org/wiki/IPad_mini
 name: 'iPad mini 3 (3rd Gen.)'
-id: iPadMini
+id: iPadMini3
 status:
 release: "01/10/2014"
 finish: ["Silver", "Gold", "Space Gray"]
