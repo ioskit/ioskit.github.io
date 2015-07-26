@@ -19,8 +19,10 @@ ram:
   size: 512
   unit: Mo
   type: DDR2
-camera: "0.7"
-video: "VGA 0.3"
+cameras:
+  front: 0.3
+  back: 0.7
+video: "720 p HD"
 wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 2.1+EDR"
 cellular: "3G HSDPA, 2G EDGE"
 location: "Skyhook Wireless GPS, Skyhook Wireless Cellular"

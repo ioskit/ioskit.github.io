@@ -1,22 +1,30 @@
 ---
 layout: device
+source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 6'
 id: iPhone6
 status:
-release: 2014
-abstract: ""
+release: "19/09/2014"
 finish: ["Silver", "Gold", "Space Gray"]
+capacity: [16,64,128]
 dimensions:
   height: 138.1
   width: 67.0
   thickness: 6.9
-capacity: [16,64,128]
-weight: 129
+weight:
+  wifi:
+  cellular: 129
 chip: "A8 64-bit, M8"
-camera: 8
+ram:
+  size: 1
+  unit: Go
+  type: LPDDR3
+cameras:
+  front: 1.2
+  back: 8
 video: "1080p HD"
-cellular: "CDMA EV-DO Rev. A and Rev. B, UMTS/HSPA+/DC-HSDPA, GSM/EDGE, LTE"
 wireless: "802.11a/b/g/n/ac Wi‑Fi, Bluetooth 4.0 wireless technology, NFC"
+cellular: "CDMA EV-DO Rev. A and Rev. B, UMTS/HSPA+/DC-HSDPA, GSM/EDGE, LTE"
 location: "Assisted GPS and GLONASS, Digital compass, Wi‑Fi, Cellular, iBeacon microlocation"
 sensors: "Touch ID, Barometer, Three-axis gyro, Accelerometer, Proximity sensor, Ambient light sensor"
 os: ["iOS8"]

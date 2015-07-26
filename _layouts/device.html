@@ -25,7 +25,9 @@ layout: default
 				<li><span class="label label-default">RAM</span>&nbsp;&nbsp;{{ page.ram.size }} {{ page.ram.unit }} ({{ page.ram.type }})</li>
 				<li><span class="label label-default">Chips</span>&nbsp;&nbsp;{{ page.chip }}</li>
 				<li><span class="label label-default">Finish</span>&nbsp;&nbsp;{{ page.finish | join: ' &bull; ' }}</li>
-				<li><span class="label label-default">Camera (Megapixel)</span>&nbsp;&nbsp;{{ page.camera }}</li>
+				<li><span class="label label-default">Cameras (Mpx)</span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-eye-open"></span> {{ page.cameras.front }} | {{ page.cameras.back }}
+					</li>
 				<li><span class="label label-default">Video</span>&nbsp;&nbsp;{{ page.video }}</li>
 				<li><span class="label label-default">Cellular</span>&nbsp;&nbsp;{{ page.cellular }}</li>
 				<li><span class="label label-default">Wireless</span>&nbsp;&nbsp;{{ page.wireless }}</li>

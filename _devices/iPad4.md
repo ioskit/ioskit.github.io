@@ -19,8 +19,10 @@ ram:
   size: 1
   unit: Go
   type: LPDDR2
-camera: 5
-video: 1.2
+cameras:
+  front: 1.2
+  back: 5
+video: "1080p HD"
 wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 4.0"
 cellular: "4G LTE, 3G+"
 location: "Skyhook Wireless GPS, Skyhook Wireless Cellular, GLONASS"

@@ -73,7 +73,7 @@ layout: default-headed
 	  				<td>{{ device.capacity | join : ", " }}</td>
 	  				<td>{{ device.ram.size }} {{ device.ram.unit }}</td>
 	  				<td>{{ device.chip }}</td>
-	  				<td>{{ device.camera }}</td>
+	  				<td>{{ device.cameras.front }} / {{ device.cameras.back }}</td>
 	  				<td>{{ device.video }}</td>
 	  				<td>{% include ios-link-list.html ios=device.os type="short" %}</td>
 	        	</tr>
@@ -82,7 +82,7 @@ layout: default-headed
       </tbody>
     </table>
 	<p><sup>(1)</sup> Weight : Wifi only / Wifi + Cellular, or Lightest / Heaviest Watch models</p>
-	<p><sup>(2)</sup> Cam. : Camera resolution (megapixels)</p>
+	<p><sup>(2)</sup> Cam. : Camera resolution (megapixels), Front / Back</p>
 </div>
 
 </div>

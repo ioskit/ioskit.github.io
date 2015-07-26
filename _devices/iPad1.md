@@ -19,7 +19,9 @@ ram:
   size: 256
   unit: Mo
   type: DDR
-camera: "-"
+cameras:
+  front: "-"
+  back: "-"
 video: "-"
 wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 2.1+EDR"
 cellular: "3G HSDPA, 2G EDGE"

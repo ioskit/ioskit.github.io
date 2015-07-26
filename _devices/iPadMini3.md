@@ -19,7 +19,9 @@ ram:
   size: 1
   unit: Go
   type: DDR3
-camera: 5
+cameras:
+  front: 1.2
+  back: 5
 video: "1080p HD"
 wireless: "Wi‑Fi (802.11a/​b/​g/​n); dual channel (2.4GHz and 5GHz) and MIMO, Bluetooth 4.0 technology"
 cellular: "UMTS/​HSPA/​HSPA+/​DC‑HSDPA; GSM/EDGE, CDMA EV-DO Rev. A and Rev. B, LTE"

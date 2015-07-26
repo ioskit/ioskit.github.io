@@ -19,7 +19,9 @@ ram:
   size: 2
   unit: Go
   type: LPDDR3
-camera: 8
+cameras:
+  front: 1.2
+  back: 8
 video: "1080p HD"
 wireless: "Wi‑Fi (802.11a/​b/​g/​n/​ac); dual channel (2.4GHz and 5GHz); HT80 with MIMO, Bluetooth 4.0 technology"
 cellular: "UMTS/​HSPA/​HSPA+/​DC‑HSDPA; GSM/EDGE, CDMA EV-DO Rev. A and Rev. B, LTE"
