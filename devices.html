@@ -29,14 +29,14 @@ layout: default-headed
 			  <th>Name</t>
 			  <th>Release</t>
 		      <th>Dimensions (mm)</th>
-		      <th>Weight (g)</th>
+		      <th>Weight (g) <sup>(1)</sup></th>
 	          <th>Screen (")</th>
 	          <th>Resolution (p)</th>
 
 	          <th>Capacity (Go)</th>
 	          <th>RAM</th>
 	          <th>Chips</th>
-	          <th>Cam. <sup>(1)</sup></th>
+	          <th>Cam. <sup>(2)</sup></th>
 	          <th>Video</th>
 	          <th>OS</th>
         </tr>
@@ -63,7 +63,7 @@ layout: default-headed
 			
 	          		<td>{{ device.dimensions.width }}x{{ device.dimensions.height }}x{{ device.dimensions.thickness }}</td>
 	        
-	  				<td>{{ device.weight }}</td>
+	  				<td>{{ device.weight.wifi }} / {{ device.weight.cellular }}</td>
 
 					{% assign screen = device.resolutions.Screen %}
 	          		<td>{{ screen.info }}</td>
@@ -75,23 +75,14 @@ layout: default-headed
 	  				<td>{{ device.chip }}</td>
 	  				<td>{{ device.camera }}</td>
 	  				<td>{{ device.video }}</td>
-	  				<td>
-						{% if device.os.size > 1 %}
-							{% if device.os.first.size > 1 %}
-								{% include ios-link.html ios=device.os.first %}&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>&nbsp;{% include ios-link.html ios=device.os.last %}
-							{% else %}
-								{% include ios-link.html ios=device.os %}
-							{% endif %}
-						{% else %}
-							{% include ios-link.html ios=device.os.first %}
-						{% endif %}
-					</td>
+	  				<td>{% include ios-link-list.html ios=device.os type="short" %}</td>
 	        	</tr>
 			{% endif %}
 		{% endfor %}
       </tbody>
     </table>
-	<p><sup>(1)</sup> Cam. : Camera (megapixels)</p>
+	<p><sup>(1)</sup> Weight : Wifi only / Wifi + Cellular</p>
+	<p><sup>(2)</sup> Cam. : Camera resolution (megapixels)</p>
 </div>
 
 </div>

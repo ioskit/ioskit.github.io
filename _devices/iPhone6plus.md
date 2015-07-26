@@ -18,9 +18,9 @@ cellular: "CDMA EV-DO Rev. A and Rev. B, UMTS/HSPA+/DC-HSDPA, GSM/EDGE, LTE"
 wireless: "802.11a/b/g/n/ac Wi‑Fi, Bluetooth 4.0 wireless technology, NFC"
 location: "Assisted GPS and GLONASS, Digital compass, Wi‑Fi, Cellular, iBeacon microlocation"
 sensors: "Touch ID, Barometer, Three-axis gyro, Accelerometer, Proximity sensor, Ambient light sensor"
-os: iOS8
-sim: nano
-connector: lightning
+os: ["iOS8"]
+sim: Nano
+connector: Lightning
 retina: "@3x"
 resolutions:
    Screen:

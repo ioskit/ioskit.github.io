@@ -1,0 +1,20 @@
+{% if include.ios.size > 1 %}
+	{% if include.ios.first.size > 1 %}
+		{% if include.type == "short" %}
+			{% include ios-link.html ios=include.ios.first %}
+			&nbsp;<i class="glyphicon glyphicon-arrow-right"></i>
+			&nbsp;{% include ios-link.html ios=include.ios.last %}
+		{% else %}
+			{% for o in include.ios %}
+				{% include ios-link.html ios=o %}
+				{% if o != include.ios.last %}
+				&nbsp;&bull;&nbsp;
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+	{% else %}
+		{% include ios-link.html ios=include.ios %}
+	{% endif %}
+{% else %}
+	{% include ios-link.html ios=include.ios.first %}
+{% endif %}

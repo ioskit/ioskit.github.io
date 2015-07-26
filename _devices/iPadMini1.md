@@ -1,34 +1,34 @@
 ---
 layout: device
-source: https://en.wikipedia.org/wiki/IPad
-name: 'iPad 2 (2nd Gen.)'
-id: iPad2
-status: 
-release: "11/03/2011"
-finish: ["Black", "White"]
+source: https://fr.wikipedia.org/wiki/IPad_mini
+name: 'iPad mini (1st Gen.)'
+id: iPadMini1
+status:
+release: "01/11/2012"
+finish: ["Silver", "Space Gray"]
 capacity: [16,32,64]
 dimensions:
-  height: 241.2
-  width: 185.7
-  thickness: 8.8
+  height: 200.0
+  width: 134.7
+  thickness: 7.2
 weight:
-  wifi: 601
-  cellular: 613
+  wifi: 308
+  cellular: 312
 chip: "A5"
 ram:
   size: 512
   unit: Mo
-  type: DDR2
-camera: "0.7"
-video: "VGA 0.3"
-wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 2.1+EDR"
-cellular: "3G HSDPA, 2G EDGE"
+  type: 
+camera: 5
+video: 1.2
+wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 4.0"
+cellular: "4G LTE, 3G+"
 location: "Skyhook Wireless GPS, Skyhook Wireless Cellular"
-sensors: "Accelerometer, Ambient light sensor, Magnetometer, Three-axis gyroscope"
-os: ["iOS4", "iOS5", "iOS6", "iOS7", "iOS8"]
+sensors: "Accelerometer, Ambient light sensor, magnétomètre, Three-axis gyro"
+os: ["iOS6", "iOS7", "iOS8"]
 sim: Micro
-connector: "Dock Connector"
-retina: ""
+connector: "Lightning"
+retina:
 resolutions:
    Screen:
     height: 1024

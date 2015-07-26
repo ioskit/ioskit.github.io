@@ -1,31 +1,31 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPad
-name: 'iPad 2 (2nd Gen.)'
-id: iPad2
+name: 'iPad (1st Gen.)'
+id: iPad1
 status: 
-release: "11/03/2011"
-finish: ["Black", "White"]
+release: "30/04/2010"
+finish: ["Black"]
 capacity: [16,32,64]
 dimensions:
-  height: 241.2
-  width: 185.7
-  thickness: 8.8
+  height: 242.8
+  width: 189.7
+  thickness: 13.4
 weight:
-  wifi: 601
-  cellular: 613
-chip: "A5"
+  wifi: 680
+  cellular: 730
+chip: "A4"
 ram:
-  size: 512
+  size: 256
   unit: Mo
-  type: DDR2
-camera: "0.7"
-video: "VGA 0.3"
+  type: DDR
+camera: "-"
+video: "-"
 wireless: "Wi-Fi (802.11 a/b/g/n), Bluetooth 2.1+EDR"
 cellular: "3G HSDPA, 2G EDGE"
 location: "Skyhook Wireless GPS, Skyhook Wireless Cellular"
-sensors: "Accelerometer, Ambient light sensor, Magnetometer, Three-axis gyroscope"
-os: ["iOS4", "iOS5", "iOS6", "iOS7", "iOS8"]
+sensors: "Accelerometer, Ambient light sensor, Magnetometer"
+os: ["iOS3", "iOS4", "iOS5"]
 sim: Micro
 connector: "Dock Connector"
 retina: ""

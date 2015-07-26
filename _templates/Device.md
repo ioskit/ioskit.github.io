@@ -1,26 +1,33 @@
 ---
 layout: device
-name: 'iPad mini 3 Wi-fi'
-id: iPadMini3Wifi
+source: https://fr.wikipedia.org/wiki/IPad_mini
+name: 'iPad mini 2 (2nd Gen.)'
+id: iPadMini2
 status:
-release: 2014
-finish: ["Silver", "Gold", "Space Gray"]
-capacity: [16,64,128]
+release: "01/11/2013"
+finish: ["Silver", "Space Gray"]
+capacity: [16,32,64,128]
 dimensions:
   height: 200.0
   width: 134.7
   thickness: 7.5
-weight: 331
-chip: "A7 64-bit, M7"
+weight:
+  wifi: 469
+  cellular: 478
+chip: "A7, M7"
+ram:
+  size: 1
+  unit: Go
+  type: DDR3
 camera: 5
-video: "1080p HD"
-cellular: "-"
-wireless: "Wi‑Fi (802.11a/​b/​g/​n); dual channel (2.4GHz and 5GHz) and MIMO, Bluetooth 4.0 technology"
-location: "Wi‑Fi, Digital compass, iBeacon microlocation"
-sensors: "Touch ID, Three-axis gyro, Accelerometer, Ambient light sensor"
-os: iOS8
-sim: nano
-connector: lightning
+video: 1,2
+wireless: "Wi-Fi (802.11 a/b/g/n), MIMO, Bluetooth 4.0"
+cellular: "4G LTE, 3G+"
+location: "Skyhook Wireless GPS, Skyhook Wireless Cellular"
+sensors: "Accelerometer, Ambient light sensor, magnétomètre, gyroscope"
+os: ["iOS7", "iOS8"]
+sim: Micro
+connector: "Lightning"
 retina: "@2x"
 resolutions:
    Screen:

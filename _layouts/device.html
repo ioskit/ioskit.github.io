@@ -20,7 +20,7 @@ layout: default
 			<h3>Tech Specs</h3>
 			<ul>
 				<li><span class="label label-default">Release</span>&nbsp;&nbsp;{{ page.release }}</li>
-				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{{ page.os | join: ' &bull; ' }}</li>
+				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{% include ios-link-list.html ios=page.os %}</li>
 				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' &bull; ' }}</li>
 				<li><span class="label label-default">RAM</span>&nbsp;&nbsp;{{ page.ram.size }} {{ page.ram.unit }} ({{ page.ram.type }})</li>
 				<li><span class="label label-default">Chips</span>&nbsp;&nbsp;{{ page.chip }}</li>
@@ -45,7 +45,7 @@ layout: default
 		      <thead>
 		        <tr>
 		          <th>Dimensions (WxHxT, mm)</th>
-		          <th>Weight (g)</th>
+		          <th>Weight (g) <sup>(1)</sup></th>
 		          <th>Screen</th>
 		          <th>Resolution (p)</th>
 		          <th>Retina</th>
@@ -60,7 +60,7 @@ layout: default
 		        	<tr>
 		          		<td>{{ page.dimensions.width }} x {{ page.dimensions.height }} x {{ page.dimensions.thickness }}</td>
 
-		          		<td>{{ page.weight }}</td>
+		          		<td>{{ page.weight.wifi }} / {{ page.weight.cellular }}</td>
 
 						{% assign screen = page.resolutions.Screen %}
 		          		<td>{{ screen.info }}"</td>
@@ -85,6 +85,7 @@ layout: default
 		        	</tr>
 		      </tbody>
 		    </table>
+			<p><sup>(1)</sup> Weight : Wifi only / Wifi + Cellular</p>
       	</div>
     </div>
 
