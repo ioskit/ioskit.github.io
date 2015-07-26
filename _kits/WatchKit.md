@@ -7,8 +7,12 @@ type: kit
 since: iOS8
 icon: /resources/images/kits/WatchKit/watchkit_2x.png
 abstract: "WatchKit provides three opportunities to extend your iPhone app to Apple Watch: WatchKit apps, Glances, and actionable notifications."
-kits__:
- - AddressBookUI
+kits:
+ - ClockKit
+detailedUpdates:
+ - update:
+     ios: WatchOS
+     brief: "Available in WatchOS."
 links:
  - link:
      name: 'WatchKit'
