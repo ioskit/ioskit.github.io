@@ -28,7 +28,7 @@ sensors: "Accelerometer, Ambient light sensor, magnétomètre, Three-axis gyro"
 os: ["iOS6", "iOS7", "iOS8"]
 sim: Micro
 connector: "Lightning"
-retina:
+retina: "@1x"
 resolutions:
    Screen:
     height: 1024

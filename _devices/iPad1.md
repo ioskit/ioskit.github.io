@@ -28,7 +28,7 @@ sensors: "Accelerometer, Ambient light sensor, Magnetometer"
 os: ["iOS3", "iOS4", "iOS5"]
 sim: Micro
 connector: "Dock Connector"
-retina: ""
+retina: "@1x"
 resolutions:
    Screen:
     height: 1024

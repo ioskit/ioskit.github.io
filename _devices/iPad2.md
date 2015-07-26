@@ -28,7 +28,7 @@ sensors: "Accelerometer, Ambient light sensor, Magnetometer, Three-axis gyroscop
 os: ["iOS4", "iOS5", "iOS6", "iOS7", "iOS8"]
 sim: Micro
 connector: "Dock Connector"
-retina: ""
+retina: "@1x"
 resolutions:
    Screen:
     height: 1024
