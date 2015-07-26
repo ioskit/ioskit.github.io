@@ -30,29 +30,36 @@ layout: default
 				{% endif %}
 				<p>&nbsp;</p>
 				
-				<p>News:</p>
-				<ol>
-				{% for kit in kits %}
-					<li>
-						<a href="#{{ kit.id }}">
-							{% if kit.deprecated %}<strike>{% endif %}
-							{{ kit.name }}
-							{% if kit.deprecated %}</strike>{% endif %}
-						</a>
+				{% if kits.size > 0 %}
+					<p>News:</p>
+					<ol>
+						{% for kit in kits %}
+							<li>
+								<a href="#{{ kit.id }}">
+									{% if kit.deprecated %}<strike>{% endif %}
+									{{ kit.name }}
+									{% if kit.deprecated %}</strike>{% endif %}
+								</a>
 						
-						 {% include mark-todo.html status=kit.status %}
-						 {% include mark-technology.html type=kit.type %}
-						&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
-					</li>
-				{% endfor %}
-				</ol>
+						 		{% include mark-todo.html status=kit.status %}
+						 		{% include mark-technology.html type=kit.type %}
+								&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
+							</li>
+						{% endfor %}
+					</ol>
+				{% endif %}
 
 				
-				<p>Updates:</p>
-				<ol>
+				{% assign updateCount = '0' %}
 				{% for kit in site.kits %}
 					{% for u in kit.detailedUpdates %}
 						{% if u.update.ios == page.name %}
+							{% if updateCount == '0' %}
+								<p>Updates:</p>
+								<ol>
+							{% endif %}
+
+							{% capture updateCount %}{{ updateCount | plus: '1' }}{% endcapture %}
 							<li>
 								<a href="#{{ kit.id }}">
 									{% if kit.deprecated %}<strike>{% endif %}
@@ -66,21 +73,26 @@ layout: default
 						{% endif %}
 					{% endfor %}
 				{% endfor %}
-				</ol>
+				{% if updateCount != '0' %}
+					</ol>
+				{% endif %}
 
 				
-				<p>Devices:</p>
-				<ol>
-					{% for d in page.devices %}
-						{% for device in site.devices %}
-							{% if d == device.id %}
-								<li>
-									<a href="{{ device.url }}">{{ device.name }}</a>
-								</li>
-							{% endif %}
+				{% if page.devices.size > 0 %}
+					<p>Devices:</p>
+					<ol>
+						{% for d in page.devices %}
+							{% for device in site.devices %}
+								{% if d == device.id %}
+									<li>
+										<a href="{{ device.url }}">{{ device.name }}</a>
+									</li>
+								{% endif %}
+							{% endfor %}
 						{% endfor %}
-					{% endfor %}
-				</ol>
+					</ol>
+				{% endif %}
+
         	</div>
 
         	<div class="col-lg-8">
@@ -135,6 +147,8 @@ layout: default
 	<div class="row">
         <div class="col-lg-12">
 			{{ content }}
+
+		  	{% include page-links.html %}
       	</div>
     </div>
 </div>

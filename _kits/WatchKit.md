@@ -22,6 +22,10 @@ links:
      name: 'Apple Watch'
      url: http://www.apple.com/watch/
      description: ' - Apple'
+ - link:
+     name: 'Watch - Human Interface Guidelines'
+     url: https://developer.apple.com/watch/human-interface-guidelines/
+     description: ' - Apple'
 ---
 
 Starting early 2015, you will be able to deliver innovative new experiences on Apple Watch that reimagine and enhance the functionality of your iPhone apps. WatchKit provides three opportunities to extend your iPhone app to Apple Watch: WatchKit apps, Glances, and actionable notifications.

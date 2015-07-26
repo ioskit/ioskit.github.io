@@ -1,13 +1,26 @@
 ---
 layout: ios
 id: watchos
-name: WatchOS
+name: watchOS
 releaseDate: 24.04.2015
 xcode: xcode6
 icon:
 devices:
  - Watch138
  - Watch142
+links:
+ - link:
+     name: 'Watch - Human Interface Guidelines'
+     url: https://developer.apple.com/watch/human-interface-guidelines/
+     description: ' - Apple Developer'
+ - link:
+     name: 'watchOS 2 Transition Guide'
+     url: https://developer.apple.com/library/prerelease/watchos/documentation/General/Conceptual/AppleWatch2TransitionGuide/index.html
+     description: ' - Apple Developer'
+ - link:
+     name: 'Start Developing for watchOS 2'
+     url: https://developer.apple.com/watchos/pre-release/
+     description: ' - Apple Developer'
 ---
 
 Watch faces:
