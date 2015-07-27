@@ -32,6 +32,7 @@ applications:
      kits: <id of used Apple Frameworks (should exists in iOS-K.it), with comma, for example 'coredata,swift', optional = can be blank>
      features: <id of used Features (should exists in iOS-K.it), with comma, for example 'barcode,searchbar', optional = can be blank>
      externals: <id of used External Frameworks (should exists in iOS-K.it), with comma, for example 'flurry,shipio', optional = can be blank>
+	 devices: <id of used devices, with comma, for example 'iPadAir2, iPhone6, iPhone6plus, Watch138', optional = can be blank>
 ---
 
 Long description of your CVs here...

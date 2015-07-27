@@ -77,6 +77,18 @@ layout: default
 		{% assign ioss = site.ios %}
 		{% assign features = site.features %}
 		{% assign externals = site.externals %}
+		{% assign devices = site.devices %}
+
+		{% assign usedExternals = ',' %}
+		{% assign usedFeatures = ',' %}
+		{% assign usedKits = ',' %}
+		{% assign usedDevices = ',' %}
+		{% for a in page.applications %}
+			{% capture usedExternals %}{{ usedExternals }}{{ a.application.externals }},{% endcapture %}
+			{% capture usedFeatures %}{{ usedFeatures }}{{ a.application.features }},{% endcapture %}
+			{% capture usedKits %}{{ usedKits }}{{ a.application.kits }},{% endcapture %}
+			{% capture usedDevices %}{{ usedDevices }}{{ a.application.devices }},{% endcapture %}
+		{% endfor %}
 
 		<div class="col-lg-10">
 	    	<table class="table table-striped table-hover">
@@ -92,31 +104,17 @@ layout: default
 					</tr>
 				</thead>
 				<tbody>
-					{% assign usedExternals = ',' %}
-					{% for a in page.applications %}
-						{% capture usedExternals %}{{ usedExternals }}{{ a.application.externals }},{% endcapture %}
-					{% endfor %}
-					
+					{% assign count = '0' %}
 					{% for e in externals %}
 						{% assign externalName = ',' | append: e.id | append: ',' %}
 						{% if usedExternals contains externalName %}
 							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 							<tr>
 								<td>{{ count }}</td>
-  								<td>
-  									<a href="{{e.url}}">{{e.name}}</a>
-								</td>
+								<td><a href="{{e.url}}">{{e.name}}</a></td>
 								<td>
 									{% for a in page.applications %}
-										{% if a.application.externals contains e.id %}
-											<a href="#{{a.application.id}}">
-												<span class="label label-primary">
-													{{a.application.name}}
-													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-												</span>
-											</a>
-											&nbsp;&nbsp;&nbsp;&nbsp;
-										{% endif %}
+										{% include cvs-application.html application=a.application item=e items=a.application.externals %}
 									{% endfor %}
 								</td>
 							</tr>
@@ -140,11 +138,6 @@ layout: default
 	        		</tr>
 	      		</thead>
 	      		<tbody>
-					{% assign usedFeatures = ',' %}
-					{% for a in page.applications %}
-						{% capture usedFeatures %}{{ usedFeatures }}{{ a.application.features }},{% endcapture %}
-					{% endfor %}
-					
 					{% assign count = '0' %}
 					{% for f in features %}
 						{% assign featureName = ',' | append: f.id | append: ',' %}
@@ -157,15 +150,7 @@ layout: default
 								</td>
 								<td>
 									{% for a in page.applications %}
-										{% if a.application.features contains f.id %}
-											<a href="#{{a.application.id}}">
-												<span class="label label-primary">
-													{{a.application.name}}
-													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-												</span>
-											</a>
-											&nbsp;&nbsp;&nbsp;&nbsp;
-										{% endif %}
+										{% include cvs-application.html application=a.application item=f items=a.application.features %}
 									{% endfor %}
 								</td>
 	        				</tr>
@@ -182,17 +167,14 @@ layout: default
 	          			<th></th>
 	        		</tr>
 	        		<tr>
-	          			<th><span class="glyphicon glyphicon-check" aria-hidden="true"></span></th>
+	          			<th>#</th>
 			  			<th>iOS Frameworks</th>
 	          			<th>Applications</th>
   						<th width="1%">{% include page-link-to-top.html %}</th>
 	        		</tr>
 	      		</thead>
 	      		<tbody>
-					{% assign usedKits = ',' %}
-					{% for a in page.applications %}
-						{% capture usedKits %}{{ usedKits }}{{ a.application.kits }},{% endcapture %}
-					{% endfor %}
+					{% assign count = '0' %}
 					{% for k in kits %}
 						{% assign kitName = ',' | append: k.id | append: ',' %}
 						{% if usedKits contains kitName %}
@@ -204,21 +186,51 @@ layout: default
 								</td>
 								<td>
 									{% for a in page.applications %}
-										{% if a.application.kits contains k.id %}
-											<a href="#{{a.application.id}}">
-												<span class="label label-primary">
-													{{a.application.name}}
-													{% if a.application.year %}&nbsp;({{ a.application.year }})</i>{% endif %}
-												</span>
-											</a>
-											&nbsp;&nbsp;&nbsp;&nbsp;
-										{% endif %}
+										{% include cvs-application.html application=a.application item=k items=a.application.kits %}
 									{% endfor %}
 								</td>
 	        				</tr>
 						{% endif %}
 			  		{% endfor %}
 	      		</tbody>
+
+
+            	<!-- DEVICES -->
+            	<thead>
+            		<tr>
+              			<th><p>&nbsp;</p><p>&nbsp;</p></th>
+              			<th></th>
+              			<th></th>
+            		</tr>
+            		<tr>
+              			<th>#</th>
+              			<th>Devices</th>
+              			<th>Applications</th>
+            			<th width="1%">{% include page-link-to-top.html %}</th>
+            		</tr>
+            	</thead>
+            	<tbody>
+					{% assign count = '0' %}
+            		{% for d in devices %}
+            			{% assign deviceName = ',' | append: d.id | append: ',' %}
+            			{% if usedDevices contains deviceName %}
+            				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+            				<tr>
+            					<td>{{ count }}</td>
+              					<td>
+              						<a href="{{d.url}}">{{d.name}}</a>
+            					</td>
+            					<td>
+            						{% for a in page.applications %}
+										{% include cvs-application.html application=a.application item=d items=a.application.devices %}
+            						{% endfor %}
+            					</td>
+            				</tr>
+            			{% endif %}
+              		{% endfor %}
+            	</tbody>
+
+
 	    	</table>
 		</div>
 
@@ -275,38 +287,26 @@ layout: default
 						{% if a.application.url %}<a href="{{ a.application.url }}">{{ a.application.url }}</a>{% endif %}
 					</p>
 					<p>{{ a.application.abstract }}</p>
-					{% if a.application.detail %}<p><span class="label label-default">The Application</span>&nbsp;{{ a.application.detail }}</p>{% endif %}
-					{% if a.application.mission %}<p><span class="label label-default">My Mission</span>&nbsp;{{ a.application.mission }}</p>{% endif %}
+					
+					{% if a.application.detail %}
+						<p><span class="label label-default">The Application</span>&nbsp;{{ a.application.detail }}</p>
+					{% endif %}
+					
+					{% if a.application.mission %}
+						<p><span class="label label-default">My Mission</span>&nbsp;{{ a.application.mission }}</p>
+					{% endif %}
 
 					<!-- FEATURES -->
-					{% if a.application.features %}
-						<h4>Features</h4>
-						<ul>
-						{% for f in features %}
-							{% if a.application.features contains f.id %}<li><a href="{{f.url}}">{{f.name}}</a></li>{% endif %}
-						{% endfor %}
-						</ul>
-					{% endif %}
+					{% include cvs-items.html title="Features" appItems=a.application.features allItems=features %}
 
 					<!-- FRAMEWORKS -->
-					{% if a.application.kits %}
-						<h4>Frameworks</h4>
-						<ul>
-						{% for k in kits %}
-							{% if a.application.kits contains k.id %}<li><a href="{{k.url}}">{{k.name}}</a></li>{% endif %}
-						{% endfor %}
-						</ul>
-					{% endif %}
+					{% include cvs-items.html title="Frameworks" appItems=a.application.kits allItems=kits %}
 
 					<!-- EXTERNAL -->
-					{% if a.application.externals %}
-						<h4>External</h4>
-						<ul>
-						{% for e in externals %}
-							{% if a.application.externals contains e.id %}<li><a href="{{e.url}}">{{e.name}}</li></a>{% endif %}
-						{% endfor %}
-						</ul>
-					{% endif %}
+					{% include cvs-items.html title="External" appItems=a.application.externals allItems=externals %}
+
+					<!-- DEVICES -->
+					{% include cvs-items.html title="Devices" appItems=a.application.devices allItems=devices %}
 				</div>
 			{% endfor %}
 		</div>

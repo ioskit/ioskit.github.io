@@ -35,6 +35,7 @@ applications:
      kits: coredata,swift,storyboard
      features: BarCode,SearchBar,MethodsTypeSwift
      externals: kif,testflight,shipio
+     devices: iPadAir2,iPhone6,iPhone6plus,Watch138
  - application:
      name: "My Private Banking App"
      id: myprivatebankingapp
@@ -52,6 +53,7 @@ applications:
      kits: coredata,objectivec
      features: TableViewCell,Segue
      externals: kif,instabug,cocoapods
+     devices: iPadAir2,iPadMini3
 ---
 
 Long description of your CVs here...

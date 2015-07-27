@@ -35,6 +35,7 @@ applications:
      kits: coredata,swift,storyboard
      features: BarCode,TableViewCell,Segue,MethodsTypeSwift
      externals: kif,testflight,flurry,instabug,shipio
+     devices: iPadAir2,iPhone6,iPhone6plus,Watch138
 ---
 
 Long description of your CVs here...

@@ -1,0 +1,9 @@
+{% if include.items contains include.item.id %}
+	<a href="#{{include.application.id}}">
+		<span class="label label-primary">
+			{{include.application.name}}
+			{% if include.application.year %}&nbsp;({{ include.application.year }})</i>{% endif %}
+		</span>
+	</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+{% endif %}
