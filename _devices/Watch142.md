@@ -41,6 +41,7 @@ resolutions:
 
 ## Models
 
+<!--
  Apple Watch Sport (10 models)                                   | <a href="/Watch138">38mm</a> | <a href="/Watch142">42mm</a> 
 -----------------------------------------------------------------|---------|------
  Silver Aluminum Case With White Sport Band                      |    $349 |    $399  
@@ -72,3 +73,51 @@ resolutions:
  18-Karat Rose Yellow Gold Case With Bright Red Modern Buckle    | $17,000 | -
  18-Karat Rose Yellow Gold Case With Black Classic Buckle Band   | $15,000 | -
  18-Karat Rose Yellow Gold Case With Midnight Blue Classic Buckle&nbsp;&nbsp;&nbsp;| $15,000&nbsp;&nbsp;&nbsp;| -
+-->
+
+
+ <table class="table table-striped table-hover">
+   <thead>
+     <tr><th>Apple Watch Sport (10 models)</th><th><a href="/Watch138">38mm</a></th><th><a href="/Watch142">42mm</a></th></tr>
+   </thead>
+   <tbody>
+     	<tr><td>Silver Aluminum Case With White Sport Band                      </td><td> $349 </td><td>    $399 </td></tr>
+		<tr><td>Silver Aluminum Case With Blue Sport Band                       </td><td> $349 </td><td>    $399 </td></tr>
+		<tr><td>Silver Aluminum Case With Green Sport Band                      </td><td> $349 </td><td>    $399 </td></tr>
+		<tr><td>Silver Aluminum Case With Pink Sport Band                       </td><td> $349 </td><td>    $399 </td></tr>
+		<tr><td>Space Gray Aluminum Case With Black Sport Band                  </td><td> $349 </td><td>    $399 </td></tr>
+		<tr><td><p>&nbsp;</p></td><td></td><td></td></tr>
+   </tbody>
+
+	   <thead>
+	     <tr><th>Apple Watch (20 models)</th><th><a href="/Watch138">38mm</a></th><th><a href="/Watch142">42mm</a></th></tr>
+	   </thead>
+	   <tbody>
+		<tr><td>Stainless Steel Case With White Sport Band                      </td><td> $549 </td><td>    $599 </td></tr>
+		<tr><td>Stainless Steel Case With Black Sport Band                      </td><td> $549 </td><td>    $599 </td></tr>
+		<tr><td>Stainless Steel Case With Black Classic Buckle                  </td><td> $649 </td><td>    $699 </td></tr>
+		<tr><td>Stainless Steel Case With Milanese Loop                         </td><td> $649 </td><td>    $699 </td></tr>
+		<tr><td>Stainless Steel Case With Link Bracelet                         </td><td> $949 </td><td>    $999 </td></tr>
+		<tr><td>Space Black Case With Space Black Stainless Steel Link Bracelet </td><td>$1049 </td><td>   $1099 </td></tr>
+		<tr><td>Stainless Steel Case With Black Modern Buckle                   </td><td> $749 </td><td> -       </td></tr>
+		<tr><td>Stainless Steel Case With Midnight Blue Modern Buckle           </td><td> $749 </td><td> -       </td></tr>
+		<tr><td>Stainless Steel Case With Soft Pink Modern Buckle               </td><td> $749 </td><td> -       </td></tr>
+		<tr><td>Stainless Steel Case With Brown Modern Buckle                   </td><td> $749 </td><td> -       </td></tr>
+		<tr><td>Stainless Steel Case With Black Leather Loop                    </td><td>    - </td><td>    $699 </td></tr>
+		<tr><td>Stainless Steel Case With Bright Blue Leather Loop              </td><td>    - </td><td>    $699 </td></tr>
+		<tr><td>Stainless Steel Case With Stone Leather Loop                    </td><td>    - </td><td>    $699 </td></tr>
+		<tr><td>Stainless Steel Case With Light Brown Leather Loop<p>&nbsp;</p>              </td><td>    - </td><td>    $699 </td></tr>
+   </tbody>
+
+	   <thead>
+	     <tr><th>Apple Watch Edition (8 models)</th><th><a href="/Watch138">38mm</a></th><th><a href="/Watch142">42mm</a></th></tr>
+	   </thead>
+	   <tbody>
+		<tr><td>18-Karat Rose Gold Case With White Sport Band                   </td><td> $10,000 </td><td> $12,000 </td></tr>
+		<tr><td>18-Karat Rose Yellow Gold Case With Black Sport Band            </td><td> $10,000 </td><td> $12,000 </td></tr>
+		<tr><td>18-Karat Rose Gold Case With Rose Gray Modern Buckle            </td><td> $17,000 </td><td> -       </td></tr>
+		<tr><td>18-Karat Rose Yellow Gold Case With Bright Red Modern Buckle    </td><td> $17,000 </td><td> -       </td></tr>
+		<tr><td>18-Karat Rose Yellow Gold Case With Black Classic Buckle Band   </td><td> $15,000 </td><td> -       </td></tr>
+		<tr><td>18-Karat Rose Yellow Gold Case With Midnight Blue Classic Buckle</td><td> $15,000 </td><td> -       </td></tr>
+   </tbody>
+ </table>
