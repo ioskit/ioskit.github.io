@@ -11,8 +11,14 @@ links:
     url: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330
     description: ' - Apple Developer'
     type: reference
-features_:
-- Constant
+ - link:
+    name: 'Optionals in Swift'
+    url: https://blog.sabintsev.com/optionals-in-swift-c94fd231e7a4
+    description: ' - To nil or not to nil'
+    type: tutorial
+features:
+ - Variable
+ - Constant
 ---
 
 TODO.
