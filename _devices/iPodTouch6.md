@@ -14,8 +14,8 @@ dimensions:
   width: 58.6
   thickness: 6.1
 weight:
-  wifi:
-  cellular: 88
+  wifi: 88
+  cellular:
 chip: "A8 64-bit, M8"
 ram:
   size: 1
@@ -38,4 +38,31 @@ resolutions:
     height: 1136
     width: 640
     info: 4
+   AppIcon:
+    height: 120
+    width: 120
+   AppStore:
+    height: 1024
+    width: 1024
+   LaunchImage:
+    height: 
+    width: 
+   Spotlight:
+    height: 80
+    width: 80
+   Settings:
+    height: 58
+    width: 58
+   Toolbar:
+    height: 44
+    width: 44
+   Tabbar:
+    height: 50
+    width: 50
+   Newsstand:
+    height: 1024
+    width: 1024
+   WebClipIcon :
+    height: 120
+    width: 120
 ---

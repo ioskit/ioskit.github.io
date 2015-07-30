@@ -46,8 +46,8 @@ resolutions:
     height: 114
     width: 114
    AppStore:
-    height: 512
-    width: 512
+    height: 1024
+    width: 1024
    LaunchImage:
     height:
     width:
