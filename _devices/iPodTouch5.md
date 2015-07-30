@@ -1,8 +1,8 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPod_Touch
-name: 'iPhone Touch (5th Gen.)'
-id: iPhoneTouch5
+name: 'iPod Touch (5th Gen.)'
+id: iPodTouch5
 status:
 release: "11/10/2012"
 finish: ["Silver", "Space Gray", "Slate", "Yellow", "Pink", "Blue", "Product Red"]
