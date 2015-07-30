@@ -1,6 +1,11 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPhone
+press:
+  title: "Apple Announces iPhone 5s—The Most Forward-Thinking Smartphone in the World"
+  subtitle: "iPhone 5s Features 64-bit A7 chip, All-New 8 Megapixel iSight Camera with True Tone Flash & Introduces Touch ID Fingerprint Sensor"
+  date: "10/09/2013"
+  url: https://www.apple.com/pr/library/2013/09/10Apple-Announces-iPhone-5s-The-Most-Forward-Thinking-Smartphone-in-the-World.html
 name: 'iPhone 5S'
 id: iPhone5s
 status:
