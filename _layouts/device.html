@@ -20,6 +20,9 @@ layout: default
         <div class="col-lg-11">
 			<h3>Tech Specs</h3>
 			<ul>
+				{% if page.current == "yes" %}
+					<li><span class="label label-primary">Last Model</span></li>
+				{% endif %}
 				<li><span class="label label-default">Release</span>&nbsp;&nbsp;{{ page.release }}</li>
 				<li><span class="label label-default">OS</span>&nbsp;&nbsp;{% include ios-link-list.html ios=page.os %}</li>
 				<li><span class="label label-default">Capacity (Go)</span>&nbsp;&nbsp;{{ page.capacity | join: ' &bull; ' }}</li>

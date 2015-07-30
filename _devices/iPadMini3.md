@@ -8,6 +8,7 @@ press:
 name: 'iPad mini 3 (3rd Gen.)'
 id: iPadMini3
 status:
+current: "yes"
 release: "01/10/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]

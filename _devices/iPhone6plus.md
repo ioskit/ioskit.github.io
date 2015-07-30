@@ -4,6 +4,7 @@ source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 6 Plus'
 id: iPhone6plus
 status: 
+current: "yes"
 release: "19/09/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]

@@ -8,6 +8,7 @@ press:
 name: 'iPad Air 2 (6th Gen.)'
 id: iPadAir2
 status: 
+current: "yes"
 release: "22/10/2014"
 finish: ["Silver", "Gold", "Space Gray"]
 capacity: [16,64,128]

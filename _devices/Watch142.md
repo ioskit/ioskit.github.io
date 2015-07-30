@@ -4,6 +4,7 @@ source:
 name: 'Watch 42mm'
 id: Watch142
 status: 
+current: "yes"
 release: "24/04/2015"
 finish: ["Black", "White", "Gray", "Silver", "Blue", "Pink", "Brown"]
 capacity: [8]

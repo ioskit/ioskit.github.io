@@ -4,6 +4,7 @@ source: https://en.wikipedia.org/wiki/IPod_Touch
 name: 'iPhone Touch (6th Gen.)'
 id: iPhoneTouch6
 status:
+current: "yes"
 release: "15/07/2015"
 finish: ["Silver", "Gold", "Space Gray", "Pink", "Blue", "Product Red"]
 capacity: [16,32,64,128]

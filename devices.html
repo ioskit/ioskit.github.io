@@ -56,7 +56,9 @@ layout: default-headed
 						{% endif %}
 					</td>
 	          		<td>
-			    		<a href="{{ device.url }}">{{ device.name }}</a></li>
+						{% if device.current == "yes" %}<span class="label label-primary">{% endif %}
+						<a href="{{ device.url }}">{{ device.name }}</a></li>
+						{% if device.current == "yes" %}</span>{% endif %}
 			  		</td>
     
 					<td>{% include year-from-date.html date=device.release %}</td>
@@ -141,7 +143,9 @@ layout: default-headed
 						{% endif %}
 					</td>
 	          		<td>
-			    		<a href="{{ device.url }}">{{ device.name }}</a></li>
+						{% if device.current == "yes" %}<span class="label label-primary">{% endif %}
+						<a href="{{ device.url }}">{{ device.name }}</a></li>
+						{% if device.current == "yes" %}</span>{% endif %}
 			  		</td>
     
 					{% assign screen = device.resolutions.Screen %}

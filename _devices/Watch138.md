@@ -4,6 +4,7 @@ source:
 name: 'Watch 38mm'
 id: Watch138
 status: 
+current: "yes"
 release: "24/04/2015"
 finish: ["Black", "White", "Gray", "Silver", "Blue", "Pink", "Brown"]
 capacity: [8]
