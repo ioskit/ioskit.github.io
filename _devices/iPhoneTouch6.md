@@ -14,8 +14,8 @@ dimensions:
   width: 58.6
   thickness: 6.1
 weight:
-  wifi: 88
-  cellular:
+  wifi:
+  cellular: 88
 chip: "A8 64-bit, M8"
 ram:
   size: 1
@@ -28,7 +28,7 @@ video: "1080p HD"
 wireless: "802.11a/b/g/n/ac Wi‑Fi, Bluetooth 4.1"
 cellular: "-"
 location: "-"
-sensors: "3-axis gyroscope"
+sensors: "3-axis gyroscope, Accelerometer"
 os: ["iOS8"]
 sim: "-"
 connector: Lightning
