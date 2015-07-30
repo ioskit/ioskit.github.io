@@ -1,6 +1,11 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPhone
+press:
+  title: "Apple Introduces iPhone 5"
+  subtitle: "Thinnest, Lightest iPhone Ever Features All-New Aluminum Design, Stunning 4-Inch Retina Display, A6 Chip & Ultrafast Wireless"
+  date: "12/09/2012"
+  url: https://www.apple.com/pr/library/2012/09/12Apple-Introduces-iPhone-5.html
 name: 'iPhone 5'
 id: iPhone5
 status:
