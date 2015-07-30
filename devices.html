@@ -72,7 +72,14 @@ layout: default-headed
 
 	  				<td>{{ device.capacity | join : ", " }}</td>
 	  				<td>{{ device.ram.size }} {{ device.ram.unit }}</td>
-	  				<td>{{ device.chip }}</td>
+	
+					{% if device.chip.size > 15 %}
+						{% assign words = device.chip | split: ' ' %}
+  						<td>{{ words[0] }}</td>
+					{% else %}
+	  					<td>{{ device.chip }}</td>
+					{% endif %}
+					
 	  				<td>{{ device.cameras.front }} / {{ device.cameras.back }}</td>
 	  				<td>{{ device.video }}</td>
 	  				<td>{% include ios-link-list.html ios=device.os type="short" %}</td>
