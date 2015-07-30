@@ -8,6 +8,8 @@ press:
   url: https://www.apple.com/pr/library/2008/06/09Apple-Introduces-the-New-iPhone-3G.html
 name: 'iPhone 3G'
 id: iPhone3g
+device: iPhone
+generation:
 status:
 release: "11/07/2008"
 finish: ["Black", "White"]

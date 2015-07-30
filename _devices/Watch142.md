@@ -3,6 +3,8 @@ layout: device
 source: 
 name: 'Watch 42mm'
 id: Watch142
+device: Watch
+generation:
 status: 
 current: "yes"
 release: "24/04/2015"

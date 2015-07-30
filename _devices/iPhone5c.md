@@ -3,6 +3,8 @@ layout: device
 source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 5C'
 id: iPhone5c
+device: iPhone
+generation:
 status:
 release: "18/03/2014"
 finish: ["White", "Pink", "Yellow", "Blue", "Green polycarbonate"]

@@ -5,8 +5,10 @@ press:
   title: "Apple Launches iPad"
   date: "27/01/2010"
   url: https://www.apple.com/pr/library/2010/01/27Apple-Launches-iPad.html
-name: 'iPad (1st Gen.)'
+name: 'iPad'
 id: iPad1
+device: iPad
+generation: 1
 status: 
 release: "30/04/2010"
 finish: ["Black"]

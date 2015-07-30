@@ -5,8 +5,10 @@ press:
   title: "Apple Launches New iPad"
   date: "07/03/2012"
   url: https://www.apple.com/pr/library/2012/03/07Apple-Launches-New-iPad.html
-name: 'iPad 3 (3rd Gen.)'
+name: 'iPad 3'
 id: iPad3
+device: iPad
+generation: 3
 status: 
 release: "16/03/2012"
 finish: ["Black", "White"]

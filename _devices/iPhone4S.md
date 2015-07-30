@@ -8,6 +8,8 @@ press:
   url: https://www.apple.com/pr/library/2011/10/04Apple-Launches-iPhone-4S-iOS-5-iCloud.html
 name: 'iPhone 4S'
 id: iPhone4s
+device: iPhone
+generation:
 status:
 release: "14/10/2011"
 finish: ["Black", "White"]

@@ -3,6 +3,8 @@ layout: device
 source: 
 name: 'Watch 38mm'
 id: Watch138
+device: Watch
+generation:
 status: 
 current: "yes"
 release: "24/04/2015"

@@ -5,8 +5,10 @@ press:
   title: "Apple Introduces iPad mini"
   date: "23/10/2012"
   url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
-name: 'iPad mini (1st Gen.)'
+name: 'iPad mini'
 id: iPadMini1
+device: iPadMini
+generation: 1
 status:
 release: "01/11/2012"
 finish: ["Silver", "Space Gray"]

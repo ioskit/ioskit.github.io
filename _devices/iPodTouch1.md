@@ -6,8 +6,10 @@ press_:
   subtitle:
   date: "12/09/2012"
   url: https://www.apple.com/pr/library/2012/09/12Apple-Introduces-iPhone-5.html
-name: 'iPod Touch (1st Gen.)'
+name: 'iPod Touch'
 id: iPodTouch1
+device: iPodTouch
+generation: 1
 status:
 current:
 release: "05/09/2007"

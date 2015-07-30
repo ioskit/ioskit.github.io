@@ -8,6 +8,8 @@ press:
   url: https://www.apple.com/pr/library/2012/09/12Apple-Introduces-iPhone-5.html
 name: 'iPhone 5'
 id: iPhone5
+device: iPhone
+generation:
 status:
 release: "21/09/2012"
 finish: ["Black", "White"]

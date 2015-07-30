@@ -1,8 +1,10 @@
 ---
 layout: device
 source: https://en.wikipedia.org/wiki/IPod_Touch
-name: 'iPod Touch (6th Gen.)'
+name: 'iPod Touch'
 id: iPodTouch6
+device: iPodTouch
+generation: 6
 status:
 current: "yes"
 release: "15/07/2015"

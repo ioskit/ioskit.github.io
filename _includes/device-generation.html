@@ -1,0 +1,8 @@
+{% if include.generation %}
+&nbsp;<span class="label label-info">&nbsp;{{ include.generation }}
+{% if include.generation == 1 %}st
+{% elsif include.generation == 2 %}nd
+{% elsif include.generation == 3 %}rd
+{% else %}th
+{% endif %}&nbsp;</span>
+{% endif %}

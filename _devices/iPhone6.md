@@ -3,6 +3,8 @@ layout: device
 source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 6'
 id: iPhone6
+device: iPhone
+generation:
 status:
 current: "yes"
 release: "19/09/2014"

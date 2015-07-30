@@ -7,6 +7,8 @@ press:
   url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
 name: 'iPad mini 2 (2nd Gen.)'
 id: iPadMini2
+device: iPadMini
+generation: 2
 status:
 release: "01/11/2013"
 price: "500 USD"

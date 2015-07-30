@@ -5,8 +5,10 @@ press:
   title: "Apple Announces iPad Air - Dramatically Thinner, Lighter & More Powerful iPad"
   date: "23/10/2013"
   url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
-name: 'iPad Air (5th Gen.)'
+name: 'iPad Air'
 id: iPadAir
+device: iPad
+generation: 5
 status:
 release: "01/11/2013"
 finish: ["Black", "White"]
