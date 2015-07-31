@@ -175,6 +175,190 @@ layout: default-headed
 		{% endfor %}
       </tbody>
     </table>
+
+
+	<label for = "weightChart">
+		Devices Weight (g)<br />
+		<canvas id="weightChart" width="600" height="300"></canvas>
+	</label>
+	
+	<label for = "camerasChart">
+		Cameras Resolutions (Mpx)<br />
+		<canvas id="camerasChart" width="600" height="300"></canvas>
+	</label>
+	
+	<label for = "screenChart">
+		Screens size ('')<br />
+		<canvas id="screenChart" width="600" height="300"></canvas>
+	</label>
+
+	<script>
+
+	var data = {
+	    labels: 
+		[
+		{% for device in site.devices %}
+			"{{device.name}}"
+			{% if device != site.devices.last %}
+			,
+			{% endif %}
+		{% endfor %}
+		],
+	    datasets: [
+	        {
+	            label: "Weight Wi-fi (g)",
+	            fillColor: "rgba(220,220,220,0.5)",
+	            strokeColor: "rgba(255,255,255,0.9)",
+	            highlightFill: "rgba(220,220,220,0.75)",
+	            highlightStroke: "rgba(220,220,220,1)",
+	            data: [
+				{% for device in site.devices %}
+					"{{device.weight.wifi}}"
+					{% if device != site.devices.last %}
+					,
+					{% endif %}
+				{% endfor %}
+				]
+	        },
+	        {
+	            label: "Weight Cellular (g)",
+	            fillColor: "rgba(151,187,205,0.5)",
+	            strokeColor: "rgba(151,187,205,0.8)",
+	            highlightFill: "rgba(151,187,205,0.75)",
+	            highlightStroke: "rgba(151,187,205,1)",
+	            data: [
+				{% for device in site.devices %}
+					"{{device.weight.cellular}}"
+					{% if device != site.devices.last %}
+					,
+					{% endif %}
+				{% endfor %}
+				]
+	        }
+	    ]
+	};
+	var options = {};
+
+	var ctx = document.getElementById("weightChart").getContext("2d");
+	var myBarChart = new Chart(ctx).Bar(data, options);
+
+</script>
+
+
+
+
+	<script>
+
+	var data2 = {
+	    labels: [
+		{% for device in site.devices %}
+			"{{device.name}}"
+			{% if device != site.devices.last %}
+			,
+			{% endif %}
+		{% endfor %}
+		],
+	    datasets: [
+	        {
+	            label: "Back Camera (Mpx)",
+	            fillColor: "rgba(220,220,220,0.2)",
+	            strokeColor: "rgba(220,220,220,1)",
+	            pointColor: "rgba(220,220,220,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(220,220,220,1)",
+	            data: [
+				{% for device in site.devices %}
+					{% if device.cameras.back == "-" %}
+						0
+					{% else %}
+						{{device.cameras.back}}
+					{% endif %}
+					{% if device != site.devices.last %}
+					,
+					{% endif %}
+				{% endfor %}
+				]
+	        },
+	        {
+	            label: "Front Camera (Mpx)",
+	            fillColor: "rgba(151,187,205,0.2)",
+	            strokeColor: "rgba(151,187,205,1)",
+	            pointColor: "rgba(151,187,205,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(151,187,205,1)",
+	            data: [
+				{% for device in site.devices %}
+					{% if device.cameras.front == "-" %}
+						0
+					{% else %}
+						{{device.cameras.front}}
+					{% endif %}
+					{% if device != site.devices.last %}
+					,
+					{% endif %}
+				{% endfor %}
+				]
+	        }
+	    ]
+	};
+	var options2 = {
+		multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+	};
+
+	var ctx2 = document.getElementById("camerasChart").getContext("2d");
+	var myLineChart = new Chart(ctx2).Line(data2, options2);
+
+</script>
+
+
+
+
+
+	<script>
+
+	var data3 = {
+	    labels: [
+		{% for device in site.devices %}
+			"{{device.name}}"
+			{% if device != site.devices.last %}
+			,
+			{% endif %}
+		{% endfor %}
+		],
+	    datasets: [
+	        {
+	            label: "Screen Size ('')",
+	            fillColor: "rgba(220,220,220,0.2)",
+	            strokeColor: "rgba(220,220,220,1)",
+	            pointColor: "rgba(220,220,220,1)",
+	            pointStrokeColor: "#fff",
+	            pointHighlightFill: "#fff",
+	            pointHighlightStroke: "rgba(220,220,220,1)",
+	            data: [
+				{% for device in site.devices %}
+					{% if device.resolutions.Screen.info == "" %}
+						0
+					{% else %}
+						{{device.resolutions.Screen.info}}
+					{% endif %}
+					{% if device != site.devices.last %}
+					,
+					{% endif %}
+				{% endfor %}
+				]
+	        }
+	    ]
+	};
+	var options3 = {
+		multiTooltipTemplate: "<%= datasetLabel %> - <%= value %>"
+	};
+
+	var ctx3 = document.getElementById("screenChart").getContext("2d");
+	var myLineChart = new Chart(ctx3).Line(data3, options3);
+
+</script>
 </div>
 
 </div>
