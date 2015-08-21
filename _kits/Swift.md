@@ -36,11 +36,11 @@ Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writi
   * [Generics](/Generics)
   * Fast and concise iteration over a range or collection
   * Structs that support methods, [Extensions](/Extension), [Protocols](/Protocol).
-  * Functional programming patterns, e.g.: map and filter
   * Types: [Class](/Class), [Extensions](/Extension), [Protocols](/Protocol) and [Enumerations](/Enumeration)
   * Operators: Equality (`==`, value) and Identity (`===`, reference)
   * [TypeAlias](/TypeAlias) (`typealias` AudioSample = UInt16; var maxAmplitudeFound = AudioSample.min)
-  * There is no Exception
+  * There is no Exception... in its first version!
+* Functional programming patterns (e.g.: `map` and `filter`). See: [Functions](/Function) and [Closures](/Closure).
 * [Optional](/Optional) (Optional Binding, Implicitly Unwrapped Optionals)
 * REPL
 * [Interactive Playgrounds](/InteractivePlaygrounds)
