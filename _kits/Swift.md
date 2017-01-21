@@ -42,5 +42,5 @@ Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writi
   * There is no Exception... in its first version!
 * Functional programming patterns (e.g.: `map` and `filter`). See: [Functions](/Function) and [Closures](/Closure).
 * [Optional](/Optional) (Optional Binding, Implicitly Unwrapped Optionals)
-* REPL
+* [REPL](/REPL)
 * [Interactive Playgrounds](/InteractivePlaygrounds)

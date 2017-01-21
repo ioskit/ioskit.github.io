@@ -7,6 +7,8 @@ markdown: kramdown
 
 encoding: utf-8
 
+gems:      ["jekyll-gist"]
+
 collections:
     ios:
             output: true
