@@ -56,6 +56,7 @@ Class in Swift support the following features:
 1. Initializers
 1. Deinitializers
 1. Methods (type & instance)
+1. Subclassing (inheritance)
 1. Subscripts
 
 
@@ -74,7 +75,8 @@ import UIKit
 2) Initializers
 3) Deinitializers
 4) Methods (type & instance)
-5) Subscripts
+5) Subclassing (inheritance)
+6) Subscripts
 */
 class Vehicule {
 
@@ -86,7 +88,7 @@ class Vehicule {
   let zeroTo60: Float
   var color: UIColor
 
-  // 2) Initializers
+  // 2) Initializers (called 'designated' initializer)
   init(passengers: Int, zeroTo60: Float, color: UIColor = UIColor.black) {
     passengersCapacity = passengers
     self.zeroTo60 = zeroTo60
@@ -94,7 +96,7 @@ class Vehicule {
     Vehicule.count += 1
   }
 
-  // You have to use 'convenience' keyword for initializers who call another initializers
+  // Use 'convenience' keyword for initializers who call another initializers (called 'convenience' initializer)
   convenience init(zeroTo60: Float) { self.init(passengers: 4, zeroTo60: zeroTo60) }
 
   convenience init() { self.init(zeroTo60: 6.0) }
@@ -111,27 +113,86 @@ class Vehicule {
 
   // 4) Instance Method
   func start() {
-    print("(Silence)")
+    // print("(Silence)")
+    fatalError("To override in subclass")
   }
 }
 
-let teslaModelS = Vehicule(passengers: 4, zeroTo60: 2.5)
-let teslaModel3 :Vehicule? = Vehicule()
+// 6) Subclassing
+// Only one super class, but multiple protocols
+class ElectricVehicule : Vehicule {
+
+  let rangePerCharge :Int
+  
+  // Assign non-optional properies before to call super class initializer
+  // Only 'designated' initializer (vs. 'convenience' initializer) can call a superclass 'designated' initializer
+  init(passengers: Int, zeroTo60: Float, rangePerCharge :Int) {
+    self.rangePerCharge = rangePerCharge                   // assignement non-optional current class properies before...
+    super.init(passengers: passengers, zeroTo60: zeroTo60) // ... to call superclass initializer
+  }
+
+  convenience init() { self.init(passengers: 4, zeroTo60: zeroTo60, rangePerCharge: 215) }
+
+  // 'override' is mandatory
+  override func start() {
+    print("(Silence)")
+  }
+
+}
+
+// 6) Subclassing
+class MotorVehicule : Vehicule {
+
+  let fuelEfficiency :Int
+  
+  init(passengers: Int, zeroTo60: Float, fuelEfficiency :Int) {
+    self.fuelEfficiency = fuelEfficiency
+    super.init(passengers: passengers, zeroTo60: zeroTo60)
+  }
+
+}
+
+let myCar = Vehicule(passengers: 4, zeroTo60: 2.5)
+let hisCar :Vehicule? = Vehicule()
 print(Vehicule.count) // = 2
 
-// Implicit use of Deinitializers
-teslaModel3 = nil
+// 3) Implicit use of Deinitializers
+hisCar = nil
 print(Vehicule.count) // = 1
 
 // By reference
-let p100d = teslaModelS
-p100d.color = UIColor.red
-// teslaModelS.color == UIColor.red
+let myWifeCar = myCar
+myWifeCar.color = UIColor.red
+// myCar.color == UIColor.red
 
-// Type Method
+// 4) Type Method
 Vehicule.printCount()
 
-// Instance Method
-teslaModelS.start()
+// 4) Instance Method
+myCar.start()
+
+// 6) Subclassing
+let teslaModelS = ElectricVehicule(passengers: 4, zeroTo60: 2.5, rangePerCharge: 315)
+var teslaModel3 = ElectricVehicule? = ElectricVehicule()
+
+let bugattiVeyron = MotorVehicule(passengers: 2, zeroTo60: 2.5, fuelEfficiency: 7)
 ```
 -->
+
+# Inheritance
+
+Rules for a subclass who inherits or not 'designated' and 'convenience' initializers of its superclass:
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>The subclass...</th>
+      <th>Inherits Designated</th>
+      <th>Inherits Convenience</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>Doesn't define any initializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Implements all superclass's designated initializers</th><td></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+  </tbody>
+</table>
