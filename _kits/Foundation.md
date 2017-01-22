@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Foundation'
-id: foundation
+iid: foundation
 status: TODO
 type: kit
 since: iOS2

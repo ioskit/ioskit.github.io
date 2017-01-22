@@ -35,7 +35,7 @@ layout: default
 					<ol>
 						{% for kit in kits %}
 							<li>
-								<a href="#{{ kit.id }}">
+								<a href="#{{ kit.iid }}">
 									{% if kit.deprecated %}<strike>{% endif %}
 									{{ kit.name }}
 									{% if kit.deprecated %}</strike>{% endif %}
@@ -61,7 +61,7 @@ layout: default
 
 							{% capture updateCount %}{{ updateCount | plus: '1' }}{% endcapture %}
 							<li>
-								<a href="#{{ kit.id }}">
+								<a href="#{{ kit.iid }}">
 									{% if kit.deprecated %}<strike>{% endif %}
 									{{ kit.name }}
 									{% if kit.deprecated %}</strike>{% endif %}
@@ -83,7 +83,7 @@ layout: default
 					<ol>
 						{% for d in page.devices %}
 							{% for device in site.devices %}
-								{% if d == device.id %}
+								{% if d == device.iid %}
 									<li>
 										<a href="{{ device.url }}">{{ device.name }}</a>
 									</li>
@@ -97,12 +97,9 @@ layout: default
 
         	<div class="col-lg-8">
 				{% for kit in kits %}
-					<div id="{{ kit.id }}"><p>&nbsp;</p></div>
+					<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 					<div class="row">
-						<h2>
-							{% if kit.deprecated %}<strike>{% endif %}
-							{{ kit.name }}
-							{% if kit.deprecated %}</strike>{% endif %}
+						<h2>{% if kit.deprecated %}<strike>{% endif %}{{ kit.name }}{% if kit.deprecated %}</strike>{% endif %}
 						 	<small>{% include mark-todo.html status=kit.status %}</small>
 						 	<small>{% include mark-technology.html type=kit.type %}</small>
 						</h2>
@@ -120,7 +117,7 @@ layout: default
 				{% for kit in site.kits %}
 					{% for u in kit.detailedUpdates %}
 						{% if u.update.ios == page.name %}
-						<div id="{{ kit.id }}"><p>&nbsp;</p></div>
+						<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 						<div class="row">
 							<h4>
 								<span data-toggle="tooltip" data-placement="top" data-original-title="Update">

@@ -1,6 +1,6 @@
 ---
 layout: ios
-id: ios8
+iid: ios8
 name: iOS8
 releaseDate: 17.09.2014
 xcode: xcode6

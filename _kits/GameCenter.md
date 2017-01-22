@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Game Center'
-id: gamecenter
+iid: gamecenter
 status:
 type: technology
 icon: /resources/images/kits/GameCenter/game-center.png

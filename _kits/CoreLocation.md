@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: corelocation
+iid: corelocation
 name: 'Core Location'
 status:
 type: kit

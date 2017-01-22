@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Function'
-id: Function
+iid: Function
 status: DOING
 language: swift,objectivec
 abstract: ""
@@ -17,13 +17,15 @@ features:
  - Block
 ---
 
-TODO.
+<div name="Nested"></div>
 
-<a name="Nested" />
 ## Nested Functions
 
+TODO.
 
-<a name="VariableParameters" />
+
+<div name="VariableParameters"></div>
+
 ## Constant and Variable Parameters
 
 *[Swift](/Swift) feature.*
@@ -36,7 +38,8 @@ As a *variable copy*, future new values of the parameter, assigned inside the fu
 
 To define a Variable parameter we use the `var` prefix before the name of the parameter.
 
-<pre><code>func alignRight(var string: String, totalLength: Int, pad: Character) -> String { let amountToPad = totalLength - count(string)
+```
+func alignRight(var string: String, totalLength: Int, pad: Character) -> String { let amountToPad = totalLength - count(string)
     if amountToPad < 1 {
         return string }
     let padString = String(pad)
@@ -48,25 +51,29 @@ To define a Variable parameter we use the `var` prefix before the name of the pa
 let originalString = "hello"
 let paddedString = alignRight(originalString, 10, "-")
 // paddedString is equal to "-----hello"
-</code></pre>
+```
 
 
-<a name="InOutParameters" />
+<div name="InOutParameters"></div>
+
 ## In-Out Parameters
 
 TODO.
 
 
-<a name="ReturnTypes" />
+<div name="ReturnTypes"></div>
+
 ## Return Types
 
 TODO.
 
 
-<a name="FunctionTypesAsReturnTypes" />
+<div name="FunctionTypesAsReturnTypes"></div>
+
 ### Function Types as Return Types
 
-<pre><code>func stepForward(input: Int) -> Int {
+```
+func stepForward(input: Int) -> Int {
     return input + 1
 }
 
@@ -77,6 +84,6 @@ func stepBackward(input: Int) -> Int {
 func chooseStepFunction(backwards: Bool) -> (Int) -> Int {
     return backwards ? stepBackward : stepForward
 }
-</code></pre>
+```
 
 Here, the return type of the `chooseStepFunction` function is: a function that takes an `Int` as single parameter and returns an `Int`.

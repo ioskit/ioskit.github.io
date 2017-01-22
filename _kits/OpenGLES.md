@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'OpenGL ES'
-id: opengles
+iid: opengles
 status:
 type: kit
 since: iOS2

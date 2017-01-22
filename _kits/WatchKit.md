@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: watchkit 
+iid: watchkit 
 name: 'WatchKit'
 status:
 type: kit

@@ -7,7 +7,7 @@ press:
   url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
   url2: https://www.apple.com/pr/library/2013/01/29Apple-Increases-iPad-with-Retina-Display-to-128GB.html
 name: 'iPad 4'
-id: iPad4
+iid: iPad4
 device: iPad
 generation: 4
 status:

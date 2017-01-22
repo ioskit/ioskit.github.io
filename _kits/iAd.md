@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'iAd'
-id: iad
+iid: iad
 status:
 type: kit
 since: iOS4

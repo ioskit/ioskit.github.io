@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CoreFoundation'
-id: corefoundation
+iid: corefoundation
 status:
 type: kit
 since: iOS2

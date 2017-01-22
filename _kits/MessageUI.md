@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Message UI'
-id: messageui
+iid: messageui
 status:
 type: kit
 since: iOS3

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'EventKit UI'
-id: eventkitui
+iid: eventkitui
 status:
 type: kit
 since: iOS4

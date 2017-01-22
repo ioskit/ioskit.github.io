@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core MIDI'
-id: coremidi
+iid: coremidi
 status:
 type: kit
 since: iOS4

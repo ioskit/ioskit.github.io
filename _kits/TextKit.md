@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Text Kit'
-id: textkit
+iid: textkit
 status:
 type: kit
 since: iOS7

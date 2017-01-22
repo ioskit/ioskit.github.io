@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: homekit
+iid: homekit
 name: 'Home Kit'
 status: 
 type: kit

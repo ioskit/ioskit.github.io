@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: airprint
+iid: airprint
 name: 'AirPrint'
 status:
 type: technology

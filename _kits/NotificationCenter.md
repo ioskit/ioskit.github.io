@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Notification Center'
-id: notificationcenter
+iid: notificationcenter
 status:
 type: kit
 since: iOS5

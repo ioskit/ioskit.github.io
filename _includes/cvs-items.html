@@ -3,8 +3,8 @@
 	<ul>
 	{% for item in include.allItems %}
 		{% assign appItemsIds = ',' | append: include.appItems | append: ',' %}
-		{% assign itemId = ',' | append: item.id | append: ',' %}
-		{% if appItemsIds contains itemId %}<li><a href="{{item.url}}">{{item.name}}</li></a>{% endif %}
+		{% assign itemId = ',' | append: item.iid | append: ',' %}
+		{% if appItemsIds contains itemId %}<li><a href="{{item.url}}">{{item.name}}</a></li>{% endif %}
 	{% endfor %}
 	</ul>
 {% endif %}

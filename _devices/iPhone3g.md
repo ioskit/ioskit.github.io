@@ -7,7 +7,7 @@ press:
   date: "09/06/2008"
   url: https://www.apple.com/pr/library/2008/06/09Apple-Introduces-the-New-iPhone-3G.html
 name: 'iPhone 3G'
-id: iPhone3g
+iid: iPhone3g
 device: iPhone
 generation:
 status:

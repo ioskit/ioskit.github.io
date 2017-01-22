@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'SystemConfiguration'
-id: systemconfiguration
+iid: systemconfiguration
 status: 
 type: kit
 since: iOS2

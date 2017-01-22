@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Storyboard'
-id: storyboard
+iid: storyboard
 kind: technology
 status:
 type: kit

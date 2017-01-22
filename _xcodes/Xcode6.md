@@ -1,6 +1,6 @@
 ---
 layout: xcode
-id: xcode6
+iid: xcode6
 name: "Xcode 6"
 releaseDate: 17.09.2014
 brief: 

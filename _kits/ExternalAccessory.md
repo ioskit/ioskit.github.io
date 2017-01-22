@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'External Accessory'
-id: externalaccessory
+iid: externalaccessory
 status:
 type: kit
 since: iOS3

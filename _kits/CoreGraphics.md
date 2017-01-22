@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CoreGraphics'
-id: coregraphics
+iid: coregraphics
 status:
 type: kit
 since: iOS2

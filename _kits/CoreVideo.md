@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CoreVideo'
-id: corevideo
+iid: corevideo
 status:
 type: kit
 since: iOS4

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Media Player'
-id: mediaplayer
+iid: mediaplayer
 status:
 type: kit
 since: iOS2

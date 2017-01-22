@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: spritekit
+iid: spritekit
 name: 'SpriteKit'
 status:
 type: kit

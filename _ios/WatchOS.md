@@ -1,6 +1,6 @@
 ---
 layout: ios
-id: watchos
+iid: watchos
 name: watchOS
 releaseDate: 24.04.2015
 xcode: xcode6

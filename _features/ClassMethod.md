@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Class Method'
-id: ClassMethod
+iid: ClassMethod
 status: 
 language: objectivec
 abstract: "In Objective-C, a class is itself an object with an opaque type called Class. Classes can’t have properties defined using the declaration syntax shown earlier for instances, but they can receive messages: they are called Class methods."

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'PassKit - Passbook'
-id: passkit
+iid: passkit
 status:
 type: kit
 since: iOS6

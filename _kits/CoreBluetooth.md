@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Bluetooth'
-id: corebluetooth
+iid: corebluetooth
 status: 
 type: kit
 since: iOS5

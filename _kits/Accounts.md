@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Accounts'
-id: accounts
+iid: accounts
 status: 
 since: iOS5
 prefixe: 'AC'

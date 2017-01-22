@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: objectivec
+iid: objectivec
 name: 'Objective-C'
 status: TODO
 type: technology

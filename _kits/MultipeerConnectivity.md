@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Multipeer Connectivity'
-id: multipeerconnectivity
+iid: multipeerconnectivity
 status:
 type: kit
 since: iOS7

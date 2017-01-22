@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Image I/O'
-id: imageio
+iid: imageio
 status:
 type: kit
 since: iOS4

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'MapKit'
-id: mapkit
+iid: mapkit
 status:
 type: kit
 since: iOS3

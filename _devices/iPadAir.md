@@ -6,7 +6,7 @@ press:
   date: "23/10/2013"
   url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad Air'
-id: iPadAir
+iid: iPadAir
 device: iPad
 generation: 5
 status:

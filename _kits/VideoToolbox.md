@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Video Toolbox'
-id: videotoolbox
+iid: videotoolbox
 status:
 type: kit
 since: iOS6

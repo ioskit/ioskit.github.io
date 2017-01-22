@@ -1,7 +1,7 @@
 ---
 layout: external
 name: 'Flurry'
-id: flurry
+iid: flurry
 abstract: "Analytics framework"
 link:
   name: flurry.com

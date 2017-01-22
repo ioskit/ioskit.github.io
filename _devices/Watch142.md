@@ -2,7 +2,7 @@
 layout: device
 source: 
 name: 'Watch 42mm'
-id: Watch142
+iid: Watch142
 device: Watch
 generation:
 status: 

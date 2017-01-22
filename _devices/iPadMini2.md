@@ -6,7 +6,7 @@ press:
   date: "23/10/2013"
   url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad mini 2'
-id: iPadMini2
+iid: iPadMini2
 device: iPadMini
 generation: 2
 status:

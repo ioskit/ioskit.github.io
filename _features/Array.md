@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Array'
-id: Array
+iid: Array
 status: DOING
 language: swift,objectivec
 abstract: "Create arrays and dictionaries using brackets ([]), and access their elements by writing the index or key in brackets."

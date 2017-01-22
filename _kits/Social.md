@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: social
+iid: social
 name: 'Social'
 status:
 type: kit

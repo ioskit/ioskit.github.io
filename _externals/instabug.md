@@ -1,7 +1,7 @@
 ---
 layout: external
 name: 'Instabug'
-id: instabug
+iid: instabug
 abstract: "a solution to get user’s feedback"
 links:
  - link:

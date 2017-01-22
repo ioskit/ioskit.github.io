@@ -28,7 +28,7 @@ layout: default
 		<ul>
 			{% for feature in page.features %}
 				{% for f in allFeatures %}
-					{% if feature == f.id %}
+					{% if feature == f.iid %}
 						<li><a href="/{{ feature }}">{% include feature-name.html name=f.name language=f.language %}</a></li>
 					{% endif %}
 				{% endfor %}

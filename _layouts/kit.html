@@ -56,15 +56,13 @@ layout: default
         <div class="col-lg-12">
 			{{ content }}
 
-			{{id}} / {{page.id}}
-
 			<p>&nbsp;</p>
 
-			{% if page.id == 'swift' or page.id == 'objectivec' %}
+			{% if page.iid == 'swift' or page.iid == 'objectivec' %}
 				<h3>Features</h3>
 				<ul>
 					{% for f in site.features %}
-						{% if f.language contains page.id %}
+						{% if f.language contains page.iid %}
 							<li><a href="{{ f.url }}">{{ f.name }}</a></li>
 						{% endif %}
 					{% endfor %}

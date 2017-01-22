@@ -1,6 +1,6 @@
 ---
 layout: xcode
-id: xcode4
+iid: xcode4
 name: "Xcode 4"
 releaseDate: 14.03.2011
 brief: 

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Metal'
-id: metal
+iid: metal
 status: 
 type: kit
 since: iOS8

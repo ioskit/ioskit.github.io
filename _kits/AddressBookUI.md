@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AddressBookUI'
-id: addressbookui
+iid: addressbookui
 status: 
 since: iOS2
 prefixe: 'AB'

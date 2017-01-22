@@ -1,6 +1,6 @@
 ---
 layout: xcode
-id: xcode3
+iid: xcode3
 name: "Xcode 3"
 releaseDate: 26.11.2007
 brief: 

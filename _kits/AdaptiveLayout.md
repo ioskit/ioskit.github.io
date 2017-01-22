@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: adaptivelayout
+iid: adaptivelayout
 name: 'Adaptive Layout'
 status: TODO
 type: technology

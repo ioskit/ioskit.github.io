@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Enumeration'
-id: Enumeration
+iid: Enumeration
 status: DOING
 language: swift,objectivec
 abstract: "Use `enum` to create an enumeration. Like classes and all other named types, enumerations can have methods associated with them."

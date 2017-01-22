@@ -1,6 +1,6 @@
 ---
 layout: ios
-id: ios4
+iid: ios4
 name: iOS4
 xcode: xcode3
 ---

@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: airplay
+iid: airplay
 name: 'AirPlay'
 status:
 type: technology

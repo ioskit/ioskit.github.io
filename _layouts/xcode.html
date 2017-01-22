@@ -4,29 +4,28 @@ layout: default
 
 <div >
 
-	{% assign kits = site.kits | where: "xcode", page.id %}
+	{% assign kits = site.kits | where: "xcode", page.iid %}
 
 	<div class="page-header">
     	<div class="row">
         	<div class="col-lg-4">
-          		<h1 id="page-title">{{ page.name }}
-				</h1>
+          		<h1 id="page-title">{{ page.name }}</h1>
 				<p>&nbsp;</p>
 				<ol>
 				{% for kit in kits %}
 					<li>
-						<a href="#{{ kit.id }}">{{ kit.name }}</a>
+						<a href="#{{ kit.iid }}">{{ kit.name }}</a>
 						{% if kit.status %}
 							&nbsp;<small><small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
 						{% endif %}	
 						&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 					</li>
 				{% endfor %}
-				<ol>
+				</ol>
         	</div>
         	<div class="col-lg-8">
 				{% for kit in kits %}
-					<div id="{{ kit.id }}"><p>&nbsp;</p></div>
+					<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 					<div class="row">
 						<h2>
 							{{ kit.name }}

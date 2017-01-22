@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'JavaScript Core'
-id: javascriptcore
+iid: javascriptcore
 status:
 type: kit
 since: iOS7

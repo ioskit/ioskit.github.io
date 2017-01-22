@@ -7,7 +7,7 @@ press:
   date: "07/06/2010"
   url: https://www.apple.com/pr/library/2010/06/07Apple-Presents-iPhone-4.html
 name: 'iPhone 4'
-id: iPhone4
+iid: iPhone4
 device: iPhone
 generation:
 status:

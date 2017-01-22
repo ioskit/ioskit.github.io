@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Text'
-id: coretext
+iid: coretext
 status:
 type: kit
 since: iOS3

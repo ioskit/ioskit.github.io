@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: airdrop
+iid: airdrop
 name: 'AirDrop'
 status: 
 type: technology

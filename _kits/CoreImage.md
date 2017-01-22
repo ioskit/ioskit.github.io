@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: coreimage
+iid: coreimage
 name: 'Core Image'
 status:
 type: kit

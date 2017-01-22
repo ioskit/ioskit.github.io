@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: applepay
+iid: applepay
 name: 'Apple Pay'
 status:
 type: technology

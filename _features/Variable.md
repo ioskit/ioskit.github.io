@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Variable'
-id: Variable
+iid: Variable
 status: 
 language: swift
 abstract: "Defines with 'var'. Can be modified"

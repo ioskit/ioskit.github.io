@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Mobile Core Services'
-id: mobilecoreservices
+iid: mobilecoreservices
 status:
 type: kit
 since: iOS3

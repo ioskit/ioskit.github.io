@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Network Extension'
-id: networkextension
+iid: networkextension
 status:
 since: iOS8
 prefixe: 'NE'

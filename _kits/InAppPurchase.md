@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: inapppurchase
+iid: inapppurchase
 name: 'In-App Purchase'
 status:
 type: technology

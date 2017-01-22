@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Audio'
-id: coreaudio
+iid: coreaudio
 status:
 type: kit
 since: iOS2

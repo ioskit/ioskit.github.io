@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AssetsLibrary'
-id: assetslibrary
+iid: assetslibrary
 type: kit
 status:
 since: iOS4

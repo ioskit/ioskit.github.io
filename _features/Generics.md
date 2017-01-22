@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Generics'
-id: Generics
+iid: Generics
 status: DOING
 language: swift
 abstract: "Write a name inside angle brackets to make a generic function or type. You can make generic forms of functions and methods, as well as classes, enumerations, and structures."

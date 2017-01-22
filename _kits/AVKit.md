@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AVKit'
-id: avkit
+iid: avkit
 status:
 type: kit
 since: iOS8

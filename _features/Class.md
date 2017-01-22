@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Class'
-id: Class
+iid: Class
 status: DOING
 language: swift,objectivec
 abstract: "Use class followed by the class’s name to create a class."

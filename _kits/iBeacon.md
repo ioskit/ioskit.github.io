@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: ibeacon
+iid: ibeacon
 name: 'iBeacon'
 status:
 type: technology

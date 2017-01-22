@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AudioToolbox'
-id: audiotoolbox
+iid: audiotoolbox
 status: 
 type: kit
 since: iOS2

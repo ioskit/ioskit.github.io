@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Motion'
-id: coremotion
+iid: coremotion
 status:
 type: kit
 since: iOS4

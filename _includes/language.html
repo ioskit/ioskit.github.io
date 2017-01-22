@@ -1,7 +1,7 @@
 {% if include.language contains 'swift' %}
 	{% if include.withLink == 'yes' %}
  		{% for kit in site.kits %}
-			{% if kit.id == 'swift' %}
+			{% if kit.iid == 'swift' %}
 				<a href="{{kit.url}}">
 			{% endif %}
 		{% endfor %}
@@ -19,7 +19,7 @@
 {% if include.language contains 'objectivec' %}
 	{% if include.withLink == 'yes' %}
 		{% for kit in site.kits %}
-			{% if kit.id == 'objectivec' %}
+			{% if kit.iid == 'objectivec' %}
 				<a href="{{kit.url}}">
 			{% endif %}
 		{% endfor %}

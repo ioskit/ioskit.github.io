@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CoreData'
-id: coredata
+iid: coredata
 status: 
 since: iOS3
 prefixe: 'NS'

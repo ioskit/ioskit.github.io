@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AudioUnit'
-id: audiounit
+iid: audiounit
 status: 
 type: kit
 since: iOS2

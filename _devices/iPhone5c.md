@@ -2,7 +2,7 @@
 layout: device
 source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 5C'
-id: iPhone5c
+iid: iPhone5c
 device: iPhone
 generation:
 status:

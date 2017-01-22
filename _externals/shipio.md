@@ -1,7 +1,7 @@
 ---
 layout: external
 name: 'Ship.io'
-id: shipio
+iid: shipio
 status: 
 abstract: "Continuous Integration and Delivery service."
 links:

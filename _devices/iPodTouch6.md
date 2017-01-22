@@ -2,7 +2,7 @@
 layout: device
 source: https://en.wikipedia.org/wiki/IPod_Touch
 name: 'iPod Touch'
-id: iPodTouch6
+iid: iPodTouch6
 device: iPodTouch
 generation: 6
 status:

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'GameKit'
-id: gamekit
+iid: gamekit
 status:
 type: kit
 icon: /resources/images/kits/GameCenter/game-center.png

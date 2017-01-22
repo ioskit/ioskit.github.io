@@ -6,7 +6,7 @@ press:
   date: "02/03/2011"
   url: https://www.apple.com/pr/library/2011/03/02Apple-Launches-iPad-2.html
 name: 'iPad 2'
-id: iPad2
+iid: iPad2
 device: iPad
 generation: 2
 status: 

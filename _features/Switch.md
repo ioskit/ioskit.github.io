@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Switch'
-id: Switch
+iid: Switch
 status: DOING
 language: swift,objectivec
 abstract: "A switch statement considers a value and compares it against several possible matching patterns."

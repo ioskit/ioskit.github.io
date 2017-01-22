@@ -106,7 +106,7 @@ layout: default
 				<tbody>
 					{% assign count = '0' %}
 					{% for e in externals %}
-						{% assign externalName = ',' | append: e.id | append: ',' %}
+						{% assign externalName = ',' | append: e.iid | append: ',' %}
 						{% if usedExternals contains externalName %}
 							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 							<tr>
@@ -140,7 +140,7 @@ layout: default
 	      		<tbody>
 					{% assign count = '0' %}
 					{% for f in features %}
-						{% assign featureName = ',' | append: f.id | append: ',' %}
+						{% assign featureName = ',' | append: f.iid | append: ',' %}
 						{% if usedFeatures contains featureName %}
 							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 	        				<tr>
@@ -176,7 +176,7 @@ layout: default
 	      		<tbody>
 					{% assign count = '0' %}
 					{% for k in kits %}
-						{% assign kitName = ',' | append: k.id | append: ',' %}
+						{% assign kitName = ',' | append: k.iid | append: ',' %}
 						{% if usedKits contains kitName %}
 							{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 	        				<tr>
@@ -212,7 +212,7 @@ layout: default
             	<tbody>
 					{% assign count = '0' %}
             		{% for d in devices %}
-            			{% assign deviceName = ',' | append: d.id | append: ',' %}
+            			{% assign deviceName = ',' | append: d.iid | append: ',' %}
             			{% if usedDevices contains deviceName %}
             				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
             				<tr>

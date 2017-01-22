@@ -2,7 +2,7 @@
 layout: device
 source: https://en.wikipedia.org/wiki/IPhone
 name: 'iPhone 6 Plus'
-id: iPhone6plus
+iid: iPhone6plus
 device: iPhone
 generation:
 status: 

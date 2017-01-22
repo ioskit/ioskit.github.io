@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'LocalAuthentication'
-id: localauthentication
+iid: localauthentication
 status: 
 since: iOS8
 prefixe: 'LA'

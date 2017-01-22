@@ -7,7 +7,7 @@ press:
   date: "10/09/2013"
   url: https://www.apple.com/pr/library/2013/09/10Apple-Announces-iPhone-5s-The-Most-Forward-Thinking-Smartphone-in-the-World.html
 name: 'iPhone 5S'
-id: iPhone5s
+iid: iPhone5s
 device: iPhone
 generation:
 status:

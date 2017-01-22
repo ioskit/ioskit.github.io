@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AdSupport'
-id: adsupport
+iid: adsupport
 status: 
 since: iOS6
 prefixe: 'AS'

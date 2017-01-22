@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'NewsstandKit'
-id: newsstandkit
+iid: newsstandkit
 status:
 type: kit
 since: iOS5

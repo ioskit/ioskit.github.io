@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'MediaAccessibility'
-id: mediaaccessibility
+iid: mediaaccessibility
 status:
 type: kit
 since: iOS7

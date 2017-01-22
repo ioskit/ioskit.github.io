@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'StoreKit'
-id: storekit
+iid: storekit
 status:
 since: iOS3
 type: kit

@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: scenekit
+iid: scenekit
 name: 'SceneKit'
 status: 
 type: kit

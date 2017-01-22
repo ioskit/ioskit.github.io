@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'AVFoundation'
-id: avfoundation
+iid: avfoundation
 status:
 since: iOS2
 detailedUpdates:

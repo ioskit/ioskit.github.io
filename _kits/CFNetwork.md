@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CFNetwork'
-id: cfnetwork
+iid: cfnetwork
 status: 
 type: kit
 since: iOS2

@@ -7,7 +7,7 @@ press:
   date: "08/06/2009"
   url: https://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html
 name: 'iPhone 3GS'
-id: iPhone3gs
+iid: iPhone3gs
 device: iPhone
 generation:
 status:

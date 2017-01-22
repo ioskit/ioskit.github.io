@@ -1,7 +1,7 @@
 ---
 layout: external
 name: 'Cocoa Pods'
-id: cocoapods
+iid: cocoapods
 abstract: "Project Dependencies Management"
 links:
  - link:

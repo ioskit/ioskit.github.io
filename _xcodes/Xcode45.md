@@ -1,6 +1,6 @@
 ---
 layout: xcode
-id: xcode45
+iid: xcode45
 name: "Xcode 4.5"
 releaseDate: 19.09.2012
 brief: 

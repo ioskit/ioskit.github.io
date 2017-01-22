@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'ResearchKit'
-id: researchkit
+iid: researchkit
 status:
 type: kit
 since: iOS8

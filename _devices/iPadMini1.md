@@ -6,7 +6,7 @@ press:
   date: "23/10/2012"
   url: https://www.apple.com/pr/library/2012/10/23Apple-Introduces-iPad-mini.html
 name: 'iPad mini'
-id: iPadMini1
+iid: iPadMini1
 device: iPadMini
 generation: 1
 status:

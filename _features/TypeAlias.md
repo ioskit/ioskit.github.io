@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Type Alias'
-id: TypeAlias
+iid: TypeAlias
 status: DOING
 language: swift
 abstract: ""

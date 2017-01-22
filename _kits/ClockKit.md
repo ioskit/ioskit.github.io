@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: clockkit
+iid: clockkit
 name: 'ClockKit'
 status: 
 type: kit

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'GLKit'
-id: glkit
+iid: glkit
 status:
 type: kit
 since: iOS5

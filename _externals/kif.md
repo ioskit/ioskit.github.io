@@ -1,7 +1,7 @@
 ---
 layout: external
 name: 'KIF'
-id: kif
+iid: kif
 status: 
 abstract: "KIF - Keep It Functionnal, which stands for Keep It Functional, is an iOS integration test framework."
 links:

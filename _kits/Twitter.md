@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Twitter'
-id: twitter
+iid: twitter
 status: 
 deprecated: Social
 type: kit

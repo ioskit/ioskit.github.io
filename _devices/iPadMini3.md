@@ -6,7 +6,7 @@ press:
   date: "16/10/2014"
   url: https://www.apple.com/pr/library/2014/10/16Apple-Introduces-iPad-Air-2-The-Thinnest-Most-Powerful-iPad-Ever.html
 name: 'iPad mini 3'
-id: iPadMini3
+iid: iPadMini3
 device: iPadMini
 generation: 3
 status:

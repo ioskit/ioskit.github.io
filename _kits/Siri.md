@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: siri
+iid: siri
 name: 'Siri'
 status:
 type: technology

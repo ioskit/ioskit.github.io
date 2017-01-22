@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'PushKit'
-id: pushkit
+iid: pushkit
 status: 
 type: kit
 icon:

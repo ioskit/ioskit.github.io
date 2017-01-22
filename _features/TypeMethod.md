@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Type Method'
-id: TypeMethod
+iid: TypeMethod
 status: 
 language: swift
 abstract: "Instance methods are methods that are called on an instance of a particular type. You can also define methods that are called on the type itself. These kinds of methods are called Type methods."

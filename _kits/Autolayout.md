@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Autolayout'
-id: autolayout
+iid: autolayout
 type: technology
 status:
 since: iOS4

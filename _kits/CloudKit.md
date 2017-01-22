@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CloudKit'
-id: cloudkit
+iid: cloudkit
 status: 
 since: iOS8
 prefixe: 'CK'

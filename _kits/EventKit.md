@@ -1,6 +1,6 @@
 ---
 layout: kit
-id: eventkit
+iid: eventkit
 name: 'Event Kit'
 status:
 type: kit

@@ -7,7 +7,7 @@ press:
   date: "09/01/2007"
   url: https://www.apple.com/pr/library/2007/01/09Apple-Reinvents-the-Phone-with-iPhone.html
 name: 'iPhone 1'
-id: iPhone1
+iid: iPhone1
 device: iPhone
 generation:
 status:

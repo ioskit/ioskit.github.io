@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'QuickLook'
-id: quicklook
+iid: quicklook
 status: TODO
 since: iOS4
 prefixe: 'QL'

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Telephony'
-id: coretelephony
+iid: coretelephony
 status:
 type: kit
 since: iOS4

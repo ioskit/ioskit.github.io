@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Safari Services'
-id: safariservices
+iid: safariservices
 status:
 type: kit
 since: iOS7

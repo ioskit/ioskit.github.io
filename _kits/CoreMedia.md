@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Core Media'
-id: coremedia
+iid: coremedia
 status:
 type: kit
 since: iOS4

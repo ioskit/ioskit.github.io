@@ -6,7 +6,7 @@ press:
   date: "07/03/2012"
   url: https://www.apple.com/pr/library/2012/03/07Apple-Launches-New-iPad.html
 name: 'iPad 3'
-id: iPad3
+iid: iPad3
 device: iPad
 generation: 3
 status: 

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'MediaToolbox'
-id: mediatoolbox
+iid: mediatoolbox
 status:
 since: iOS6
 prefixe: 'MT'

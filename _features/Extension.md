@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Extension'
-id: Extension
+iid: Extension
 status: DOING
 language: swift,objectivec
 abstract: "Use extension to add functionality to an existing type, such as new methods and computed properties."

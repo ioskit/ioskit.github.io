@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Photos'
-id: photos
+iid: photos
 status: 
 type: kit
 since: iOS8

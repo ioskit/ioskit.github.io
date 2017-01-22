@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'QuickType'
-id: quicktype
+iid: quicktype
 status:
 type: technology
 icon: /resources/images/kits/QuickType/quicktype_icon.png

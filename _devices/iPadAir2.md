@@ -6,7 +6,7 @@ press:
   date: "16/10/2014"
   url: https://www.apple.com/pr/library/2014/10/16Apple-Introduces-iPad-Air-2-The-Thinnest-Most-Powerful-iPad-Ever.html
 name: 'iPad Air 2'
-id: iPadAir2
+iid: iPadAir2
 device: iPad
 generation: 6
 status: 

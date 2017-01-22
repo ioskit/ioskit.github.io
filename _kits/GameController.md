@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Game Controller'
-id: gamecontroller
+iid: gamecontroller
 status:
 type: kit
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

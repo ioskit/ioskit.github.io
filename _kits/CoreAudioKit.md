@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'CoreAudioKit'
-id: coreaudiokit
+iid: coreaudiokit
 status:
 since: iOS8
 updates: 

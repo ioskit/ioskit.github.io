@@ -1,7 +1,7 @@
 ---
 layout: feature
 name: 'Protocol'
-id: Protocol
+iid: Protocol
 status: DOING
 language: swift,objectivec
 abstract: "Are like 'interfaces' in other OO languages. Use protocol to declare a protocol. Classes, enumerations, and structs can all adopt protocols."

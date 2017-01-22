@@ -2,7 +2,7 @@
 layout: kit
 name: 'Automatic Reference Counting (ARC)'
 shortName: ARC
-id: arc
+iid: arc
 type: technology
 status:
 since: iOS4

@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'Messages'
-id: messages
+iid: messages
 status: TODO
 type: technology
 icon: /resources/images/kits/Messages/icon_messages_large.png

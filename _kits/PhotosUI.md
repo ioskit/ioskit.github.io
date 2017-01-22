@@ -1,7 +1,7 @@
 ---
 layout: kit
 name: 'PhotosUI'
-id: photosui
+iid: photosui
 status: 
 type: kit
 since: iOS8
