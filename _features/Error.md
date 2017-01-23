@@ -6,29 +6,31 @@ status: DOING
 language: swift
 abstract: "Error handling is the process of responding to and recovering from error conditions in your program. Swift provides first-class support for throwing, catching, propagating, and manipulating recoverable errors at runtime."
 links:
- - link:
-    name: 'The Swift Programming Language (Swift 3.0.1): Error Handling'
-    url: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html
-    description: ' - Apple Developer'
-    type: reference
+ - link:
+    name: 'The Swift Programming Language (Swift 3.0.1): Error Handling'
+    url: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ErrorHandling.html
+    description: ' - Apple Developer'
+    type: reference
 features:
- - Class
+ - Class
 ---
 
+
 Error handling is the process of responding to and recovering from error conditions in your program. Swift provides first-class support for:
- 
-1. Defining
-1. Throwing
-  1. Can use `guard`
-  2. Initializers
-1. Catching 
-1. Propagating 
-  1. Method throwing error should terminate signature with `throws`
-1. Converting
-  1. Use `try?` to handle an error by converting it to an optional value
-1. Disabling
-  1. Use `try!`
-1. Clean up with `defer`
+
+1. Defining
+1. Throwing
+   1. Can use `guard`
+   2. Initializers
+1. Catching 
+1. Propagating 
+   1. Method throwing error should terminate signature with `throws`
+1. Converting
+   1. Use `try?` to handle an error by converting it to an optional value
+1. Disabling
+   1. Use `try!`
+1. Clean up with `defer`
+
 
 ```
 
