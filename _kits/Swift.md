@@ -40,5 +40,4 @@ Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writi
   * Operators: Equality (`==`, value) and Identity (`===`, reference)
   * [TypeAlias](/TypeAlias) (`typealias` AudioSample = UInt16; var maxAmplitudeFound = AudioSample.min)
 * Functional programming patterns (e.g.: `map` and `filter`). See: [Functions](/Function) and [Closures](/Closure).
-* [Optional](/Optional) (Optional Binding, Implicitly Unwrapped Optionals)
 * [Interactive Playgrounds](/InteractivePlaygrounds)
