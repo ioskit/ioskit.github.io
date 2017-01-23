@@ -2,7 +2,7 @@
 layout: feature
 name: 'Optional'
 iid: Optional
-status: DOING
+status: DONE
 language: swift
 abstract: "You use optionals in situations where a value may be absent."
 links:
