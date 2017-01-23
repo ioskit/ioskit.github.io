@@ -12,7 +12,36 @@ links:
     description: ' - Apple Developer'
     type: reference
 features:
+ - Class
  - Extension
 ---
 
-TODO.
+A protocol is an abstract type representation that has no implementation body (like an interface in other languages), 
+and types (both struct and class) can adopt protocols at definition time.
+
+{% gist baa5fbb7e378dee6137deccab29894b0 %}
+
+<!--
+```
+// Defining
+protocol ExampleProtocol {
+    var simpleDescription: String { get }
+    mutating func adjust()
+}
+
+
+// Adopting
+class SimpleClass: ExampleProtocol {
+    var simpleDescription: String = "A very simple class."
+    var anotherProperty: Int = 69105
+    func adjust() {
+        simpleDescription += "  Now 100% adjusted."
+    }
+}
+
+
+// Using
+var a = SimpleClass()
+a.adjust()
+```
+-->
