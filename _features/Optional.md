@@ -21,47 +21,47 @@ features:
  - Constant
 ---
 
-TODO.
+You use optionals in situations where a value may be absent.
 
-<pre><code>let possibleNumber = "123"
-let convertedNumber = possibleNumber.toInt()
-// convertedNumber is inferred to be of type "Int?", or "optional Int"
-</code></pre>
+{% gist aa39f331d6008dd18a2157bc1a6618a7 %}
 
-##nil
-
-<pre><code>var serverResponseCode: Int? = 404
-// serverResponseCode contains an actual Int value of 404
-serverResponseCode = nil
-// serverResponseCode now contains no value
-</code></pre>
+<!--
+```
+// Defining
+let possibleNumber = "123"
+let convertedNumber = possibleNumber.toInt() // convertedNumber is inferred to be of type 'Int?' or 'Optional<Int>"
 
 
-##if Statements and Forced Unwrapping
+// Nil
+var serverResponseCode: Int? = 404 // serverResponseCode contains an actual Int value of 404
+serverResponseCode = nil           // serverResponseCode now contains no value
 
-<pre><code>if convertedNumber != nil {
+
+// if Statements and Forced Unwrapping
+if convertedNumber != nil {
     println("convertedNumber contains some integer value.")
 }
 // prints "convertedNumber contains some integer value."
-</code></pre>
 
 
-##Optional Binding
-
-<pre><code>if let actualNumber = possibleNumber.toInt() {
+// Optional Binding
+if let actualNumber = possibleNumber.toInt() {
     println("\'\(possibleNumber)\' has an integer value of \(actualNumber)")
 } else {
     println("\'\(possibleNumber)\' could not be converted to an integer")
 }
 // prints "'123' has an integer value of 123"
-</code></pre>
 
 
-##Implicitly Unwrapped Optionals
-
-<pre><code>let possibleString: String? = "An optional string."
+// Implicitly Unwrapped Optionals
+let possibleString: String? = "An optional string."
 let forcedString: String = possibleString! // requires an exclamation mark
  
 let assumedString: String! = "An implicitly unwrapped optional string."
 let implicitString: String = assumedString // no need for an exclamation mark
-</code></pre>
+
+
+// Nil-Coalescing Operator (Optional<AType> ?? AType)
+let notOptionalString = possibleString ?? "default value"
+```
+-->

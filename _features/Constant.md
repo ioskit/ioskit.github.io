@@ -13,6 +13,7 @@ links:
     type: reference
 features:
  - Variable
+ - Optional
 ---
 
 Use `let` to make a constant. The value of a constant doesn’t need to be known at compile time.

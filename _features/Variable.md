@@ -13,6 +13,7 @@ links:
     type: reference
 features:
  - Constant
+ - Optional
 ---
 
 Use `var` to make a variable. The value of a variable doesn’t need to be known at compile time.
