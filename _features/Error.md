@@ -32,8 +32,10 @@ Error handling is the process of responding to and recovering from error conditi
 1. Clean up with `defer`
 
 
-```
+{% gist c4af7a94d2a3d15c0300c55e1988fee3 %}
 
+<!--
+```
     struct Item {
         var price: Int
         var count: Int
@@ -177,3 +179,4 @@ Error handling is the process of responding to and recovering from error conditi
         }
     }
 ```
+-->
