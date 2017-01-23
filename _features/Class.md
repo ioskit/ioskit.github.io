@@ -19,9 +19,7 @@ features:
  - Protocol
  - Enumeration
  - Structure
-features_:
- - Variable
- - MethodsVisibility
+ - AccessControl
 ---
 
 # Comparison between Class and Structure
