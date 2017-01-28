@@ -28,14 +28,14 @@ features:
 ## Closed Range
 
 An interval over a comparable type, from a lower bound up to, and including, an upper bound. 
-You create instances of ClosedRange by using the closed range operator (`...`).
+You create instances of ClosedRange by using the closed range operator (`...`):
 
-{% highlight Swift linenos %}
+```
 for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
 }
 // Write 5 lines
-{% endhighlight %}
+```
 
 It is possible to use double:
 
