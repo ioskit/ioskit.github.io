@@ -13,13 +13,16 @@ links:
     type: reference
 features:
  - While
+ - Range
 ---
 
 TODO.
 
-#Swift
+# Swift
 
 ## For-in
+
+This loop instruction can be used with [Range](/Range) structure:
 
 {% highlight swift linenos %}
 for index in 1...5 {

@@ -11,8 +11,9 @@ links:
     url: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/GuidedTour.html#//apple_ref/doc/uid/TP40014097-CH2-ID1
     description: ' - Apple Developer'
     type: reference
-features_:
+features:
  - Variable
+ - Range
 ---
 
 # Swift
@@ -40,6 +41,17 @@ If type information can be inferred, you can write an empty array as [] and an e
 <pre><code>shoppingList = []
 occupations = [:]
 </code></pre>
+
+## Range
+
+It is possible to access items of an array with [Range](/Range) operator:
+
+```
+var accounts = ['11', '22', '33']
+accounts[3...5] = ['44', '55', '66']
+print(accounts)                     // Prints ['11', '22', '33', '44', '55', '66']
+```
+
 
 
 # Objective-C
