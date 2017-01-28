@@ -33,16 +33,11 @@ layout: default-headed
       <tbody>
 		{% assign count = '0' %}
 		{% for feature in site.features %}
-			{% if feature.status != "TODO" %}
 				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 	        	<tr>
 					<td>{{ count }}</td>
 	        		<td>
-						{% if feature.status == "DOING" %}
-							<span data-toggle="tooltip" data-placement="top" data-original-title="TODO">
-								<span class="glyphicon glyphicon-fire" aria-hidden="true">
-							</span>
-						{% endif %}
+						{% include mark-status.html status=feature.status %}
 					</td>
 					<td>
 						{% include language.html language=feature.language size="small" %}
@@ -54,7 +49,6 @@ layout: default-headed
 						{{ feature.abstract }}
 			  		</td>
 	        	</tr>
-			{% endif %}
 		{% endfor %}
       </tbody>
     </table>
