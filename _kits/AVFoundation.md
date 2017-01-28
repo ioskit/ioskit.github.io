@@ -2,7 +2,7 @@
 layout: kit
 name: 'AVFoundation'
 iid: avfoundation
-status: DONE
+status: iOS8
 since: iOS2
 detailedUpdates:
  - update:
