@@ -2,7 +2,7 @@
 layout: kit
 iid: coreimage
 name: 'Core Image'
-status:
+status: iOS8
 type: kit
 since: iOS5
 detailedUpdates:

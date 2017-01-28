@@ -2,7 +2,7 @@
 layout: kit
 name: 'Messages'
 iid: messages
-status: TODO
+status:
 type: technology
 icon: /resources/images/kits/Messages/icon_messages_large.png
 since: iOS3

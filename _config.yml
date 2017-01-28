@@ -40,3 +40,6 @@ versions:
 - iOS7
 - iOS8
 - WatchOS
+
+currentVersions:
+- iOS10

@@ -2,7 +2,7 @@
 layout: kit
 iid: spritekit
 name: 'SpriteKit'
-status:
+status: iOS8
 type: kit
 icon: /resources/images/kits/SpriteKit/spritekit-icon_2x.png
 since: iOS7

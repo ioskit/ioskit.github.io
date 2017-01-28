@@ -2,7 +2,7 @@
 layout: kit
 name: 'CloudKit'
 iid: cloudkit
-status: 
+status: iOS8
 since: iOS8
 prefixe: 'CK'
 icon: /resources/images/kits/CloudKit/cloudkit-icon_2x.png

@@ -2,7 +2,7 @@
 layout: feature
 name: 'Switch'
 iid: Switch
-status: DOING
+status: DONE
 language: swift,objectivec
 abstract: "A switch statement considers a value and compares it against several possible matching patterns."
 links:

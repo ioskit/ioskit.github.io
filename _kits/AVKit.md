@@ -2,7 +2,7 @@
 layout: kit
 name: 'AVKit'
 iid: avkit
-status:
+status: iOS10
 type: kit
 since: iOS8
 updates:

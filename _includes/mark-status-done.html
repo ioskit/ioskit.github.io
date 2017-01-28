@@ -1,0 +1,12 @@
+{% if include.hideDone != true %}
+
+	{% capture status_class %}{% if include.status == "DONE" or (site.currentVersions contains include.status) %}status_done{% elsif site.versions contains include.status %}status_was_done{% else %}hide{% endif %}{% endcapture %}
+	{% capture status_tooltip %}{% if include.status == "DONE" or (site.currentVersions contains include.status) %}{% elsif site.versions contains include.status %} for {{include.status}}{% else %}{% endif %}{% endcapture %}
+
+	{% if status_class != "hide" %}
+		<span data-toggle="tooltip" data-placement="top" data-original-title="DONE{{status_tooltip}}" class="{{status_class}}">
+			<span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+		</span>
+	{% endif %}
+
+{% endif %}

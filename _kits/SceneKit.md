@@ -2,7 +2,7 @@
 layout: kit
 iid: scenekit
 name: 'SceneKit'
-status: 
+status: iOS8
 type: kit
 since: iOS8
 prefixe: 'PK'

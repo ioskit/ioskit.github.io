@@ -2,7 +2,7 @@
 layout: kit
 name: 'PhotosUI'
 iid: photosui
-status: 
+status: iOS8
 type: kit
 since: iOS8
 prefixe: 'PH'

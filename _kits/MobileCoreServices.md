@@ -2,7 +2,7 @@
 layout: kit
 name: 'Mobile Core Services'
 iid: mobilecoreservices
-status:
+status: iOS8
 type: kit
 since: iOS3
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

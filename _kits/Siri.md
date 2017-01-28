@@ -2,7 +2,7 @@
 layout: kit
 iid: siri
 name: 'Siri'
-status:
+status: iOS8
 type: technology
 since: iOS6
 prefixe:

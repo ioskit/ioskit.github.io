@@ -2,7 +2,7 @@
 layout: kit
 name: 'AddressBookUI'
 iid: addressbookui
-status: 
+status: iOS8
 since: iOS2
 prefixe: 'AB'
 abstract: "Contains classes for displaying the system-defined people picker and editor interfaces."

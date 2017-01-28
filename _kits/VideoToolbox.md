@@ -2,7 +2,7 @@
 layout: kit
 name: 'Video Toolbox'
 iid: videotoolbox
-status:
+status: iOS8
 type: kit
 since: iOS6
 detailedUpdates:

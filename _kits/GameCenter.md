@@ -2,7 +2,7 @@
 layout: kit
 name: 'Game Center'
 iid: gamecenter
-status:
+status: iOS8
 type: technology
 icon: /resources/images/kits/GameCenter/game-center.png
 since: iOS3

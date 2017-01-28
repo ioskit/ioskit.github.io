@@ -15,9 +15,7 @@ layout: default
 				{% for kit in kits %}
 					<li>
 						<a href="#{{ kit.iid }}">{{ kit.name }}</a>
-						{% if kit.status %}
-							&nbsp;<small><small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small></small>
-						{% endif %}	
+						<small>{% include mark-status.html status=kit.status %}</small>
 						&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 					</li>
 				{% endfor %}
@@ -29,9 +27,7 @@ layout: default
 					<div class="row">
 						<h2>
 							{{ kit.name }}
-							{% if kit.status %}
-								&nbsp;<small><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></small>
-							{% endif %}
+							<small>{% include mark-status.html status=kit.status %}</small>
 						</h2>
 						{{ kit.abstract }}
 						<br />

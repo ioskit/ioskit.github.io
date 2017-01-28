@@ -1,6 +1,8 @@
 # ioskit.github.io
+
 Which iOS Kit in which iOS version ?... !
 
+## Setup
 
 * Broken Links checkers
   * http://www.brokenlinkcheck.com/broken-links.php
@@ -16,7 +18,7 @@ http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 gem install jekyll-gist
 ```
 
-##Troubleshooting
+### Troubleshooting
 
 ```
 MacBook-Pro-de-Jacques:ioskit.github.io jacques$ jekyll serve --watch
@@ -46,6 +48,12 @@ gem uninstall psych
 gem install psych -v 2.0.5
 ```
 
-##Versions:
+### Versions:
 
 - https://pages.github.com/versions/
+
+
+## Add new iOS version
+
+* Replace current version in `/_config.xml#currentVersions`
+* Update `_kits/*.md#status` and `_features/*.md#status`

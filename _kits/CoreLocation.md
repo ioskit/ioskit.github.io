@@ -2,7 +2,7 @@
 layout: kit
 iid: corelocation
 name: 'Core Location'
-status:
+status: iOS8
 type: kit
 since: iOS2
 detailedUpdates:

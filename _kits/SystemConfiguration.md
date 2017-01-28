@@ -2,7 +2,7 @@
 layout: kit
 name: 'SystemConfiguration'
 iid: systemconfiguration
-status: 
+status: iOS8
 type: kit
 since: iOS2
 prefixe: 'SC'

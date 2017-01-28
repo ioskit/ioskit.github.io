@@ -1,0 +1,29 @@
+{% if include.status == null %}
+    <span data-toggle="tooltip" data-placement="top" data-original-title="Status" class="label status_empty_label">
+        <span class="glyphicon glyphicon-ban-circle status_label_item" aria-hidden="true"></span>EMPTY
+    </span>
+
+
+{% elsif include.status == "DOING" %}
+    <span data-toggle="tooltip" data-placement="top" data-original-title="Status" class="label status_doing_label">
+        <span class="status_label_item glyphicon glyphicon-fire" aria-hidden="true"></span>{{include.status}}
+    </span>
+
+
+{% elsif include.status == "TODO" %}
+    <span data-toggle="tooltip" data-placement="top" data-original-title="Status" class="label status_todo_label">
+        <span class="glyphicon glyphicon-cog status_label_item" aria-hidden="true"></span>{{include.status}}
+    </span>
+
+{% else %}
+
+    {% capture status_class %}{% if include.status == "DONE" or (site.currentVersions contains include.status) %}status_done{% elsif site.versions contains include.status %}status_was_done{% else %}hide{% endif %}{% endcapture %}
+    {% capture status_tooltip %}{% if include.status == "DONE" or (site.currentVersions contains include.status) %}{% elsif site.versions contains include.status %} for {{include.status}}{% else %}{% endif %}{% endcapture %}
+
+    {% if status_class != "hide" %}
+        <span data-toggle="tooltip" data-placement="top" data-original-title="Status" class="label {{status_class}}_label">
+            <span class="glyphicon glyphicon-ok-circle status_label_item" aria-hidden="true"></span>DONE{{status_tooltip}}
+        </span>
+    {% endif %}
+
+{% endif %}

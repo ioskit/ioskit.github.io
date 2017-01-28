@@ -2,7 +2,7 @@
 layout: kit
 name: 'PassKit - Passbook'
 iid: passkit
-status:
+status: iOS8
 type: kit
 since: iOS6
 detailedUpdates:

@@ -2,7 +2,7 @@
 layout: kit
 name: 'Media Player'
 iid: mediaplayer
-status:
+status: iOS8
 type: kit
 since: iOS2
 detailedUpdates:

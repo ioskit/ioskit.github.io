@@ -2,7 +2,7 @@
 layout: kit
 iid: inapppurchase
 name: 'In-App Purchase'
-status:
+status: iOS8
 type: technology
 since: iOS6
 icon___: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

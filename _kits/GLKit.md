@@ -2,7 +2,7 @@
 layout: kit
 name: 'GLKit'
 iid: glkit
-status:
+status: iOS8
 type: kit
 since: iOS5
 updates:

@@ -2,7 +2,7 @@
 layout: kit
 iid: airplay
 name: 'AirPlay'
-status:
+status: iOS8
 type: technology
 since: iOS4
 icon: /resources/images/kits/AirPlay/AirPlay_logo.png

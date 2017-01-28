@@ -2,7 +2,7 @@
 layout: kit
 iid: eventkit
 name: 'Event Kit'
-status:
+status: iOS8
 type: kit
 since: iOS4
 icon: /resources/images/kits/Calendar/Apple-Calendar-Icon.png

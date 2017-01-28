@@ -2,6 +2,7 @@
 layout: kit
 iid: addressbook 
 name: 'Address Book'
+status: iOS8
 since: iOS2
 link: https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html
 abstract: "The Address Book technology for iOS provides a way to store people’s contact information and other personal information in a centralized database, and to share this information between applications."

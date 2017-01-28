@@ -2,7 +2,7 @@
 layout: kit
 name: 'Metal'
 iid: metal
-status: 
+status: iOS8
 type: kit
 since: iOS8
 prefixe: 'MTL'

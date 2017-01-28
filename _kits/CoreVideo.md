@@ -2,7 +2,7 @@
 layout: kit
 name: 'CoreVideo'
 iid: corevideo
-status:
+status: iOS8
 type: kit
 since: iOS4
 icon__: /resources/images/kits/CoreAudio/core-audio.png

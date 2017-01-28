@@ -2,7 +2,7 @@
 layout: kit
 name: 'MapKit'
 iid: mapkit
-status:
+status: iOS8
 type: kit
 since: iOS3
 detailedUpdates:

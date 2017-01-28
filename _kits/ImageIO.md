@@ -2,7 +2,7 @@
 layout: kit
 name: 'Image I/O'
 iid: imageio
-status:
+status: iOS8
 type: kit
 since: iOS4
 icon__: /resources/images/kits/ResearchKit/researchkit.png

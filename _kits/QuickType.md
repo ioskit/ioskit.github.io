@@ -2,7 +2,7 @@
 layout: kit
 name: 'QuickType'
 iid: quicktype
-status:
+status: iOS8
 type: technology
 icon: /resources/images/kits/QuickType/quicktype_icon.png
 since: iOS8

@@ -2,7 +2,7 @@
 layout: kit
 name: 'CoreData'
 iid: coredata
-status: 
+status: iOS8
 since: iOS3
 prefixe: 'NS'
 link: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html

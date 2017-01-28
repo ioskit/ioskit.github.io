@@ -2,7 +2,7 @@
 layout: kit
 name: 'Twitter'
 iid: twitter
-status: 
+status: iOS8
 deprecated: Social
 type: kit
 since: iOS5

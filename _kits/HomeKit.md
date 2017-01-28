@@ -2,7 +2,7 @@
 layout: kit
 iid: homekit
 name: 'Home Kit'
-status: 
+status: iOS8
 type: kit
 since: iOS8
 prefixe: 'HM'

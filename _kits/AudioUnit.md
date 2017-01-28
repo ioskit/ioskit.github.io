@@ -2,7 +2,7 @@
 layout: kit
 name: 'AudioUnit'
 iid: audiounit
-status: 
+status: iOS8
 type: kit
 since: iOS2
 prefixe: 'AU,Audio'

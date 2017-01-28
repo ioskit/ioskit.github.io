@@ -2,7 +2,7 @@
 layout: kit
 name: 'Multipeer Connectivity'
 iid: multipeerconnectivity
-status:
+status: iOS8
 type: kit
 since: iOS7
 icon__: /resources/images/kits/CoreAudio/core-audio.png

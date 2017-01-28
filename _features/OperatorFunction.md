@@ -2,7 +2,7 @@
 layout: feature
 name: 'Operator Function'
 iid: OperatorFunction
-status: DOING
+status: 
 language: swift
 abstract: ""
 links__:

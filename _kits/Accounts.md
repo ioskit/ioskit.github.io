@@ -2,7 +2,7 @@
 layout: kit
 name: 'Accounts'
 iid: accounts
-status: 
+status: iOS8
 since: iOS5
 prefixe: 'AC'
 link: https://developer.apple.com/library/ios/documentation/ContactData/Conceptual/AddressBookProgrammingGuideforiPhone/Introduction.html

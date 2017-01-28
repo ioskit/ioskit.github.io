@@ -39,7 +39,7 @@ layout: default-headed
         <tr>
 			<td>{{ count }}</td>
           	<td>{% include ios-link.html ios=kit.since %}</td>
-        	<td>{% include mark-todo.html status=kit.status %}</td>
+        	<td>{% include mark-status.html status=kit.status %}</td>
           	<td>
 				<!-- {% include mark-technology.html type=kit.type %} -->
 
@@ -84,7 +84,7 @@ layout: default-headed
 			{% assign kits = site.kits | where: "since", ios %}
 			  {% for kit in kits %}
 	        <tr>
-        		<td>{% include mark-todo.html status=kit.status %}</td>
+        		<td>{% include mark-status.html status=kit.status %}</td>
 	          	<td>{% include mark-technology.html type=kit.type %}</td>
 	          	<td>
 					{% capture tooltip %}{% endcapture %}

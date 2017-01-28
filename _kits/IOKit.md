@@ -2,7 +2,7 @@
 layout: kit
 name: 'IOKit'
 iid: iokit
-status: 
+status: iOS8
 type: kit
 since: iOS2
 detailedUpdates__:

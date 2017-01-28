@@ -2,7 +2,7 @@
 layout: kit
 name: 'Network Extension'
 iid: networkextension
-status:
+status: iOS8
 since: iOS8
 prefixe: 'NE'
 link: 

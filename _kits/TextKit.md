@@ -2,7 +2,7 @@
 layout: kit
 name: 'Text Kit'
 iid: textkit
-status:
+status: iOS8
 type: kit
 since: iOS7
 icon__: /resources/images/kits/CoreAudio/core-audio.png

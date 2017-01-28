@@ -2,8 +2,8 @@
 layout: kit
 name: 'Autolayout'
 iid: autolayout
+status: iOS8
 type: technology
-status:
 since: iOS4
 icon:
 xcode: xcode5

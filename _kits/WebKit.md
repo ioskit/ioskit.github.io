@@ -2,8 +2,8 @@
 layout: kit
 name: 'WebKit'
 iid: webkit
+status: iOS8
 type: kit
-status:
 icon:
 xcode:
 since: iOS8

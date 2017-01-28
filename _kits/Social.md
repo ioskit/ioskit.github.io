@@ -2,7 +2,7 @@
 layout: kit
 iid: social
 name: 'Social'
-status:
+status: iOS8
 type: kit
 since: iOS6
 icon__: /resources/images/kits/CoreAudio/core-audio.png

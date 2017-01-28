@@ -41,7 +41,7 @@ layout: default
 									{% if kit.deprecated %}</strike>{% endif %}
 								</a>
 						
-						 		{% include mark-todo.html status=kit.status %}
+						 		{% include mark-status.html status=kit.status %}
 						 		{% include mark-technology.html type=kit.type %}
 								&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 							</li>
@@ -66,7 +66,7 @@ layout: default
 									{{ kit.name }}
 									{% if kit.deprecated %}</strike>{% endif %}
 								</a>
-							 	{% include mark-todo.html status=kit.status %}
+							 	{% include mark-status.html status=kit.status %}
 							 	{% include mark-technology.html type=kit.type %}
 								&nbsp;<a href="{{ kit.url }}"><span class="glyphicon glyphicon-expand" aria-hidden="true"></span></a>
 							</li>
@@ -100,7 +100,7 @@ layout: default
 					<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 					<div class="row">
 						<h2>{% if kit.deprecated %}<strike>{% endif %}{{ kit.name }}{% if kit.deprecated %}</strike>{% endif %}
-						 	<small>{% include mark-todo.html status=kit.status %}</small>
+						 	<small>{% include mark-status.html status=kit.status %}</small>
 						 	<small>{% include mark-technology.html type=kit.type %}</small>
 						</h2>
 					 	{% include deprecated.html deprecated=kit.deprecated %}
@@ -126,7 +126,7 @@ layout: default
 								{% if kit.deprecated %}<strike>{% endif %}
 								{{ kit.name }}
 								{% if kit.deprecated %}</strike>{% endif %}
-							 	<small>{% include mark-todo.html status=kit.status %}</small>
+							 	<small>{% include mark-status.html status=kit.status %}</small>
 							 	<small>{% include mark-technology.html type=kit.type %}</small>
 							</h4>
 						 	{% include deprecated.html deprecated=kit.deprecated %}

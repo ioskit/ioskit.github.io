@@ -2,7 +2,7 @@
 layout: kit
 iid: appextentions
 name: 'App Extensions'
-status:
+status: iOS8
 type: technology
 since: iOS8
 icon: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

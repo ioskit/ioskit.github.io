@@ -2,8 +2,8 @@
 layout: kit
 name: 'AssetsLibrary'
 iid: assetslibrary
+status: iOS8
 type: kit
-status:
 since: iOS4
 prefixe: 'AL'
 abstract: "Contains classes for accessing the user’s photos and videos."

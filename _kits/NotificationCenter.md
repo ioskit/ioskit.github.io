@@ -2,7 +2,7 @@
 layout: kit
 name: 'Notification Center'
 iid: notificationcenter
-status:
+status: iOS8
 type: kit
 since: iOS5
 detailedUpdates__:

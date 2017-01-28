@@ -2,7 +2,7 @@
 layout: kit
 name: 'MediaToolbox'
 iid: mediatoolbox
-status:
+status: iOS8
 since: iOS6
 prefixe: 'MT'
 icon: /resources/images/kits/CoreAudio/core-audio.png

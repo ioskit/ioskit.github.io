@@ -2,7 +2,7 @@
 layout: kit
 name: 'CoreFoundation'
 iid: corefoundation
-status:
+status: iOS8
 type: kit
 since: iOS2
 detailedUpdates:

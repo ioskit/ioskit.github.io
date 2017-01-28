@@ -2,7 +2,7 @@
 layout: feature
 name: 'UISearchBar'
 iid: SearchBar
-status: DOING
+status: 
 abstract: ""
 links_:
  - link:

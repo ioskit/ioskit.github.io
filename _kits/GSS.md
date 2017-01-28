@@ -3,7 +3,7 @@ layout: kit
 name: 'Generic Security Services (GSS)'
 shortName: GSS
 iid: gss
-status:
+status: iOS8
 type: kit
 since: iOS5
 prefixe: 'gss'

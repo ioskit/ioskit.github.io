@@ -21,3 +21,19 @@ a .label {
 	color: white;
 }
 */
+
+.status_list { margin-left: 20px; }
+.status_item { margin-right: 10px; }
+.status_label_item { margin-right: 7px; }
+.glyphicon.status_label_item { top: 3px; }
+
+.status_empty       { color: rgba(169, 169, 169, 0.3); }
+.status_empty_label { background-color: rgba(169, 169, 169, 0.3); }
+.status_todo     { color: darkgrey; }
+.status_todo_label  { background-color: darkgrey; }
+.status_doing    { color: hotpink; }
+.status_doing_label { background-color: hotpink; }
+.status_done     { color: greenyellow; }
+.label.status_done_label     { background-color: greenyellow; color:darkslategray; }
+.status_was_done { color: deepskyblue; }
+.status_was_done_label { background-color: deepskyblue; }

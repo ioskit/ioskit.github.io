@@ -2,7 +2,7 @@
 layout: feature
 name: 'Constant'
 iid: Constant
-status: 
+status: DONE
 language: swift
 abstract: "Defines with 'let'. Can not be modified."
 links:

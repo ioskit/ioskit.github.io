@@ -2,7 +2,7 @@
 layout: kit
 name: 'UIKit'
 iid: uikit
-status: TODO
+status: DOING
 since: iOS2
 detailedUpdates:
  - update:

@@ -2,7 +2,7 @@
 layout: kit
 iid: watchkit 
 name: 'WatchKit'
-status:
+status: iOS8
 type: kit
 since: iOS8
 icon: /resources/images/kits/WatchKit/watchkit_2x.png

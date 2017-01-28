@@ -2,7 +2,7 @@
 layout: kit
 name: 'ResearchKit'
 iid: researchkit
-status:
+status: iOS8
 type: kit
 since: iOS8
 icon: /resources/images/kits/ResearchKit/researchkit.png

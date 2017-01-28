@@ -2,7 +2,7 @@
 layout: kit
 name: 'External Accessory'
 iid: externalaccessory
-status:
+status: iOS8
 type: kit
 since: iOS3
 icon__: /resources/images/kits/CoreAnimation/graphics_coreanimation.png

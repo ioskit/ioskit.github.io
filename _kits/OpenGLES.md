@@ -2,7 +2,7 @@
 layout: kit
 name: 'OpenGL ES'
 iid: opengles
-status:
+status: iOS8
 type: kit
 since: iOS2
 detailedUpdates:

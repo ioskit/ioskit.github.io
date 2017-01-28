@@ -3,8 +3,8 @@ layout: kit
 name: 'Automatic Reference Counting (ARC)'
 shortName: ARC
 iid: arc
+status: iOS8
 type: technology
-status:
 since: iOS4
 icon:
 xcode: xcode42

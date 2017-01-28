@@ -2,7 +2,7 @@
 layout: kit
 name: 'QuartzCore'
 iid: quartzcore
-status: TODO
+status: DOING
 since: iOS2
 prefixe: 'CA'
 link: 

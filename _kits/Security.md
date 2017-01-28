@@ -3,7 +3,7 @@ layout: kit
 iid: security
 name: 'Security'
 since: iOS2
-status: TODO
+status: DOING
 links:
  - link:
      name: 'Security Framework Reference'

@@ -2,7 +2,7 @@
 layout: kit
 name: 'AdSupport'
 iid: adsupport
-status: 
+status: iOS8
 since: iOS6
 prefixe: 'AS'
 link: https://developer.apple.com/library/ios/documentation/DeviceInformation/Reference/AdSupport_Framework/index.html

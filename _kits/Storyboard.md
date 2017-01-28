@@ -2,8 +2,8 @@
 layout: kit
 name: 'Storyboard'
 iid: storyboard
+status: iOS8
 kind: technology
-status:
 type: kit
 since: iOS5
 detailedUpdates__:

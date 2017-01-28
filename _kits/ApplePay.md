@@ -2,7 +2,7 @@
 layout: kit
 iid: applepay
 name: 'Apple Pay'
-status:
+status: iOS8
 type: technology
 since: iOS8
 icon: /resources/images/kits/ApplePay/apple-pay_2x.png

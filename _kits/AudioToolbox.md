@@ -2,7 +2,7 @@
 layout: kit
 name: 'AudioToolbox'
 iid: audiotoolbox
-status: 
+status: iOS8
 type: kit
 since: iOS2
 prefixe: 'AU,Audio'

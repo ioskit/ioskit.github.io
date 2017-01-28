@@ -2,7 +2,7 @@
 layout: kit
 name: 'JavaScript Core'
 iid: javascriptcore
-status:
+status: iOS8
 type: kit
 since: iOS7
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

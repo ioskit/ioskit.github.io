@@ -2,7 +2,7 @@
 layout: kit
 iid: handoff
 name: 'Handoff'
-status:
+status: iOS8
 type: technology
 since: iOS8
 icon: /resources/images/kits/Handoff/handoff-icon_2x.png

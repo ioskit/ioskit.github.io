@@ -2,7 +2,7 @@
 layout: kit
 iid: airdrop
 name: 'AirDrop'
-status: 
+status: iOS8
 type: technology
 since: iOS7
 icon: /resources/images/kits/AirDrop/AirDrop_Icon.png

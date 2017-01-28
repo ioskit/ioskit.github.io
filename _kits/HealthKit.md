@@ -2,7 +2,7 @@
 layout: kit
 iid: healthkit
 name: 'HealthKit'
-status: 
+status: iOS8
 type: kit
 since: iOS8
 prefixe: 'HK'

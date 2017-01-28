@@ -2,7 +2,7 @@
 layout: kit
 name: 'Core Motion'
 iid: coremotion
-status:
+status: iOS8
 type: kit
 since: iOS4
 detailedUpdates:

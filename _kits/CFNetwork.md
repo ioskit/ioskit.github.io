@@ -2,7 +2,7 @@
 layout: kit
 name: 'CFNetwork'
 iid: cfnetwork
-status: 
+status: iOS8
 type: kit
 since: iOS2
 prefixe: 'CF'

@@ -2,7 +2,7 @@
 layout: kit
 iid: clockkit
 name: 'ClockKit'
-status: 
+status: iOS8
 type: kit
 since: WatchOS
 kits:

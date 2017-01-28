@@ -2,7 +2,7 @@
 layout: kit
 name: 'Core Bluetooth'
 iid: corebluetooth
-status: 
+status: iOS8
 type: kit
 since: iOS5
 detailedUpdates:

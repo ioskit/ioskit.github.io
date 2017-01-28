@@ -2,7 +2,7 @@
 layout: kit
 name: 'CoreAudioKit'
 iid: coreaudiokit
-status:
+status: iOS8
 since: iOS8
 updates: 
 prefixe: 'CA'

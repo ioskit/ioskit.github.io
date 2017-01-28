@@ -2,7 +2,7 @@
 layout: kit
 iid: carplay
 name: 'CarPlay'
-status:
+status: iOS8
 type: technology
 since: iOS8
 icon: /resources/images/kits/CarPlay/carplay-icon.png

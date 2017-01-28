@@ -2,7 +2,7 @@
 layout: kit
 name: 'Game Controller'
 iid: gamecontroller
-status:
+status: iOS8
 type: kit
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 since: iOS7

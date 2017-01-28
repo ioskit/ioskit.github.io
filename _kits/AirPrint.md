@@ -2,7 +2,7 @@
 layout: kit
 iid: airprint
 name: 'AirPrint'
-status:
+status: iOS8
 type: technology
 since: iOS4
 icon: /resources/images/kits/AirPrint/welcome_airprint.png

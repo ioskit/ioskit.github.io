@@ -2,7 +2,7 @@
 layout: kit
 name: 'iAd'
 iid: iad
-status:
+status: iOS8
 type: kit
 since: iOS4
 abstract: "Contains classes for displaying advertisements in your application. See iAd Framework."

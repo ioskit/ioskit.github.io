@@ -2,7 +2,7 @@
 layout: kit
 name: 'PushKit'
 iid: pushkit
-status: 
+status: iOS8
 type: kit
 icon:
 since: iOS8

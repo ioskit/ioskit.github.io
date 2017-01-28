@@ -2,7 +2,7 @@
 layout: kit
 name: 'OpenAL'
 iid: openal
-status: TODO
+status: DOING
 since: iOS2
 prefixe: 'AL'
 link: 

@@ -2,7 +2,7 @@
 layout: kit
 name: 'NewsstandKit'
 iid: newsstandkit
-status:
+status: iOS8
 type: kit
 since: iOS5
 icon: /resources/images/kits/Newsstand/newsstand.png

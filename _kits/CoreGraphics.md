@@ -2,7 +2,7 @@
 layout: kit
 name: 'CoreGraphics'
 iid: coregraphics
-status:
+status: iOS8
 type: kit
 since: iOS2
 icon__: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png

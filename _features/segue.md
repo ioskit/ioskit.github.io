@@ -2,7 +2,7 @@
 layout: feature
 name: 'Segue'
 iid: Segue
-status: DOING
+status: 
 abstract: ""
 links_:
  - link:

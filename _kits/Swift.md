@@ -2,7 +2,7 @@
 layout: kit
 iid: swift 
 name: 'Swift'
-status:
+status: DOING
 type: language
 since: iOS8
 kits:

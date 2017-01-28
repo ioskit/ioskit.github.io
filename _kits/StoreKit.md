@@ -2,7 +2,7 @@
 layout: kit
 name: 'StoreKit'
 iid: storekit
-status:
+status: iOS8
 since: iOS3
 type: kit
 detailedUpdates:

@@ -2,7 +2,7 @@
 layout: kit
 iid: touchid
 name: 'Touch ID'
-status: 
+status: iOS8
 type: technology
 since: iOS8
 prefixe:

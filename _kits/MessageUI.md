@@ -2,7 +2,7 @@
 layout: kit
 name: 'Message UI'
 iid: messageui
-status:
+status: iOS8
 type: kit
 since: iOS3
 detailedUpdates:

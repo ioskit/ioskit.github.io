@@ -2,7 +2,7 @@
 layout: feature
 name: 'UITableView'
 iid: TableView
-status: DOING
+status: 
 abstract: ""
 links_:
  - link:

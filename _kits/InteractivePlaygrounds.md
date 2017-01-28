@@ -2,7 +2,7 @@
 layout: kit
 iid: interactiveplaygrounds 
 name: 'Interactive&nbsp;Playgrounds'
-status:
+status: iOS8
 type: technology
 since: iOS8
 kits:
