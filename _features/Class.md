@@ -4,7 +4,9 @@ name: 'Class'
 iid: Class
 status: DONE
 language: swift,objectivec
-abstract: "Use class followed by the class’s name to create a class."
+abstract: "Classes and structures are general-purpose, flexible constructs that become the building blocks of your program’s code. 
+You define properties and methods to add functionality to your classes and structures 
+by using exactly the same syntax as for constants, variables, and functions."
 links:
  - link:
     name: 'The Swift Programming Language: A Swift Tour'
@@ -12,17 +14,19 @@ links:
     description: ' - Apple Developer'
     type: reference
 features:
+ - AccessControl
  - ClassMethod
- - TypeMethod
  - Closure
+ - Enumeration
  - Extension
  - Protocol
- - Enumeration
  - Structure
- - AccessControl
+ - TypeMethod
 ---
 
 # Comparison between Class and Structure
+
+See also [Structure](/Structure) page.
 
 <table class="table table-striped table-hover">
   <thead>

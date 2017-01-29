@@ -30,8 +30,8 @@ Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writi
 
 ## Main topics
 
-* [Class](/Class), [Extensions](/Extension), [Protocols](/Protocol) and [Access Control](/AccessControl)
-* [Class and Structure](/Class) and [Enumerations](/Enumeration)
+* [Classes](/Class), [Extensions](/Extension), [Protocols](/Protocol) and [Access Control](/AccessControl)
+* [Classes](/Class), [Structures](/Structure) and [Enumerations](/Enumeration)
 * [Constants](/Constant), [Variables](/Variable) and [Optionals](/Optional)
 * [Functions](/Function) and [Closures](/Closure)
 * [Error handling](/Error)

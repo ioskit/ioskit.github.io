@@ -29,7 +29,7 @@ layout: default
 			{% for feature in page.features %}
 				{% for f in allFeatures %}
 					{% if feature == f.iid %}
-						<li><a href="/{{ feature }}">{% include feature-name.html name=f.name language=f.language %}</a></li>
+						<li><a href="/{{ feature }}">{{f.name}}</a><sup>{% include language.html language=f.language size="big" %}</sup></li>
 					{% endif %}
 				{% endfor %}
 			{% endfor %}
