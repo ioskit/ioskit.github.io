@@ -2,6 +2,11 @@
 
 Which iOS Kit in which iOS version ?... !
 
+## What's New in iOS
+
+- [What's New in iOS](https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html#//apple_ref/doc/uid/TP40017084-SW1)
+
+
 ## Setup
 
 * Broken Links checkers

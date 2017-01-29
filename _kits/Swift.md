@@ -5,6 +5,7 @@ name: 'Swift'
 status: DOING
 type: language
 since: iOS8
+icon: /resources/images/kits/Swift/swift-hero_2x.png
 kits:
  - InteractivePlaygrounds
  - AutomaticReferenceCounting
