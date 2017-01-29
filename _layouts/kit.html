@@ -7,14 +7,14 @@ layout: default
 	<div class="page-header">
     	<div class="row">
         	<div class="col-lg-12">
+				<h3 class="pull-right">
+					{% include label-status.html status=page.status %}
+				</h3>
           		<h1 id="page-title">
 			      	{% if page.icon %}<img src="{{page.icon}}" width="100"/>&nbsp;{% endif %}
 					{% if page.deprecated %}<strike>{% endif %}
 					{{ page.name }}
 					{% if page.deprecated %}</strike>{% endif %}
-					<small><small>
-						{% include label-status.html status=page.status %}
-					</small></small>
 				</h1>
         	</div>
       	</div>
@@ -36,7 +36,7 @@ layout: default
 			{% assign xcodes = site.xcodes | where: "iid", page.xcode %}
 			{% assign xcode = xcodes[0] %}
 
-			&nbsp;&bull;&nbsp;
+		&nbsp;&bull;&nbsp;
 			{% if xcode %}
 				<a href="{{xcode.url}}"><span class="label
 						{% if page.xcode == "xcode6" %}label-primary
