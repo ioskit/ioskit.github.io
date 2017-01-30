@@ -8,6 +8,7 @@ since: iOS8
 icon: /resources/images/kits/Swift/swift-hero_2x.png
 kits:
  - InteractivePlaygrounds
+ - REPL
  - AutomaticReferenceCounting
  - ObjectiveC
 xcode: xcode6
