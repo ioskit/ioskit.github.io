@@ -10,7 +10,7 @@ devices_:
  - iPadMini3
  - iPhone6
  - iPhone6plus
-links_:
+links:
  - link:
      name: 'iOS 10'
      url: http://www.apple.com/ios/ios-10/
