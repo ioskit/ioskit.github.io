@@ -4,14 +4,14 @@ layout: default
 
 <div >
 
-	{% assign kits = site.kits | where: "since", page.name %}
+	{% assign kits = site.kits | where: "since", page.iid %}
 
 	<div class="page-header">
     	<div class="row">
         	<div class="col-lg-4">
           		<h1 id="page-title">
 			      	{% if page.icon %}<img src="{{page.icon}}" width="100"/>&nbsp;{% endif %}
-			      	{% include ios.html ios=page.name %}
+			      	{% include ios.html ios=page.iid %}
 				</h1>
 				
 				<p>&nbsp;</p>
@@ -53,7 +53,7 @@ layout: default
 				{% assign updateCount = '0' %}
 				{% for kit in site.kits %}
 					{% for u in kit.detailedUpdates %}
-						{% if u.update.ios == page.name %}
+						{% if u.update.ios == page.iid %}
 							{% if updateCount == '0' %}
 								<p>Updates:</p>
 								<ol>
@@ -116,7 +116,7 @@ layout: default
 
 				{% for kit in site.kits %}
 					{% for u in kit.detailedUpdates %}
-						{% if u.update.ios == page.name %}
+						{% if u.update.ios == page.iid %}
 						<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 						<div class="row">
 							<h4>

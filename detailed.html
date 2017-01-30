@@ -38,18 +38,8 @@ layout: default-headed
 			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
         <tr>
 			<td>{{ count }}</td>
-          	<td>
-          		<a href="/{{kit.since}}"><span class="label 
-				{% if kit.since == "iOS8" %}label-primary
-				{% elsif kit.since == "iOS7" %}label-success
-				{% elsif kit.since == "iOS6" %}label-danger
-				{% elsif kit.since == "iOS5" %}label-warning
-				{% else %}label-info
-				{% endif %}">{{kit.since}}</span></a>
-			</td>
-        	<td>
-				{% include mark-status.html status=kit.status %}
-			</td>
+          	<td>{% include ios-link.html ios=kit.since %}</td>
+        	<td>{% include mark-status.html status=kit.status %}</td>
 			<td>
 				{% if kit.type == 'technology' %}
 					<span data-toggle="tooltip" data-placement="top" data-original-title="Technology">

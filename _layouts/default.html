@@ -59,16 +59,11 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="ios_menu">iOS <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="iOS">
-                <li><a href="/WatchOS">WatchOS</a></li>
-                <li class="divider"></li>
-                <li><a href="/iOS8">iOS 8</a></li>
-                <li><a href="/iOS7">iOS 7</a></li>
-                <li><a href="/iOS6">iOS 6</a></li>
-                <li><a href="/iOS5">iOS 5</a></li>
-                <li class="divider"></li>
-                <li><a href="/iOS4">iOS 4</a></li>
-                <li><a href="/iOS3">iOS 3</a></li>
-                <li><a href="/iOS2">iOS 2</a></li>
+                  {% for os in site.versions reversed %}
+                      {% if os == site.versions.first %}<li class="divider"></li>{% endif %}
+                      <li><a href="/{{os}}">{{os}}</a></li>
+                      {% if os == site.versions.last %}<li class="divider"></li>{% endif %}
+                  {% endfor %}
               </ul>
             </li>
           </ul>

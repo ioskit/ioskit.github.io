@@ -1,7 +1,7 @@
 ---
 layout: ios
-iid: ios3
-name: iOS3
+iid: iOS3
+name: 'iOS 3'
 xcode: xcode3
 ---
 
