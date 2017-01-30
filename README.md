@@ -14,7 +14,7 @@ Updates:
 
 News:
 
-- Intents, IntentsUI, MessagesApp, ProactiveSuggestions, SiriKit
+- Intents, IntentsUI, MessagesApp, ProactiveSuggestions, SiriKit, UserNotifications, UserNotificationsUI
 
 ## Setup
 

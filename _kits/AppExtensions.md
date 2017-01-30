@@ -10,6 +10,7 @@ abstract: "A way for you to share your app’s functionality with other apps, wi
 kits:
  - NotificationCenter
  - MessagesApp
+ - UserNotifications
 links:
  - link:
      name: 'App extensions'
