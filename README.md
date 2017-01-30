@@ -8,7 +8,7 @@ Which iOS Kit in which iOS version ?... !
 
 Updated for iOS 10:
 
-- Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, AVFoundation
+- Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, ..., AVFoundation, AVKit
 
 ## Setup
 
