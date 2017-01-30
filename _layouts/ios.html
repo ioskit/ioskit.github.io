@@ -99,10 +99,12 @@ layout: default
 				{% for kit in kits %}
 					<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
 					<div class="row">
-						<h2>{% if kit.deprecated %}<strike>{% endif %}{{ kit.name }}{% if kit.deprecated %}</strike>{% endif %}
-						 	<small>{% include mark-status.html status=kit.status %}</small>
-						 	<small>{% include mark-technology.html type=kit.type %}</small>
-						</h2>
+						<h3 class="pull-right">
+							{% include mark-technology.html type=kit.type %}
+							{% include mark-status.html status=kit.status %}
+						</h3>
+						<h2>{% if kit.deprecated %}<strike>{% endif %}{{ kit.name }}{% if kit.deprecated %}</strike>{% endif %}</h2>
+
 					 	{% include deprecated.html deprecated=kit.deprecated %}
 						{{ kit.abstract }}
 						<br />
@@ -117,7 +119,7 @@ layout: default
 				{% for kit in site.kits %}
 					{% for u in kit.detailedUpdates %}
 						{% if u.update.ios == page.iid %}
-						<div id="{{ kit.iid }}"><p>&nbsp;</p></div>
+						<div id="update_{{ kit.iid }}"><p>&nbsp;</p></div>
 						<div class="row">
 							<h4>
 								<span data-toggle="tooltip" data-placement="top" data-original-title="Update">
