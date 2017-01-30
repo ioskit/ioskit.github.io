@@ -16,6 +16,7 @@ link:
 abstract: "Contains classes and methods for the iOS application user interface layer. See UIKit Framework."
 kits:
  - TextKit
+ - ProactiveSuggestions
 links:
  - link:
      name: 'Unified Storyboards for Universal Apps'

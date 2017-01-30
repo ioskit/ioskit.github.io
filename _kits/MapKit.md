@@ -13,6 +13,7 @@ prefixe: 'MK'
 abstract: "Contains classes for embedding a map interface into your application and for reverse-geocoding coordinates."
 kits:
  - CoreLocation
+ - ProactiveSuggestions
 links:
  - link:
      name: 'Location and Maps Programming Guide'

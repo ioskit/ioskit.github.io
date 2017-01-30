@@ -14,7 +14,7 @@ Updates:
 
 News:
 
-- Intents, IntentsUI, SiriKit
+- Intents, IntentsUI, ProactiveSuggestions, SiriKit
 
 ## Setup
 

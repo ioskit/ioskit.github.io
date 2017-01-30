@@ -16,6 +16,7 @@ prefixe: ''
 kits:
  - Intents
  - IntentsUI
+ - ProactiveSuggestions
  - CarPlay
 links:
  - link:

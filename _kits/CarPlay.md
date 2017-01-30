@@ -9,6 +9,7 @@ icon: /resources/images/kits/CarPlay/carplay-icon.png
 abstract: "is a smarter, safer way to use your iPhone in the car."
 kits:
  - SiriKit
+ - ProactiveSuggestions
 links:
  - link:
      name: 'Apple - CarPlay'
