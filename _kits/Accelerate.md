@@ -2,7 +2,7 @@
 layout: kit
 name: 'Accelerate'
 iid: accelerate
-status: iOS8
+status: iOS10
 since: iOS4
 detailedUpdates:
  - update:

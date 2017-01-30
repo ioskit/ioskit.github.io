@@ -2,9 +2,9 @@
 layout: kit
 iid: adaptivelayout
 name: 'Adaptive Layout'
-status:
-type: technology
+status: iOS10
 since: iOS8
+type: technology
 xcode: xcode6
 icon: 
 abstract: "TODO"
