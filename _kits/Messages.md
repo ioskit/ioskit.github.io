@@ -14,6 +14,7 @@ prefixe:
 abstract: "TODO"
 kits:
  - MessageUI
+ - MessagesApp
 links__:
  - link:
      name: 'Game Center for Developers'

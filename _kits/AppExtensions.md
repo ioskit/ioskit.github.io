@@ -9,6 +9,7 @@ icon: /resources/images/kits/AppExtensions/app-extensions-icon_2x.png
 abstract: "A way for you to share your app’s functionality with other apps, with to the OS itself."
 kits:
  - NotificationCenter
+ - MessagesApp
 links:
  - link:
      name: 'App extensions'
