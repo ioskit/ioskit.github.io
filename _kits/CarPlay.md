@@ -7,8 +7,8 @@ type: technology
 since: iOS8
 icon: /resources/images/kits/CarPlay/carplay-icon.png
 abstract: "is a smarter, safer way to use your iPhone in the car."
-kits__:
- - NotificationCenter
+kits:
+ - SiriKit
 links:
  - link:
      name: 'Apple - CarPlay'

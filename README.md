@@ -6,9 +6,15 @@ Which iOS Kit in which iOS version ?... !
 
 - [What's New in iOS](https://developer.apple.com/library/content/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html#//apple_ref/doc/uid/TP40017084-SW1)
 
-Updated for iOS 10:
+### iOS 10
+
+Updates:
 
 - Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, ..., AVFoundation, AVKit
+
+News:
+
+- Intents, IntentsUI, SiriKit
 
 ## Setup
 
