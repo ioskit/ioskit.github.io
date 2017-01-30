@@ -32,6 +32,7 @@ collections:
             permalink: /:path/index:output_ext
 
 versions:
+- WatchOS
 - iOS2
 - iOS3
 - iOS4
@@ -39,8 +40,8 @@ versions:
 - iOS6
 - iOS7
 - iOS8
-- WatchOS
+- iOS9
+- iOS10
 
 currentVersions:
-- iOS8
 - iOS10

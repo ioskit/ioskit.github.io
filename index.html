@@ -108,14 +108,10 @@ layout: default-headed
 						{% if kit.deprecated %}</strike>{% endif %}
 					</span>
 			  	</td>
-				<td>{% include kit-with-ios-update.html ios="iOS2" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS3" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS4" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS5" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS6" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS7" %}</td>
-				<td>{% include kit-with-ios-update.html ios="iOS8" %}</td>
-				<td>{% include kit-with-ios-update.html ios="WatchOS" %}</td>
+				{% for iosColumn in site.versions %}
+				<td>{% include kit-with-ios-update.html ios=iosColumn %}</td>
+				{% endfor %}
+
 	        </tr>
 			  {% endfor %}
 	
