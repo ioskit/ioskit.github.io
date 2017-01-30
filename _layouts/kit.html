@@ -30,7 +30,10 @@ layout: default
 		</span>
 		&nbsp;&nbsp;&bull;&nbsp;
 
-  		{% include ios-link.html ios=page.since %}
+		<span data-toggle="tooltip" data-placement="top" data-original-title="Available since:">
+			{% include ios-link.html ios=page.since %}
+		</span>
+
 
 		{% if page.xcode %}
 			{% assign xcodes = site.xcodes | where: "iid", page.xcode %}

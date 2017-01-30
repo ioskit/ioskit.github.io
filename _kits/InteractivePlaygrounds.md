@@ -1,12 +1,14 @@
 ---
 layout: kit
-iid: interactiveplaygrounds 
+iid: InteractivePlaygrounds 
 name: 'Interactive&nbsp;Playgrounds'
-status: iOS8
+abstract: "Playgrounds make writing Swift code productive and easy. Enter a line of code, and the result appears immediately."
 type: technology
+status: iOS8
 since: iOS8
 kits:
  - Swift
+ - REPL
 xcode: xcode6
 links__:
 - was:
@@ -30,7 +32,6 @@ links:
      url: http://www.bignerdranch.com/blog/ios-8-interactive-playgrounds/
      description: ' - Big Nerd Ranch'
      type: resource
-abstract: "Playgrounds make writing Swift code productive and easy. Enter a line of code, and the result appears immediately."
 ---
 
 Playgrounds make writing [Swift](/Swift) code productive and easy. Enter a line of code, and the result appears immediately. If your code runs over time—for instance through a loop—you can add that line of code to Timeline Assistant to watch it progress. Display variables in a graph, inspect each step of drawing a view, or watch an animated [SpriteKit](/SpriteKit) scene. When you’ve perfected your code in the playground, simply move that code into your project. Some uses for playgrounds include:
@@ -40,3 +41,5 @@ Playgrounds make writing [Swift](/Swift) code productive and easy. Enter a line 
 * Creating new tests and then verifying that they work before promoting them into your test suite
 
 Learn in a playground. Open select documentation in a playground to learn from the tutorial in an interactive environment. The combination of richly formatted documentation and an interactive playground makes it easy to fully explore the API, changing and experimenting with the sample code.
+
+Another effective way to learn **Swift** is [Read-Eval-Print-Loop](/REPL).
