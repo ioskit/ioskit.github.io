@@ -2,15 +2,21 @@
 layout: kit
 name: 'AVFoundation'
 iid: avfoundation
-status: iOS8
+status: iOS10
 since: iOS2
 detailedUpdates:
  - update:
      ios: iOS7
-     brief: "The AV Foundation framework (AVFoundation.framework) includes many enhancements: see page content."
+     brief: "It includes many enhancements: see page content."
  - update:
      ios: iOS8
-     brief: "Arbitrary types of metadata can be embedded with a video recording at various points in time. For example, you might record the current physical location in a video created by a moving camera device."
+     brief: "It includes many enhancements: see page content."
+ - update:
+     ios: iOS9
+     brief: "It adds new AVSpeechSynthesisVoice API that lets you specify a voice by identifier, instead of by language. You can also use the name and quality properties to get information about a voice."
+ - update:
+     ios: iOS10
+     brief: "It includes many enhancements: see page content."
 prefixe: 'AV'
 abstract: "AV Foundation framework provides essential services for working with time-based audiovisual media on iOS and OS X."
 kits:
@@ -53,7 +59,7 @@ The services offered by this framework include:
 
 ### iOS 7
 
-The AV Foundation framework (AVFoundation.framework) includes the following enhancements:
+The AV Foundation framework (`AVFoundation.framework`) includes the following enhancements:
 
 * The AVAudioSession class supports the following new behaviors:
   * Selecting the preferred audio input, including audio from built-in microphones
@@ -80,3 +86,23 @@ The AV Foundation framework (AVFoundation.framework) includes the following enha
   * When you link your app against iOS 7 SDK, the behavior when getting the values of player item properties—such as the duration, tracks, or presentationSize properties—is different from the behaviors in previous versions of iOS. The properties of this class now return a default value and no longer block your app if the AVPlayerItem object is not yet ready to play. As soon as the player item’s status changes to AVPlayerItemStatusReadyToPlay, the getters reflect the actual values of the underlying media resource. If you use key-value observing to monitor changes to the properties, your observers are notified as soon as changes are available.
 * The AVPlayerItemLegibleOutput class can process timed text from media files.
 * The AVAssetResourceLoaderDelegate protocol now supports loading of arbitrary ranges of bytes from a media resource.
+
+
+### iOS 8
+
+The **AV Foundation framework** (`AVFoundation.framework`):
+ 
+* (**Manual Camera Controls**) makes it easier than ever to take great photos. Your app can take direct control over the camera focus, white balance, and exposure settings. In addition, your app can use bracketed exposure captures to automatically capture images with different exposure settings.
+* (**)AV Audio Engine**) adds support for a broad cross-section of audio functionality at a higher level of abstraction than Core Audio. These new audio capabilities are available on both OS X and iOS and include automatic access to audio input and output hardware, audio recording and playback, and audio file parsing and conversion. You also gain access to audio units for generating special effects and filters, pitch and playback speed management, stereo and 3D audio environments, and MIDI instruments.
+
+Arbitrary types of metadata can be embedded with a video recording at various points in time. For example, you might record the current physical location in a video created by a moving camera device.
+
+
+### iOS 10
+
+The media capture subsystem in **AVFoundation** framework (`AVFoundation.framework`) includes several important changes.
+
+* **Dual Camera and Device Discovery**: [iPhone 7 Plus](/iPhone7Plus) includes a dual camera, which combines separate wide-angle and telephoto cameras that serve together as a single capture device. When using the dual camera device, iOS automatically uses either or both cameras based on light levels, zoom factor, and other conditions to capture the highest quality image possible. When you use the AVCaptureDevice class for video or photo capture, you can choose to use the dual camera device to gain these features, or to specifically use only the wide-angle or telephoto camera for more manual control. For details on the capabilities of each capture device, see [iOS Device Compatibility Reference](https://developer.apple.com/library/content/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013599).
+* **New Photo Capture API**: The new `AVCapturePhotoOutput` class provides a unified pipeline for all photography workflows, enabling more sophisticated control and monitoring of the entire capture process and including support for new features such as Live Photos and RAW format capture. You should transition to `AVCapturePhotoOutput` instead of `AVCaptureStillImageOutput`, which is deprecated in [iOS 10](/iOS10).
+* **Wide Color**: The Camera Capture pipeline now enables capture in wide-gamut color formats on supported hardware. By default, an `AVCaptureSession` automatically configures for wide-color capture when appropriate for your capture workflow—for details, see [iOS Device Compatibility Reference](https://developer.apple.com/library/content/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40013599).
+* **AVFoundation Media** (media playback and editing subsystem) includes enhancements.
