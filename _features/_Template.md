@@ -1,10 +1,10 @@
 ---
 layout: feature
-name: 'Enumeration'
-iid: Enumeration
-status: 
-language: swift,objectivec
-abstract: "Like classes and all other named types, enumerations can have methods associated with them."
+name: 'Template'
+iid: Template
+status: DONE
+language: swift
+abstract: ""
 links:
  - link:
     name: 'The Swift Programming Language: A Swift Tour'
@@ -12,11 +12,7 @@ links:
     description: ' - Apple Developer'
     type: reference
 features:
- - Class
- - Structure
- - Subscripts
+ - AccessControl
 ---
-
-Use `enum` to create an enumeration. 
 
 TODO.

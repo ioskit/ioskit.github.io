@@ -21,6 +21,7 @@ links:
 features:
  - Class
  - Enumeration
+ - Subscripts
 ---
 
 See [Class](/Class) page for a Comparison between Class and Structure.

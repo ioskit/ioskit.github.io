@@ -22,6 +22,7 @@ features:
  - Protocol
  - Structure
  - TypeMethod
+ - Subscripts
 ---
 
 # Comparison between Class and Structure
