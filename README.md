@@ -10,11 +10,12 @@ Which iOS Kit in which iOS version ?... !
 
 Updates:
 
-- Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, ..., AVFoundation, AVKit
+- Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, AdSupport, ..., AVFoundation, AVKit, AppThinning
+- AppThinning
 
 News:
 
-- Intents, IntentsUI, MessagesApp, ProactiveSuggestions, SiriKit, UserNotifications, UserNotificationsUI
+- HapticFeedbacks, Intents, IntentsUI, MessagesApp, ProactiveSuggestions, SiriKit, UserNotifications, UserNotificationsUI
 
 ## Setup
 

@@ -14,8 +14,6 @@ icon: /resources/images/kits/Siri/SiriKit.png
 prefixe: ''
 kits:
  - Intents
- - IntentsUI
- - CarPlay
 links:
  - link:
      name: 'SiriKit Programming Guide'
