@@ -2,9 +2,9 @@
 layout: kit
 iid: airdrop
 name: 'AirDrop'
-status: iOS8
-type: technology
+status: iOS10
 since: iOS7
+type: technology
 icon: /resources/images/kits/AirDrop/AirDrop_Icon.png
 abstract: "With AirDrop, you can share photos, videos, websites, locations, and more with people nearby with an Apple device."
 kits:
