@@ -7,6 +7,7 @@ abstract: "SiriKit lets you integrate your app’s content and services with the
 language: swift
 type: technology
 xcode: xcode6
+deprecated_: Contacts
 status: iOS10
 since: iOS8
 icon: /resources/images/kits/Siri/SiriKit.png
