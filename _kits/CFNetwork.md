@@ -1,21 +1,27 @@
 ---
 layout: kit
-name: 'CFNetwork'
 iid: cfnetwork
-status: iOS8
-type: kit
+name: 'CFNetwork'
+status: iOS10
 since: iOS2
-prefixe: 'CF'
+type: kit
+deprecated_: ContactsUI
 abstract: "Contains interfaces for accessing the network via Wi-Fi and cellular radios."
+icon_: /resources/images/kits/Siri/SiriKit.png
+language_: swift
+xcode_: xcode6
+prefixe: 'CF'
 links:
  - link:
      name: 'CFNetwork Programming Guide'
-     url: https://developer.apple.com/library/ios/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html
+     url: https://developer.apple.com/library/content/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html
+     was: https://developer.apple.com/library/ios/documentation/Networking/Conceptual/CFNetwork/Introduction/Introduction.html
      description: ' - Apple Developer'
      type: reference
  - link:
      name: 'CFNetwork Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/CFNetwork/Reference/CFNetwork_Framework/index.html
+     url: https://developer.apple.com/reference/cfnetwork
+     was2: https://developer.apple.com/library/ios/documentation/CFNetwork/Reference/CFNetwork_Framework/index.html
      was: https://developer.apple.com/library/ios/documentation/CFNetwork/Reference/CFNetwork_Framework/_index.html
      description: ' - Apple Developer'
      type: reference
