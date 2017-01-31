@@ -2,9 +2,9 @@
 layout: kit
 iid: airplay
 name: 'AirPlay'
-status: iOS8
-type: technology
+status: iOS10
 since: iOS4
+type: technology
 icon: /resources/images/kits/AirPlay/AirPlay_logo.png
 abstract: "Play content from your iPhone, iPad, iPod touch, or Mac on your HDTV."
 kits__:
