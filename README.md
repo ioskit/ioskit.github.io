@@ -11,7 +11,7 @@ Which iOS Kit in which iOS version ?... !
 Updates:
 
 - Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, AdSupport, ..., AVFoundation, AVKit, AppThinning, AirDrop, AirPlay, AirPrint, ApplePay
-- AppThinning, AssetsLibrary
+- AppThinning, AssetsLibrary, AudioToolbox
 - Contacts, ContactsUI
 
 News:

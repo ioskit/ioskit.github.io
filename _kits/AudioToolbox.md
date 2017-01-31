@@ -1,13 +1,16 @@
 ---
 layout: kit
+iid: AudioToolbox
 name: 'AudioToolbox'
-iid: audiotoolbox
-status: iOS8
-type: kit
+status: iOS10
 since: iOS2
-prefixe: 'AU,Audio'
-icon: /resources/images/kits/CoreAudio/core-audio.png
 abstract: "Contains the interfaces for handling audio stream data and for playing and recording audio."
+icon: /resources/images/kits/CoreAudio/core-audio.png
+language_: swift
+type: kit
+xcode_: xcode6
+deprecated_: Contacts
+prefixe: 'AU,Audio'
 kits:
  - CoreAudio
  - AudioUnit
@@ -16,7 +19,8 @@ kits:
 links:
  - link:
      name: 'Audio Toolbox Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/index.html
+     url: https://developer.apple.com/reference/audiotoolbox
+     was2: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/index.html
      was: https://developer.apple.com/library/ios/documentation/MusicAudio/Reference/CAAudioTooboxRef/_index.html
      description: ' - Apple Developer'
      type: reference
