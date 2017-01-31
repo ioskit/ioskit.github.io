@@ -2,9 +2,9 @@
 layout: kit
 iid: airprint
 name: 'AirPrint'
-status: iOS8
-type: technology
+status: iOS10
 since: iOS4
+type: technology
 icon: /resources/images/kits/AirPrint/welcome_airprint.png
 abstract: "Is an Apple technology that helps you create full-quality printed output without the need to download or install drivers."
 kits__:
