@@ -1,16 +1,20 @@
 ---
 layout: kit
-name: 'Core Bluetooth'
-iid: corebluetooth
-status: iOS8
 type: kit
+iid: corebluetooth
+name: 'Core Bluetooth'
+status: iOS10
 since: iOS5
+deprecated_: Contacts
+abstract: "Provides access to low-power Bluetooth hardware."
+icon_: /resources/images/kits/Siri/SiriKit.png
+language_: swift
+xcode_: xcode6
+prefixe: 'CB'
 detailedUpdates:
  - update:
      ios: iOS7
      brief: "The Core Bluetooth framework (CoreBluetooth.framework) includes many enhancements: see page content."
-prefixe: 'CB'
-abstract: "Provides access to low-power Bluetooth hardware."
 kits:
  - iBeacon
  - CoreLocation
@@ -19,18 +23,24 @@ links:
      name: 'Bluetooth for Developers'
      url: https://developer.apple.com/bluetooth/
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Core Bluetooth Programming Guide'
-     url: https://developer.apple.com/library/prerelease/ios/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html
+     url: https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html
+     was: https://developer.apple.com/library/prerelease/ios/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Core Bluetooth Framework Reference'
-     url: https://developer.apple.com/library/mac/documentation/CoreBluetooth/Reference/CoreBluetooth_Framework/
+     url: https://developer.apple.com/reference/corebluetooth
+     was: https://developer.apple.com/library/mac/documentation/CoreBluetooth/Reference/CoreBluetooth_Framework/
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Introduction to Core Bluetooth: Building a Heart Rate Monitor'
      url: http://www.raywenderlich.com/52080/introduction-core-bluetooth-building-heart-rate-monitor
      description: ' - Ray Wenderlich (other tutorials about Core Bluetooth)'
+     type: tutorial
 ---
 
 The *Core Bluetooth* framework (`CoreBluetooth.framework`) allows developers to interact specifically with **Bluetooth low energy** (LE) accessories. The Objective-C interfaces of this framework allow you to do the following:
