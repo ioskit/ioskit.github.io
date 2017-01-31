@@ -12,6 +12,7 @@ Updates:
 
 - Accelerate, Accounts, AdaptiveLayout, AddressBook, AddressBookUI, AdSupport, ..., AVFoundation, AVKit, AppThinning, AirDrop, AirPlay, AirPrint, ApplePay
 - AppThinning
+- Contacts, ContactsUI
 
 News:
 
