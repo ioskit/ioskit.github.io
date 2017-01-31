@@ -1,13 +1,16 @@
 ---
 layout: kit
+iid: AudioUnit
 name: 'AudioUnit'
-iid: audiounit
-status: iOS8
-type: kit
+status: iOS10
 since: iOS2
-prefixe: 'AU,Audio'
-icon: /resources/images/kits/CoreAudio/core-audio.png
 abstract: "Contains the interfaces for loading and using audio units and support for Inter-App Audio."
+icon: /resources/images/kits/CoreAudio/core-audio.png
+language_: swift
+type: kit
+xcode_: xcode6
+deprecated_: Contacts
+prefixe: 'AU,Audio'
 kits:
  - CoreAudio
  - AudioToolbox
@@ -16,18 +19,21 @@ kits:
 links:
  - link:
      name: 'Audio Unit Framework Reference'
-     url: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/index.html
+     url: https://developer.apple.com/reference/audiounit
+     was2: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/index.html
      was: https://developer.apple.com/library/ios/documentation/AudioUnit/Reference/AudioUnit_Framework/_index.html
      description: ' - Apple Developer'
      type: reference
  - link:
      name: 'Audio Unit Processing Graph Services Reference'
-     url: https://developer.apple.com/library/ios/documentation/AudioToolbox/Reference/AUGraphServicesReference/index.html
+     url: https://developer.apple.com/reference/audiotoolbox/audio_unit_processing_graph_services
+     was: https://developer.apple.com/library/ios/documentation/AudioToolbox/Reference/AUGraphServicesReference/index.html
      description: ' - Apple Developer'
      type: reference
  - link:
      name: 'Audio Unit Hosting Guide for iOS'
-     url: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/AudioUnitHostingGuide_iOS/Introduction/Introduction.html
+     url: https://developer.apple.com/library/content/documentation/MusicAudio/Conceptual/AudioUnitHostingGuide_iOS/Introduction/Introduction.html
+     was: https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/AudioUnitHostingGuide_iOS/Introduction/Introduction.html
      description: ' - Apple Developer'
      type: reference
 ---
