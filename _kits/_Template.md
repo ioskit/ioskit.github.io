@@ -6,11 +6,11 @@ shortName: 'Template'
 status: iOS10
 since: iOS8
 abstract: "SiriKit lets you integrate your app’s content and services with the system. As its name implies, SiriKit is used most prominently to support Siri, giving users the ability to control your app’s behavior using their voice. "
+icon: /resources/images/kits/Siri/SiriKit.png
 language: swift
 type: technology
 xcode: xcode6
 deprecated_: Contacts
-icon: /resources/images/kits/Siri/SiriKit.png
 prefixe: ''
 kits:
  - Intents
