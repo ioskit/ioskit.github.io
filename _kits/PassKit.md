@@ -16,6 +16,11 @@ kits:
  - ApplePay
 links:
  - link:
+     name: 'Pass Kit Framework Reference'
+     url: https://developer.apple.com/reference/passkit
+     description: ' - Apple Developer'
+     type: reference
+ - link:
      name: 'Passbook Programming Guide'
      url: https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/PassKit_PG/Chapters/Introduction.html
      description: ' - Apple Developer'
@@ -36,6 +41,7 @@ The Passbook app provides users with a place to store coupons, boarding passes, 
 
 Passes are created by your company’s web service and delivered to the user’s device via email, Safari, or your custom app. The pass itself, using a special file format, is cryptographically signed before being delivered. The file format identifies relevant information about the service being offered so that the user knows what the service is for. It might also contain a bar code or other information that you can then use to validate the card so that it can be redeemed or used.
 
+For more information, see [PassKit Framework Reference](https://developer.apple.com/reference/passkit).
 
 ### iOS 7
 

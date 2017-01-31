@@ -18,6 +18,7 @@ kits:
  - IntentsUI
  - ProactiveSuggestions
  - CarPlay
+ - ApplePay
 links:
  - link:
      name: 'SiriKit Programming Guide'
