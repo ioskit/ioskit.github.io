@@ -15,6 +15,7 @@ features:
  - Class
  - Structure
  - Subscripts
+ - Properties
 ---
 
 Use `enum` to create an enumeration. 

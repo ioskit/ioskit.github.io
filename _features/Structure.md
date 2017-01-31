@@ -22,6 +22,7 @@ features:
  - Class
  - Enumeration
  - Subscripts
+ - Properties
 ---
 
 See [Class](/Class) page for a Comparison between Class and Structure.

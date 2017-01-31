@@ -23,6 +23,7 @@ features:
  - Structure
  - TypeMethod
  - Subscripts
+ - Properties
 ---
 
 # Comparison between Class and Structure
