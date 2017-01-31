@@ -17,6 +17,7 @@ abstract: "Contains classes and methods for the iOS application user interface l
 kits:
  - TextKit
  - ProactiveSuggestions
+ - HapticFeedback
 links:
  - link:
      name: 'Unified Storyboards for Universal Apps'
