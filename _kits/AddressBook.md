@@ -1,11 +1,16 @@
 ---
 layout: kit
-iid: addressbook 
+iid: AddressBook 
 name: 'Address Book'
-status: iOS8
+status: DONE
 since: iOS2
 deprecated: Contacts
+type: kit
 abstract: "The Address Book technology for iOS provides a way to store people’s contact information and other personal information in a centralized database, and to share this information between applications."
+icon_: /resources/images/kits/Siri/SiriKit.png
+language_: swift
+xcode_: xcode6
+prefixe_: ''
 kits:
  - Contacts
  - AddressBookUI
