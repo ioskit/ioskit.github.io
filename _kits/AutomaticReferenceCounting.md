@@ -1,30 +1,38 @@
 ---
 layout: kit
+iid: arc
 name: 'Automatic Reference Counting (ARC)'
 shortName: ARC
-iid: arc
-status: iOS8
-type: technology
+status: iOS10
 since: iOS4
+type: technology
+deprecated_: ContactsUI
+abstract: "automates memory management for Objective-C and Swift objects."
 icon:
 xcode: xcode42
 prefixe:
-abstract: "automates memory management for Objective-C and Swift objects."
 kits:
  - Swift
+ - ObjectiveC
 links:
  - link:
      name: 'Transitioning to ARC Release Notes'
-     url: https://developer.apple.com/library/prerelease/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
+     url: https://developer.apple.com/library/content/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
+     was: https://developer.apple.com/library/prerelease/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html
      description: ' - Apple Developer'
+     type: reference
  - link:
-     name: 'The Swift Programming Language - Automatic Reference Counting'
-     url: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
+     name: 'The Swift Programming Language (Swift 3.0.1): Automatic Reference Counting'
+     url: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
+     was: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'Advanced Memory Management Programming Guide'
-     url: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html
+     url: https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html
+     was: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html
      description: ' - Apple Developer'
+     type: reference
  - link:
      name: 'ARC Tutorials'
      url: http://www.raywenderlich.com/?s=arc&cof=FORID%3A10

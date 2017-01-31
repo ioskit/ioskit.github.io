@@ -4,8 +4,8 @@ iid: AddressBookUI
 name: 'AddressBookUI'
 status: DONE
 since: iOS2
-deprecated: ContactsUI
 type: kit
+deprecated: ContactsUI
 abstract: "Contains classes for displaying the system-defined people picker and editor interfaces."
 icon_: /resources/images/kits/Siri/SiriKit.png
 language_: swift
