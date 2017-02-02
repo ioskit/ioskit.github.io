@@ -2,7 +2,7 @@
 layout: feature
 name: 'Enumeration'
 iid: Enumeration
-status: DONE
+status: DOING
 language: swift,objectivec
 abstract: "An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code."
 links:
@@ -162,9 +162,11 @@ When it is not appropriate to provide a case for every enumeration case, you can
 
 
 
-<!--
 ## Code Summary
 
+{% gist 7ab927e65e4d4e9ba90dc0fbb2b8eafb %}
+
+<!--
 // This enumeration has 14 'enumeration cases'
 enum Rank: Int {                            // 1) Defining
     case ace = 1                            // '= 1' is the optional zero-based starting raw value
@@ -190,5 +192,4 @@ var card = Rank.ace
 card = .jack                                // At this place, the enumeration type is known, so it is optional
 let aceRawValue = ace.rawValue
 ```
-
 -->
