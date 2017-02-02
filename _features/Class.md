@@ -36,19 +36,20 @@ See also [Structure](/Structure) page.
       <th></th>
       <th>Class</th>
       <th>Structure</th>
+      <th>Enumeration</th>
     </tr>
   </thead>
   <tbody>
-    <tr><th>Properties</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Methods</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Subscripts</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Initializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Extensions</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Protocols</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Reference Type</th><td><span class="glyphicon glyphicon-ok"></span></td><td></td></tr>
-    <tr><th>Value Type</th><td></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Deinitializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td></td></tr>
-    <tr><th>Inheritance</th><td><span class="glyphicon glyphicon-ok"></span></td><td></td></tr>
+    <tr><th>Properties</th>    <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Methods</th>       <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Subscripts</th>    <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td>-</td></tr>
+    <tr><th>Initializers</th>  <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Extensions</th>    <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Protocols</th>     <td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Reference Type</th><td><span class="glyphicon glyphicon-ok"></span></td><td></td>                                            <td>-</td></tr>
+    <tr><th>Value Type</th>    <td></td>                                            <td><span class="glyphicon glyphicon-ok"></span></td><td>-</td></tr>
+    <tr><th>Deinitializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td></td>                                            <td>-</td></tr>
+    <tr><th>Inheritance</th>   <td><span class="glyphicon glyphicon-ok"></span></td><td></td>                                            <td>-</td></tr>
   </tbody>
 </table>
 
