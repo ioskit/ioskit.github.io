@@ -209,6 +209,10 @@ print(SomeClass.computedTypeProperty)
 // Prints "27"
 ```
 
+# Code Summary
+
+{% gist 25e8fa6b2efff41d97fee864bf906e70 %}
+
 <!--
 ```
 struct Point {
