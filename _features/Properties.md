@@ -17,21 +17,28 @@ features:
  - Enumeration
 ---
 
-Properties associate values with a particular [Classes](/Classe), [Structures](/Structure) or [Enumerations](/Enumeration). Stored properties 
-store [Constant](/Constant) and [Variable](/Variable) values as part of an instance, whereas computed properties calculate (rather than store) 
-a value. Computed properties are provided by [Classes](/Classe), [Structures](/Structure) and [Enumerations](/Enumeration). Stored properties 
-are provided only by classes and structures.
+Properties associate values with a particular [Classes](/Classe), [Structures](/Structure) or [Enumerations](/Enumeration). 
+
+Properties can be:
+
+* Stored
+  * store [Constant](/Constant) and [Variable](/Variable) values as part of an instance
+  * provided only by [Classes](/Class) and [Structures](/Structure)
+* Computed
+  * calculate (rather than store) a value
+  * provided by [Classes](/Class), [Structures](/Structure) and [Enumerations](/Enumeration)
+  * a setter and an optional setter
 
 Stored and computed properties are usually associated with instances of a particular type. However, properties can also be associated with the 
 type itself. Such properties are known as type properties.
 
-In addition, you can define property observers to monitor changes in a property’s value, which you can respond to with custom actions. Property 
+In addition, you can define property observers to monitor changes in a property's value, which you can respond to with custom actions. Property 
 observers can be added to stored properties you define yourself, and also to properties that a subclass inherits from its superclass.
+
 
 ## Stored Properties
 
-In its simplest form, a stored property is a constant or variable that is stored as part of an instance of a particular class or structure. 
-Stored properties can be either variable stored properties (introduced by the var keyword) or constant stored properties (introduced by the let keyword).
+In its simplest form, a stored property is a [Constant](/Constant) (`let`) or [Variable](/Variable) (`var`) that is stored as part of an instance of a particular [Classes](/Class) or [Structures](/Structure). 
 
 ```
 struct FixedLengthRange {
@@ -46,7 +53,7 @@ rangeOfThreeItems.firstValue = 6
 
 ## Computed Properties
    
-In addition to stored properties, classes, structures, and enumerations can define computed properties, which do not actually store a value. 
+In addition to stored properties, [Classes](/Class), [Structures](/Structure) and [Enumerations](/Enumeration) can define computed properties, which do not actually store a value. 
 Instead, they provide a getter and an optional setter to retrieve and set other properties and values indirectly.
 
 ```
@@ -81,7 +88,7 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 
 ## Shorthand Setter Declaration
    
-If a computed property’s setter does not define a name for the new value to be set, a default name of newValue is used. Here’s an alternative 
+If a computed property's setter does not define a name for the new value to be set, a default name of `newValue` is used. Here's an alternative 
 version of the Rect structure, which takes advantage of this shorthand notation:
    
 ```
@@ -104,7 +111,7 @@ struct AlternativeRect {
 
 ## Read-Only Computed Properties
 
-A computed property with a getter but no setter is known as a read-only computed property. A read-only computed property always returns a value, 
+A computed property with a getter but no setter is known as a __read-only computed property__. A read-only computed property always returns a value, 
 and can be accessed through dot syntax, but cannot be set to a different value.
 
 ```
@@ -121,22 +128,22 @@ print("the volume of fourByFiveByTwo is \(fourByFiveByTwo.volume)")
 
 ## Property Observers
 
-Property observers observe and respond to changes in a property’s value. Property observers are called every time a property’s value is set, 
-even if the new value is the same as the property’s current value.
+Property observers observe and respond to changes in a property's value. Property observers are called every time a property's value is set, 
+even if the new value is the same as the property's current value.
 
 You have the option to define either or both of these observers on a property:
 
 * `willSet` is called just before the value is stored.
 * `didSet` is called immediately after the new value is stored.
 
-If you implement a `willSet` observer, it’s passed the new property value as a constant parameter. You can specify a name for this parameter as 
-part of your `willSet` implementation. If you don’t write the parameter name and parentheses within your implementation, the parameter is made 
+If you implement a `willSet` observer, it's passed the new property value as a constant parameter. You can specify a name for this parameter as 
+part of your `willSet` implementation. If you don't write the parameter name and parentheses within your implementation, the parameter is made 
 available with a default parameter name of `newValue`.
 
 ```
 class StepCounter {
     var totalSteps: Int = 0 {
-        willSet(newTotalSteps) {
+        willSet(newTotalSteps) { // '(newTotalSteps)' is optional
             print("About to set totalSteps to \(newTotalSteps)")
         }
         didSet {
@@ -201,3 +208,51 @@ print(SomeEnumeration.computedTypeProperty)
 print(SomeClass.computedTypeProperty)
 // Prints "27"
 ```
+
+<!--
+```
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Rect {
+    var origin = Point()     // 1) implicit Stored property
+    var size = Size()        // 1) implicit Stored property
+    var center: Point {      // 2) Computed property
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set(newValue) {      // 3) '(newValue)' is optional = Shorthand Setter Declaration (`newValue` becames default name)
+            origin.x = newValue.x - (size.width / 2)
+            origin.y = newValue.y - (size.height / 2)
+        }
+    }
+    var area: Double {       // 4) Read-Only Computed Properties
+        return size.width * size.height
+    }
+    var totalSteps: Int = 0 { // 5) Property Observers
+        willSet(newTotalSteps) { // '(newTotalSteps)' is optional, like setters
+            print("About to set totalSteps to \(newTotalSteps)")
+        }
+        didSet {
+            if totalSteps > oldValue  {
+                print("Added \(totalSteps - oldValue) steps")
+            }
+        }
+    }
+
+	// 6) Type Properties
+    static var storedTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 27
+    }
+    class var overrideableComputedTypeProperty: Int {
+        return 107
+    }
+}
+```
+-->
