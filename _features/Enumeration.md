@@ -25,6 +25,9 @@ features:
  - Protocol
 ---
 
+* TOC
+{:toc}
+
 An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code.
 
 Alternatively, enumeration cases can specify associated values of any type to be stored along with each different case value, much as unions or 
@@ -162,7 +165,9 @@ When it is not appropriate to provide a case for every enumeration case, you can
 
 
 
-## Code Summary
+# Code Card
+
+_Code Card a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible._
 
 {% gist 7ab927e65e4d4e9ba90dc0fbb2b8eafb %}
 

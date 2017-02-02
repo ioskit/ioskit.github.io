@@ -17,6 +17,9 @@ features:
  - Enumeration
 ---
 
+* TOC
+{:toc}
+
 Properties associate values with a particular [Classes](/Classe), [Structures](/Structure) or [Enumerations](/Enumeration). 
 
 Properties can be:
@@ -35,6 +38,8 @@ type itself. Such properties are known as type properties.
 In addition, you can define property observers to monitor changes in a property's value, which you can respond to with custom actions. Property 
 observers can be added to stored properties you define yourself, and also to properties that a subclass inherits from its superclass.
 
+
+# Swift (3.0.1)
 
 ## Stored Properties
 
@@ -209,7 +214,9 @@ print(SomeClass.computedTypeProperty)
 // Prints "27"
 ```
 
-# Code Summary
+# Code Card
+
+_Code Card a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible._
 
 {% gist 25e8fa6b2efff41d97fee864bf906e70 %}
 
