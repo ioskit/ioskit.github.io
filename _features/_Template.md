@@ -5,6 +5,9 @@ iid: Template
 status: DONE
 language: swift
 abstract: ""
+code:
+  gist: 7ab927e65e4d4e9ba90dc0fbb2b8eafb
+  iswift: PUoss6
 links:
  - link:
     name: 'The Swift Programming Language: A Swift Tour'

@@ -5,7 +5,9 @@ iid: Enumeration
 status: DOING
 language: swift,objectivec
 abstract: "An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code."
-codeCardGist: 7ab927e65e4d4e9ba90dc0fbb2b8eafb
+code:
+  gist: 7ab927e65e4d4e9ba90dc0fbb2b8eafb
+  iswift: PUoss6
 links:
  - link:
     name: 'The Swift Programming Language (Swift 3.0.1): A Swift Tour, Enumerations and Structures'
@@ -252,13 +254,6 @@ func evaluate(_ expression: ArithmeticExpression) -> Int {
 print(evaluate(product))
 // Prints "18"
 ```
-
-# Code Card
-
-_Code Card is a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible. As included from 'gist' you need to have access to http://gist.github.com to see it._
-
-{% gist 7ab927e65e4d4e9ba90dc0fbb2b8eafb %}
-
 
 
 <!--
