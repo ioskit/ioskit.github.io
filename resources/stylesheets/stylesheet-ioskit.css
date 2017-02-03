@@ -2,6 +2,12 @@
 ioskit Custom CSS
 *******************************************************************************/
 
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
 .apple {
   /* 
   display: block;
@@ -21,6 +27,13 @@ a .label {
 	color: white;
 }
 */
+
+pre {
+  border-radius: 3px;
+}
+pre code {
+  font-size: 85%;
+}
 
 .status_list { margin-left: 20px; }
 .status_item { margin-right: 10px; }
