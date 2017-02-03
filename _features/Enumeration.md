@@ -5,6 +5,7 @@ iid: Enumeration
 status: DOING
 language: swift,objectivec
 abstract: "An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code."
+codeCardGist: 7ab927e65e4d4e9ba90dc0fbb2b8eafb
 links:
  - link:
     name: 'The Swift Programming Language (Swift 3.0.1): A Swift Tour, Enumerations and Structures'
@@ -47,12 +48,11 @@ Use `enum` to create an enumeration. Like [Classes](/Class) and all other named 
 ```
 // This enumeration has 13 'enumeration cases'
 enum Rank: Int {
-    case ace = 1 // '= 1' is optional
+    case ace
     case two, three, four, five, six, seven, eight, nine, ten
     case jack, queen, king
 }
 let ace = Rank.ace
-let aceRawValue = ace.rawValue
 ```
 
 Wording:
@@ -60,17 +60,35 @@ Wording:
 * Like other types in Swift, their names (such as CompassPoint and Planet) should start with a capital letter
 * Give enumeration types singular rather than plural names (consider the whole name, aka `CompassPoint.west`)
 
+
+## Raw value
+
+If an enumeration has raw values, those values are determined as part of the declaration.
+
 By default, Swift assigns the raw values starting at zero and incrementing by one each time, but you can change this behavior by explicitly specifying values. 
 
-You can also use strings or floating-point numbers as the raw type of an enumeration. Use the rawValue property to access the raw value of an enumeration case.
+Raw values can be strings, characters, or any of the integer or floating-point number types. Each raw value must be unique within its enumeration declaration. Use the `rawValue` property to access the raw value of an enumeration case.
 
-Use the `init?(rawValue:)` initializer to make an instance of an enumeration from a raw value.
+```
+enum Rank: Int {
+    case ace = 1 // '= 1' is the optional zero-based starting raw value
+    case two, three, four, five, six, seven, eight, nine, ten
+    case jack, queen, king
+}
+let aceRawValue = ace.rawValue
+```
+
+Use the `init?(rawValue:)` initializer to make an instance of an enumeration from a raw value. As no case may be found for a given raw value, the 
+return type is an [Optional](/Optional): `nil` will be returned if no case is found.
 
 ```
 if let convertedRank = Rank(rawValue: 3) {
     let threeDescription = convertedRank.simpleDescription()
 }
 ```
+
+__Warning:__ Raw values are not the same as associated values...
+
 
 ## Method
 
@@ -102,32 +120,6 @@ You can use the abbreviated form anytime the value’s type is already known:
 var directionToHead = CompassPoint.west
 directionToHead = .east // At this place, the type is known
 ```
-
-
-## Raw value
-
-If an enumeration has raw values, those values are determined as part of the declaration.
-
-It is possible to have enumeration cases having values associated with the case—these values are determined when you make the instance, and they can be different for each instance of an enumeration case.
-
-```
-enum ServerResponse {
-    case result(String, String)
-    case failure(String)
-}
-
-let success = ServerResponse.result("6:00 am", "8:09 pm")
-let failure = ServerResponse.failure("Out of cheese.")
- 
-switch success {
-case let .result(sunrise, sunset):
-    print("Sunrise is at \(sunrise) and sunset is at \(sunset).")
-case let .failure(message):
-    print("Failure...  \(message)")
-}
-```
-
-Notice how the sunrise and sunset times are extracted from the `ServerResponse` value as part of matching the value against the switch cases.
 
 
 ## Matchning
@@ -165,19 +157,118 @@ When it is not appropriate to provide a case for every enumeration case, you can
 
 
 
+
+
+## Associated Values
+
+You can define Swift enumerations to store associated values of any given type, and the value types can be different for each case of the enumeration 
+if needed. Enumerations similar to these are known as _discriminated unions_, _tagged unions_, or _variants_ in other programming languages.
+
+These values associated with the case—these values are determined when you make the instance, and they can be different for each instance of an enumeration case.
+
+For example, imagine an inventory tracking system to be able to store UPC 2D barcodes as a tuple of four integers (number system, manufacturer code, 
+product code, check digit), and QR code barcodes as a string of any length. In Swift, an enumeration to define product barcodes of either type might look like this:
+
+```
+enum Barcode {
+    case upc(Int, Int, Int, Int)
+    case qrCode(String)
+}
+var productBarcode = Barcode.upc(8, 85909, 51226, 3) // value of 'Barcode.upc' with an associated tuple value of (8, 85909, 51226, 3).
+productBarcode = .qrCode("ABCDEFGHIJKLMNOP")
+```
+
+These enumeration can be used like that:
+
+```
+switch productBarcode {
+    // case .upc(let numberSystem, let manufacturer, let product, let check): // this line is equivalent to:
+    case let .upc(numberSystem, manufacturer, product, check):
+        print("UPC: \(numberSystem), \(manufacturer), \(product), \(check).")
+    // case let .qrCode(productCode):                                         // this line is equivalent to:
+    case .qrCode(let productCode):
+        print("QR code: \(productCode).")
+}
+```
+
+__Warning:__ Raw values are not the same as associated values:
+
+* Raw values are set to prepopulated values when you first define the enumeration in your code, like the three ASCII codes above. The raw value for a particular enumeration case is always the same. 
+* Associated values are set when you create a new constant or variable based on one of the enumeration’s cases, and can be different each time you do so.
+
+
+
+
+## Recursive Enumerations
+
+A recursive enumeration is an enumeration that has another instance of the enumeration as the associated value for one or more of the enumeration cases. 
+You indicate that an enumeration case is recursive by writing `indirect` before it, which tells the compiler to insert the necessary layer of indirection.
+
+For example, here is an enumeration that stores simple arithmetic expressions:
+
+```
+enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+```
+
+You can also write `indirect` before the beginning of the enumeration, to enable indirection for all of the enumeration’s cases that need it.
+
+```
+indirect enum ArithmeticExpression {
+    case number(Int)
+    case addition(ArithmeticExpression, ArithmeticExpression)
+    case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+```
+
+For example, the expression `(5 + 4) * 2` has a number on the right hand side of the multiplication and another expression on the left hand side of the 
+multiplication. Because the data is nested, the enumeration used to store the data also needs to support nesting—this means the enumeration needs to 
+be recursive. The code below shows the `ArithmeticExpression` recursive enumeration being created for `(5 + 4) * 2`:
+
+```
+let five = ArithmeticExpression.number(5)
+let four = ArithmeticExpression.number(4)
+let sum = ArithmeticExpression.addition(five, four)
+let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
+```
+
+A recursive function is a straightforward way to work with data that has a recursive structure. For example, here’s a function that evaluates an arithmetic expression:
+
+```
+func evaluate(_ expression: ArithmeticExpression) -> Int {
+    switch expression {
+    case let .number(value):
+        return value
+    case let .addition(left, right):
+        return evaluate(left) + evaluate(right)
+    case let .multiplication(left, right):
+        return evaluate(left) * evaluate(right)
+    }
+}
+ 
+print(evaluate(product))
+// Prints "18"
+```
+
 # Code Card
 
-_Code Card a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible._
+_Code Card is a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible. As included from 'gist' you need to have access to http://gist.github.com to see it._
 
 {% gist 7ab927e65e4d4e9ba90dc0fbb2b8eafb %}
 
+
+
 <!--
+
 // This enumeration has 14 'enumeration cases'
 enum Rank: Int {                            // 1) Defining
-    case ace = 1                            // '= 1' is the optional zero-based starting raw value
+    case ace = 1                            // '= 1' is the optional zero-based starting 'raw value'
     case two, three, four, five, six, seven, eight, nine, ten
     case jack, queen, king
-	case joker(String)                      // Custom raw value associated to this case.
+	case misc(String)                   // 5) Custom 'associated value' for this case (ex: String = 'joker', 'rules').
     func simpleDescription() -> String {    // 3) Method
         switch self {                       // 4) Matching with 'switch'
         case .ace:
@@ -197,4 +288,5 @@ var card = Rank.ace
 card = .jack                                // At this place, the enumeration type is known, so it is optional
 let aceRawValue = ace.rawValue
 ```
+
 -->
