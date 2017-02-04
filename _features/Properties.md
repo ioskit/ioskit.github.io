@@ -5,6 +5,9 @@ iid: Properties
 status: DONE
 language: swift
 abstract: "Properties associate values with a particular class, structure, or enumeration."
+code:
+  gist: 25e8fa6b2efff41d97fee864bf906e70
+  iswift: ezKqDw
 links:
  - link:
     name: 'The Swift Programming Language (Swift 3.0.1): Properties'
@@ -214,12 +217,6 @@ print(SomeClass.computedTypeProperty)
 // Prints "27"
 ```
 
-# Code Card
-
-_Code Card a full code snippet including the whole material seen on this page - hopefully as the most coherent way as possible._
-
-{% gist 25e8fa6b2efff41d97fee864bf906e70 %}
-
 <!--
 ```
 struct Point {
@@ -261,7 +258,7 @@ struct Rect {
     static var computedTypeProperty: Int {
         return 27
     }
-    class var overrideableComputedTypeProperty: Int {
+    static var overrideableComputedTypeProperty: Int {
         return 107
     }
 }
