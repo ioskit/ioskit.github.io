@@ -7,6 +7,9 @@ language: swift,objectivec
 abstract: "Classes and structures are general-purpose, flexible constructs that become the building blocks of your program’s code. 
 You define properties and methods to add functionality to your classes and structures 
 by using exactly the same syntax as for constants, variables, and functions."
+code:
+  gist: ac6040f564565c68b72054edf60e05b2
+  iswift: 5erSyB
 links:
  - link:
     name: 'The Swift Programming Language: A Swift Tour'
@@ -25,6 +28,9 @@ features:
  - Subscripts
  - Properties
 ---
+
+* TOC
+{:toc}
 
 # Comparison between Class and Structure
 
@@ -53,6 +59,27 @@ See also [Structure](/Structure) page.
   </tbody>
 </table>
 
+
+# Inheritance
+
+Rules for a subclass who inherits or not 'designated' and 'convenience' initializers of its superclass:
+
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>The subclass...</th>
+      <th>Inherits Designated</th>
+      <th>Inherits Convenience</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>Doesn't define any initializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+    <tr><th>Implements all superclass's designated initializers</th><td></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
+  </tbody>
+</table>
+
+
+<!--
 # Code
 
 Class in Swift support the following features:
@@ -63,9 +90,7 @@ Class in Swift support the following features:
 1. Methods (type & instance)
 1. Subclassing (inheritance)
 1. Subscripts
-
-
-{% gist ac6040f564565c68b72054edf60e05b2 %}
+-->
 
 <!--
 ``
@@ -108,7 +133,7 @@ class Vehicule {
 
   // 3) Deinitializers
   deinit {
-    Vehicule.count +-= 1
+    Vehicule.count -= 1
   }
 
   // 4) Type Method (you can use 'static' or 'class' keyword)
@@ -158,7 +183,7 @@ class MotorVehicule : Vehicule {
 }
 
 let myCar = Vehicule(passengers: 4, zeroTo60: 2.5)
-let hisCar :Vehicule? = Vehicule()
+var hisCar :Vehicule? = Vehicule()
 print(Vehicule.count) // = 2
 
 // 3) Implicit use of Deinitializers
@@ -183,21 +208,3 @@ var teslaModel3 = ElectricVehicule? = ElectricVehicule()
 let bugattiVeyron = MotorVehicule(passengers: 2, zeroTo60: 2.5, fuelEfficiency: 7)
 ```
 -->
-
-# Inheritance
-
-Rules for a subclass who inherits or not 'designated' and 'convenience' initializers of its superclass:
-
-<table class="table table-striped table-hover">
-  <thead>
-    <tr>
-      <th>The subclass...</th>
-      <th>Inherits Designated</th>
-      <th>Inherits Convenience</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><th>Doesn't define any initializers</th><td><span class="glyphicon glyphicon-ok"></span></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-    <tr><th>Implements all superclass's designated initializers</th><td></td><td><span class="glyphicon glyphicon-ok"></span></td></tr>
-  </tbody>
-</table>
