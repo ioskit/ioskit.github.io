@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="bs-docs-section">
+
+	<div class="page-header">
+    	<div class="row">
+        	<div class="col-lg-12">
+				<a href="/languages.html" class="pull-right">Goto Languages</a>
+          		<h1 id="page-title">
+			      	{{ page.name }}
+				</h1>
+        	</div>
+      	</div>
+    </div>
+
+	<div class="row">
+        <div class="col-lg-12">
+			{{ content }}
+
+			<ul>
+				{% for feature in page.features %}
+				<li><b>{{feature[0]}}:</b> {{feature[1]}}</li>
+				{% endfor %}
+			</ul>
+      	</div>
+	</div>
+
+
+</div>

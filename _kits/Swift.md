@@ -26,9 +26,23 @@ links:
      url: http://www.raywenderlich.com/73967/swift-cheat-sheet-and-quick-reference
      description: ' - Ray Wenderlich'
 abstract: "An innovative new programming language for Cocoa and Cocoa Touch."
+features:
+  TypeSafe: true
+  TypeInference: true
+  Immutability: true
+  FirstClassFunction: true
+  PatternMatching: true
 ---
 
-Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, and apps run lightning-fast. Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works side-by-side with Objective-C.
+* TOC
+{:toc}
+
+Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, 
+and apps run lightning-fast. Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works 
+side-by-side with Objective-C.
+
+A strength of Swift as an open source hybrid language is the ability to support both __Object-Oriented Programming (OOP)__ and __Functional Programming__.
+
 
 ## Main topics
 
@@ -36,5 +50,70 @@ Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writi
 * [Classes](/Class), [Structures](/Structure) and [Enumerations](/Enumeration)
 * [Constants](/Constant), [Variables](/Variable) and [Optionals](/Optional)
 * [Functions](/Function) and [Closures](/Closure)
+* [Generics](/Generics)
 * [Error handling](/Error)
 * [Read-Eval-Print-Loop](/REPL) and [Interactive Playgrounds](/InteractivePlaygrounds)
+
+
+## Object-Oriented Programming (OOP)
+
+Software is divided into smaller pieces such as (packages,) [Classes](/Class), interfaces or [Protocols](/Protocol), and methods or [Functions](/Function).
+
+In OOP, connecting the building blocks to each other is not as easy as dividing them. Connection between different objects may propose strong coupling 
+between them. Coupling is the biggest source of complexity in OOP. A change in a module or class could force change in all coupled modules and classes. 
+Also, a particular module or class might be harder to reuse and test because of coupled modules or classes.
+
+Software engineers try to loosen coupling by structuring the software well and applying different principles and design patterns. For instance:
+
+* Single responsibility
+* Open-closed
+* Liskov substitution
+* Interface segregation 
+* Dependency inversion 
+
+or __SOLID__ principles when applied together properly tend to make software easy to maintain and extend.
+
+Even though it is possible to decrease the coupling and simplify software structures, managing the memory, referencing to instances, and testing 
+different objects remains difficult because, in OOP, objects are open to change and mutation.
+
+In functional programming, functions are the fundamental building blocks. In OOP, programs are composed of classes and statements, which change the 
+state of classes when executed.
+
+OOP is categorized as __imperative programming__.
+
+
+## Functional Programming
+
+In functional programming, __pure functions__ are the most important building blocks. They:
+ 
+* do not rely on data outside of themselves 
+* do not change data that exists outside of them. 
+
+Pure functions:
+ 
+* are easy to test because they will always provide the same results
+* can be executed on different threads or cores without any mechanisms to handle multithreading and multiprocessing. 
+
+This is a very important benefit of functional programming over OOP as multicore programming mechanisms are very complex to handle in OOP though is 
+becoming more important day by day because hardware engineers have finally hit the speed limit of light. So, in order to have more cycles per second, 
+hardware engineers are adding more processors to chips. Functional programming eliminates the need for a complex multicore programming mechanism, and 
+as pure functions are not dependent on any instances or data outside of themselves, it is easy to change them without changing other parts.
+
+Functional programming is a __declarative programming__ style.
+
+Theoretically, functional programming employs the concepts of __category theory__, which is a branch of mathematics. It is not necessary to know the 
+category theory to be able to program functionally but studying it will help us grasp some of the more advanced concepts such as functors, applicative 
+functors, and monads.
+
+As opposed to OOP, functional programming avoids using mutable states. Avoiding mutable states makes it easier to test, read, and understand the code 
+although it is not easy to avoid mutable states in some cases such as file and database operations.
+
+Swift has features empowering it as a functional programming language:
+
+* [Type](/Type) safety and inference
+* __Immutability__ with the `let` keyword to easily define [Constants](/Constant)
+* Stateless programming with [Structures](/Structure) and [Enumerations](Enumeration) that are passed by values and can be stateless
+* [Functions](/Function) are __first-class types__, so they can be stored, passed, and returned
+* [Functions](/Function) are __higher-order__ functions, so they can receive other functions as their parameters (swift provides higher-order functions such as `map`, `filter`, and `reduce`)
+* Pattern Matching
+* Closures

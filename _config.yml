@@ -30,6 +30,9 @@ collections:
     devices:
             output: true
             permalink: /:path/index:output_ext
+    languages:
+            output: true
+            permalink: /:path/index:output_ext
 
 versions:
 - WatchOS

@@ -25,6 +25,9 @@ features:
  - For
 ---
 
+* TOC
+{:toc}
+
 ## Closed Range
 
 An interval over a comparable type, from a lower bound up to, and including, an upper bound. 
@@ -124,4 +127,14 @@ print(fingers.upperBound)           // Prints "6"
 var fingers = 1..<6
 print(fingers.contains(5))          // Prints "true"
 print(fingers.contains(6))          // Prints "false"
+```
+
+## stride
+
+The `stride` functions enable us to iterate through ranges with a step other than one. There are two stride functions: the stride to function, which 
+iterates over exclusive ranges, and stride through, which iterates over inclusive ranges. Let's consider the following example:
+
+```
+let fourToTwo = Array(stride(from: 4, to: 1, by: -1)) // [4, 3, 2]
+let fourToOne = Array(stride(from:4, through: 1, by: -1)) // [4, 3, 2, 1]
 ```

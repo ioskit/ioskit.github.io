@@ -24,6 +24,9 @@ features:
  - Tuple
 ---
 
+* TOC
+{:toc}
+
 
 <!-- ================================================== --><a name="DefiningAndCalling"></a>
 
@@ -245,6 +248,12 @@ print(greet(person: "Anna").text)
 <!-- ================================================== --><div name="FunctionTypes"></div>
 
 ## Using Function Types
+
+In [Swift](/Swift) Functions are:
+ 
+* __first-class types__, so they can be stored, passed, and returned. First-class functions empower functional programming style in Swift.
+* __higher-order__ functions, so they can receive other functions as their parameters. Swift provides higher-order functions such as `map`, `filter`, and `reduce`. Also, in Swift, we can develop our own higher-order functions and DSLs.
+
 
 ### Swift 3
 
