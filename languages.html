@@ -23,47 +23,31 @@ layout: default-headed
 	<p>See also the <a href="/Swift">Swift</a> language page.</p>
 	<p>&nbsp;</p>
     <table class="table table-striped table-hover">
-		{% assign count = '0' %}
-		{% for language in languages %}
-
-			{% if forloop.index == 1 %}
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Name</th>
-						{% for features in language.features %}
-							<th>{{ features[0] }}</th>
-						{% endfor %}
-					</tr>
-				</thead>
-				<tbody>
-			{% endif %}
-
-			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+		<thead>
 			<tr>
-				<th>{{ count }}</th>
-				<td><a href="{{language.url}}">{{ language.name }}</a></td>
-
-				{% for features in language.features %}
-				<td>
-					{% if features[1] == true %}
-						<span class="glyphicon glyphicon-ok status_done"></span>
-					{% elsif features[1] == false %}
-						<span class="glyphicon glyphicon-remove status_doing"></span>
-					{% else %}
-						{{ features[1] }}
-					{% endif %}
-				</td>
+				<th>#</th>
+				<th>Name</th>
+				{% for feature in site.languageFeatures %}
+					<th>{{ feature }}</th>
 				{% endfor %}
-
-				<td>
 			</tr>
-
-			{% if forloop.rindex == 1 %}
-				</tbody>
-			{% endif %}
-
-		{% endfor %}
+		</thead>
+		<tbody>
+			{% assign count = '0' %}
+			{% for language in languages %}
+				{% capture count %}{{ count | plus: '1' }}{% endcapture %}
+				<tr>
+					<th>{{ count }}</th>
+					<td><a href="{{language.url}}">{{ language.name }}</a></td>
+					{% for f in site.languageFeatures %}
+						{% assign feature = language.features[f] %}
+						<td>
+							{% include mark-language-feature.html feature=feature %}
+						</td>
+					{% endfor %}
+				</tr>
+			{% endfor %}
+		</tbody>
     </table>
 </div>
 

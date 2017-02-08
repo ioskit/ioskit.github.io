@@ -1,0 +1,15 @@
+<small>
+    {% if include.feature == true %}
+        <span data-toggle="tooltip" data-placement="top" data-original-title="Supported">
+            <span class="glyphicon glyphicon-ok status_done"></span>
+        </span>
+    {% elsif include.feature == false %}
+        <span data-toggle="tooltip" data-placement="top" data-original-title="Not Supported">
+            <span class="glyphicon glyphicon-remove status_doing"></span>
+        </span>
+    {% else %}
+        <span data-toggle="tooltip" data-placement="top" data-original-title="Unknown">
+            <span class="glyphicon glyphicon-question-sign"></span>
+        </span>
+    {% endif %}
+</small>

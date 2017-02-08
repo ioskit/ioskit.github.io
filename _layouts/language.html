@@ -19,12 +19,18 @@ layout: default
         <div class="col-lg-12">
 			{{ content }}
 
-			<ul>
-				{% for feature in page.features %}
-				<li><b>{{feature[0]}}:</b> {{feature[1]}}</li>
+			<h3>Features</h3>
+			<ul class="list-unstyled status_list">
+				{% for feature in site.languageFeatures %}
+					{% assign featureSupport = page.features[feature] %}
+					<li>
+						<small class="status_item">{% include mark-language-feature.html feature=featureSupport %}</small>
+						{{feature}}
+					</li>
 				{% endfor %}
 			</ul>
-      	</div>
+
+		</div>
 	</div>
 
 

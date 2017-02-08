@@ -55,6 +55,8 @@ A strength of Swift as an open source hybrid language is the ability to support 
 * [Read-Eval-Print-Loop](/REPL) and [Interactive Playgrounds](/InteractivePlaygrounds)
 
 
+See also the comparison with other [Languages](/languages)
+
 ## Object-Oriented Programming (OOP)
 
 Software is divided into smaller pieces such as (packages,) [Classes](/Class), interfaces or [Protocols](/Protocol), and methods or [Functions](/Function).
