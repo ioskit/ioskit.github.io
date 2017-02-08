@@ -48,3 +48,10 @@ versions:
 
 currentVersions:
 - iOS10
+
+languageFeatures:
+- TypeSafe
+- TypeInference
+- Immutability
+- FirstClassFunction
+- PatternMatching

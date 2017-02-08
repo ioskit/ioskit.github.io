@@ -2,6 +2,9 @@
 layout: default-headed
 ---
 
+{% assign swift = site.kits | where:"iid", 'swift' | first %}
+
+{% assign languages = site.languages | push: swift | reverse %}
 
 <!--
 <h3>
@@ -21,7 +24,7 @@ layout: default-headed
 	<p>&nbsp;</p>
     <table class="table table-striped table-hover">
 		{% assign count = '0' %}
-		{% for language in site.languages %}
+		{% for language in languages %}
 
 			{% if forloop.index == 1 %}
 				<thead>
