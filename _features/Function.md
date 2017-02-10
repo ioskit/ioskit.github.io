@@ -254,6 +254,7 @@ In [Swift](/Swift) Functions are:
 * __first-class types__, so they can be stored, passed, and returned. First-class functions empower functional programming style in Swift.
 * __higher-order__ functions, so they can receive other functions as their parameters. Swift provides higher-order functions such as `map`, `filter`, and `reduce`. Also, in Swift, we can develop our own higher-order functions and DSLs.
 
+See also [first-class functions](/functional/FirstClassFunction) and [higher-order functions](/functional/HigherOrderFunction).
 
 ### Swift 3
 
@@ -283,6 +284,8 @@ func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
 
 printMathResult(addTwoInts, 3, 5) // Prints "Result: 8"
 ```
+
+See also [higher-order functions](/functional/HigherOrderFunction).
 
 
 ### Function Types as Return Types

@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% assign swift = site.kits | where:"iid", 'swift' | first %}
+{% assign languages = site.languages | push: swift | reverse %}
+
 <div class="bs-docs-section">
 
 	<div class="page-header">
@@ -19,13 +22,13 @@ layout: default
         <div class="col-lg-12">
 			{{ content }}
 
-			<h3>Features</h3>
+			<h3>Languages</h3>
 			<ul class="list-unstyled status_list">
-				{% for feature in site.languageFeatures %}
-					{% assign featureSupport = page.features[feature] %}
+				{% for language in languages %}
+					{% assign feature = language.features[page.iid] %}
 					<li>
-						<small class="status_item">{% include mark-language-feature.html feature=featureSupport %}</small>
-						<a href="/functional/{{feature}}">{{feature}}</a>
+						<small class="status_item">{% include mark-language-feature.html feature=feature %}</small>
+						<a href="{{language.url}}">{{language.name}}</a>
 					</li>
 				{% endfor %}
 			</ul>

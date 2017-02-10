@@ -27,10 +27,13 @@ links:
      description: ' - Ray Wenderlich'
 abstract: "An innovative new programming language for Cocoa and Cocoa Touch."
 features:
-  TypeSafe: true
+  TypeSafety: true
   TypeInference: true
   Immutability: true
+  StatelessProgramming: true
+  PureFunction: true
   FirstClassFunction: true
+  HigherOrderFunction: true
   PatternMatching: true
 ---
 
@@ -84,6 +87,8 @@ state of classes when executed.
 OOP is categorized as __imperative programming__.
 
 
+&nbsp;
+
 ## Functional Programming
 
 In functional programming, __pure functions__ are the most important building blocks. They:
@@ -112,10 +117,12 @@ although it is not easy to avoid mutable states in some cases such as file and d
 
 Swift has features empowering it as a functional programming language:
 
-* [Type](/Type) safety and inference
-* __Immutability__ with the `let` keyword to easily define [Constants](/Constant)
-* Stateless programming with [Structures](/Structure) and [Enumerations](Enumeration) that are passed by values and can be stateless
-* [Functions](/Function) are __first-class types__, so they can be stored, passed, and returned
-* [Functions](/Function) are __higher-order__ functions, so they can receive other functions as their parameters (swift provides higher-order functions such as `map`, `filter`, and `reduce`)
-* Pattern Matching
+* [Type Safety](/functional/TypeSafety) and [TypeInference](/functional/TypeInference)
+* [Immutability](/functional/Immutability) with the `let` keyword to easily define [Constants](/Constant)
+* [Stateless Programming](/functional/StatelessProgramming) with [Structures](/Structure) and [Enumerations](Enumeration) that are passed by values
+* [Functions](/Function):
+  * [Pure functions](/functional/PureFunction), which do not rely on data outside of themselves and they do not change data that exists outside of them 
+  * [First-class types](/functional/FirstClassFunction), so they can be stored, passed, and returned
+  * [Higher-order functions](/functional/HigherOrderFunction), so they can receive other functions as their parameters
+* [Pattern Matching](/functional/PatternMatching)
 * Closures

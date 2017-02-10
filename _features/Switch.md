@@ -17,7 +17,8 @@ features:
 
 A switch statement considers a value and compares it against several possible matching patterns. It then executes an appropriate block of code, based on the first pattern that matches successfully. A switch statement provides an alternative to the if statement for responding to multiple potential states.
 
-<pre><code>let someCharacter: Character = "e"
+```
+let someCharacter: Character = "e"
 switch someCharacter {
 case "a", "e":
 case "i", "o", "u":
@@ -29,4 +30,6 @@ default:
     println("\(someCharacter) is not a vowel or a consonant")
 }
 // prints "e is a vowel"
-</code></pre>
+```
+
+See also [Pattern Matching](/functional/PatternMatching).

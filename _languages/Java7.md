@@ -11,11 +11,13 @@ links_:
     description: ' - Apple Developer'
     type: reference
 features:
-  TypeSafe: '?'
-  TypeInference: '?'
-  Immutability: '?'
-  FirstClassFunction: '?'
-  PatternMatching: '?'
+  TypeSafety: true
+  TypeInference: false
+  Immutability: true
+  PureFunction: true
+  FirstClassFunction: false
+  HigherOrderFunction: false
+  PatternMatching:
 ---
 
 * TOC

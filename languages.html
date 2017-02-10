@@ -3,22 +3,9 @@ layout: default-headed
 ---
 
 {% assign swift = site.kits | where:"iid", 'swift' | first %}
-
 {% assign languages = site.languages | push: swift | reverse %}
 
-<!--
-<h3>
-	<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true">
-		<span class="octicon octicon-link"></span>
-	</a>
-	List of available Apple frameworks
-</h3>
--->
-
-<div class="col-lg-1">
-</div>
-
-<div class="col-lg-10">
+<div class="col-lg-12">
 	<p>This page compare features of some famous Functional Programming languages.</p>
 	<p>See also the <a href="/Swift">Swift</a> language page.</p>
 	<p>&nbsp;</p>
@@ -28,7 +15,15 @@ layout: default-headed
 				<th>#</th>
 				<th>Name</th>
 				{% for feature in site.languageFeatures %}
-					<th>{{ feature }}</th>
+					{% for functional in site.functional %}
+						{% if functional.iid == feature %}
+							<th>
+								<span data-toggle="tooltip" data-placement="top" data-original-title="{{ functional.abstract }}">
+									<a href="{{ functional.url }}">{{ functional.name }}</a>
+								</span>
+							</th>
+						{% endif %}
+					{% endfor %}
 				{% endfor %}
 			</tr>
 		</thead>
@@ -49,7 +44,4 @@ layout: default-headed
 			{% endfor %}
 		</tbody>
     </table>
-</div>
-
-<div class="col-lg-1">
 </div>

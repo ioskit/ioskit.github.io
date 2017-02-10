@@ -33,6 +33,9 @@ collections:
     languages:
             output: true
             permalink: /:path/index:output_ext
+    functional:
+            output: true
+            permalink: /functional/:path/index:output_ext
 
 versions:
 - WatchOS
@@ -50,8 +53,11 @@ currentVersions:
 - iOS10
 
 languageFeatures:
-- TypeSafe
+- TypeSafety
 - TypeInference
 - Immutability
+- StatelessProgramming
+- PureFunction
 - FirstClassFunction
+- HigherOrderFunction
 - PatternMatching

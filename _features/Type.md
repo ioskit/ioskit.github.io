@@ -21,6 +21,8 @@ features:
 * TOC
 {:toc}
 
+See also [other languages supporting Type Safety and Type Inference](/languages)
+
 ## Type safety
 
 ```
