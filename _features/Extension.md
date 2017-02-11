@@ -13,11 +13,13 @@ links:
     type: reference
 features:
  - Protocol
+ - Generics
 ---
 
 TODO.
 
-<pre><code>extension Int: ExampleProtocol {
+```
+extension Int: ExampleProtocol {
     var simpleDescription: String {
         return "The number \(self)"
     }
@@ -25,4 +27,9 @@ TODO.
         self += 42
     }
 }
-println(7.simpleDescription)</code></pre>
+println(7.simpleDescription)
+```
+
+## Extending a Generic Type
+
+You can also extends [Generics](/Generics) types.
