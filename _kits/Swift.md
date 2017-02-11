@@ -29,6 +29,7 @@ abstract: "An innovative new programming language for Cocoa and Cocoa Touch."
 features:
   TypeSafety: true
   TypeInference: true
+  Generics: true
   Immutability: true
   StatelessProgramming: true
   PureFunction: true

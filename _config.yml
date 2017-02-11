@@ -55,6 +55,7 @@ currentVersions:
 languageFeatures:
 - TypeSafety
 - TypeInference
+- Generics
 - Immutability
 - StatelessProgramming
 - PureFunction

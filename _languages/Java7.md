@@ -13,6 +13,7 @@ links_:
 features:
   TypeSafety: true
   TypeInference: false
+  Generics: true
   Immutability: true
   PureFunction: true
   FirstClassFunction: false

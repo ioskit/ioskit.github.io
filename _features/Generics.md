@@ -20,6 +20,7 @@ links:
     description: ' - Apple Developer'
     type: reference
 features:
+ - Type
  - Class
  - Structure
  - Enumeration
@@ -29,6 +30,11 @@ features:
 * TOC
 {:toc}
 
+[Swift](/Swift) is a [type-safe language](/functional/TypeSafety). Whenever we work with types, we need to specify them. For instance, a function can have 
+specific parameters and return types. We cannot pass any type but the ones that are specified. What if we need a function that can handle more than one type?
+
+Swift provides `Any` and `AnyObject` but it is not a good practice to use them unless we have to. Using `Any` and `AnyObject` will make our 
+code fragile as we will not be able to catch type mismatching during compile time. __Generics__ are the solution to our requirement. 
 
 Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define. 
 You can write code that avoids duplication and expresses its intent in a clear, abstracted manner.

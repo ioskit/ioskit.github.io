@@ -11,8 +11,9 @@ links_:
     description: ' - Apple Developer'
     type: reference
 features:
-  TypeSafety:
+  TypeSafety: true
   TypeInference: true
+  Generics: true
   Immutability:
   PureFunction: true
   FirstClassFunction: '?'

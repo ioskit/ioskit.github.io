@@ -16,6 +16,7 @@ features:
  - Variable
  - Function
  - Tuple
+ - Generics
 ---
 
 * TOC
@@ -29,6 +30,9 @@ See also [other languages supporting Type Safety and Type Inference](/languages)
 var aString :String = "text"
 aString = 123 // Failed
 ```
+
+As it is a type safe language, [Generics](/Generics) make it possible to write code in [Swift](/Swift) that is not specific to a type and 
+can be utilized for different types.
 
 ## Type inference
 

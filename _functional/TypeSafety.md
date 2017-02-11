@@ -14,6 +14,10 @@ var aString :String = "text"
 aString = 123 // Failed
 ```
 
-See [Type Safety](/functional/TypeSafety) feature.
+## See also
 
-See [Swift's Type](/Type) page for more details. 
+The following topics are related to Type Safety:
+
+- [Type Inference](/functional/TypeInference) feature of functional languages
+- [Generics](/functional/Generics) feature of functional languages
+- [Swift's Type](/Type) page
