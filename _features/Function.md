@@ -32,7 +32,7 @@ features:
 
 ## Defining and Calling
 
-### Swift 3
+__Swift 3__
 
 A function is defined with:
 
@@ -71,12 +71,13 @@ greet2(person:) -> String
 greet(person:)
 ```
 
+&nbsp;
 
 <!-- ================================================== --><a name="Parameters"></a>
 
 ## Parameters
 
-### Swift 3
+__Swift 3__
 
 Each function parameter has both:
 
@@ -97,7 +98,7 @@ let _ = someFunction(1, argumentLabel2: 2, parameterName3: 3) // Use the unnamed
 
 ## Nested Functions
 
-### Swift 3
+__Swift 3__
 
 Functions can be nested. Nested functions have access to variables that were declared in the outer function. You can use nested functions to organize the code in a function that is long or complex.
 
@@ -113,12 +114,13 @@ func returnFifteen() -> Int {
 returnFifteen()
 ```
 
+&nbsp;
 
 <!-- ================================================== --><a name="VariableParameters"></a>
 
 ## Constant and Variable Parameters / In-Out Parameters
 
-### Swift 1
+__Swift 1__
 
 Function parameters are constants by default. Trying to change the value of a function parameter from within the body of that function results in a compile-time error. This means that you can't change the value of a parameter by mistake.
 
@@ -143,7 +145,7 @@ let paddedString = alignRight(originalString, 10, "-")
 // paddedString is equal to "-----hello"
 ```
 
-### Swift 3 - In-Out Parameters
+__Swift 3 - In-Out Parameters__
 
 Function parameters are constants by default. Trying to change the value of a function parameter from within the body of that function results in a compile-time error. This means that you can't change the value of a parameter by mistake. If you want a function to modify a parameter's value, and you want those changes to persist after the function call has ended, define that parameter as an "in-out" parameter instead.
 
@@ -162,7 +164,7 @@ greet(person: "Anna", greeting: &greeting))
 print(greeting)               //  // "Hello, Anna!"
 ```
 
-
+&nbsp;
 
 <!-- ================================================== --><div name="DefaultValueParameters"></div>
 
@@ -170,7 +172,7 @@ print(greeting)               //  // "Hello, Anna!"
 
 You can define a default value for any parameter in a function by assigning a value to the parameter after that parameter's type. If a default value is defined, you can omit that parameter when calling the function.
 
-### Swift 3
+__Swift 3__
 
 ```
 func greet(person: String = "John Doe") -> String {
@@ -182,6 +184,7 @@ print(greet(person: "Anna")) // "Hello, Anna!"
 print(greet())               // "Hello, John Doe!"
 ```
 
+&nbsp;
 
 <!-- ================================================== --><div name="VariadicParameters"></div>
 
@@ -189,7 +192,7 @@ print(greet())               // "Hello, John Doe!"
 
 A variadic parameter accepts zero or more values of a specified type. You use a variadic parameter to specify that the parameter can be passed a varying number of input values when the function is called. Write variadic parameters by inserting three period characters (`...`) after the parameter's type name.
 
-### Swift 3
+__Swift 3__
 
 ```
 func greet(_ persons: String...) -> String {
@@ -203,12 +206,13 @@ func greet(_ persons: String...) -> String {
 print(greet("Anna", "John", "Jack")) // "Hello, Anna, John, Jack!"
 ```
 
+&nbsp;
 
 <!-- ================================================== --><div name="ReturnTypes"></div>
 
 ## Return Types
 
-### Swift 3
+__Swift 3__
 
 With return value:
 
@@ -244,6 +248,7 @@ func greet(person: String) -> (text: String, lenght: Int) {
 print(greet(person: "Anna").text)
 ```
 
+&nbsp;
 
 <!-- ================================================== --><div name="FunctionTypes"></div>
 
@@ -256,7 +261,7 @@ In [Swift](/Swift) Functions are:
 
 See also [first-class functions](/functional/FirstClassFunction) and [higher-order functions](/functional/HigherOrderFunction).
 
-### Swift 3
+__Swift 3__
 
 Every function has a specific function type, made up of the parameter types and the return type of the function. You use function types just like any other types in Swift. 
 
@@ -311,3 +316,39 @@ let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
 ```
 
 Here, the return type of the `chooseStepFunction` function is: a function that takes an `Int` as single parameter and returns an `Int`.
+
+&nbsp;
+
+<!-- ================================================== --><div name="MapFilterReduce"></div>
+
+## Map, filter, and reduce
+
+See also the [Closure](/Closure) feature.
+
+The `map` function solves the problem of transforming the elements of an array using a function:
+
+```
+   // Return an `Array` containing the results of calling `transform(x)` on each element `x` of `self`
+   // func map<U>(transform: (T) -> U) -> [U]
+   let numbers = [10, 30, 91, 50, 100, 39, 74]
+   let mappedNumbers = numbers.map { "\($0)$" }
+```
+
+The `filter` function takes a function that, given an element in the array, returns `Bool` indicating whether the element should be included in the resulting array:
+
+```
+   // Return an Array containing the elements x of self for which includeElement(x)` is `true`
+   // func filter(includeElement: (T) -> Bool) -> [T]
+   let someEvenNumbers = numbers.filter { $0 % 2 == 0 }
+```
+
+The `reduce` function reduces an array to a single value. It takes two parameters: a starting value and a function, which takes a running total and an element of the arrays as parameters and returns a new running total.
+
+```
+   // Return the result of repeatedly calling `combine` with an accumulated
+   //  value initialized to `initial` and each element of `self`, in turn,
+   //  that is return `combine(combine(...combine(combine(initial, self[0]),
+   //  self[1]),...self[count-2]), self[count-1])`.
+   // func reduce<U>(initial: U, combine: (U, T) -> U) -> U
+   let total = numbers.reduce(0) { $0 + $1 }
+```

@@ -74,3 +74,7 @@ gem install psych -v 2.0.5
 
 * Replace current version in `/_config.xml#currentVersions`
 * Update `_kits/*.md#status` and `_features/*.md#status`
+
+# Resources
+
+- http://jekyll.tips/jekyll-cheat-sheet/
