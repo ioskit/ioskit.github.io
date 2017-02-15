@@ -321,7 +321,10 @@ Here, the return type of the `chooseStepFunction` function is: a function that t
 
 <!-- ================================================== --><div name="MapFilterReduce"></div>
 
+{% include playground-link.html iswift='bNuDSz' %}
+
 ## Map, filter, and reduce
+
 
 See also the [Closure](/Closure) feature.
 

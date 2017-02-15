@@ -22,6 +22,7 @@ features:
  - Closure
  - Enumeration
  - Extension
+ - Function
  - Protocol
  - Structure
  - TypeMethod
