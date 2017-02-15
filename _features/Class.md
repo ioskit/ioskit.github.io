@@ -42,8 +42,8 @@ See also [Structure](/Structure) page.
     <tr>
       <th></th>
       <th>Class</th>
-      <th>Structure</th>
-      <th>Enumeration</th>
+      <th><a href="/Structure">Structure</a></th>
+      <th><a href="/Enumeration">Enumeration</a></th>
     </tr>
   </thead>
   <tbody>
@@ -60,6 +60,18 @@ See also [Structure](/Structure) page.
   </tbody>
 </table>
 
+
+We consider creating a [Structure](/Structure) when one or more of the following conditions apply:
+
+- The structure's primary purpose is to encapsulate a few relatively simple data values
+- It is reasonable to expect that the encapsulated values will be copied rather than referenced when we assign or pass around an instance of the structure
+- Any properties stored by the structure are themselves value types, which would also be expected to be copied rather than referenced
+- The structure does not need to inherit properties or behavior from another existing type
+
+Example of good candidates for structures include the following:
+
+- The size of a geometric shape
+- A point in a 3D coordinate system
 
 # Inheritance
 

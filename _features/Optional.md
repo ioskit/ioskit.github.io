@@ -5,10 +5,13 @@ iid: Optional
 status: DONE
 language: swift
 abstract: "You use optionals in situations where a value may be absent."
+code:
+  gist: aa39f331d6008dd18a2157bc1a6618a7
+  iswift: qBHwNO
 links:
  - link:
-    name: 'The Swift Programming Language: The Basics, Optionals'
-    url: https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330
+    name: 'The Swift Programming Language (Swift 3.0.1)'
+    url: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330
     description: ' - Apple Developer'
     type: reference
  - link:
@@ -21,9 +24,10 @@ features:
  - Constant
 ---
 
-You use optionals in situations where a value may be absent.
+* TOC
+{:toc}
 
-{% gist aa39f331d6008dd18a2157bc1a6618a7 %}
+You use optionals in situations where a value may be absent.
 
 <!--
 ```

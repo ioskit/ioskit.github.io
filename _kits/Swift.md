@@ -56,6 +56,7 @@ A strength of Swift as an open source hybrid language is the ability to support 
 * [Functions](/Function) and [Closures](/Closure)
 * [Generics](/Generics)
 * [Error handling](/Error)
+* [Automatic Reference Counting (ARC)](/AutomaticReferenceCounting)
 * [Read-Eval-Print-Loop](/REPL) and [Interactive Playgrounds](/InteractivePlaygrounds)
 
 
