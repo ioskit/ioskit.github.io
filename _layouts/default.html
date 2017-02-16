@@ -50,54 +50,69 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-	        <ul class="nav navbar-nav">
-	          <li><a href="/detailed.html">Detailed</a></li>
-	        </ul>
-          <ul class="nav navbar-nav">
-            <!-- li><a href="http://news.bootswatch.com">Blog</a></li -->
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="ios_menu">iOS <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="iOS">
-                  {% for os in site.versions reversed %}
-                      {% if os == site.versions.first %}<li class="divider"></li>{% endif %}
-                      <li><a href="/{{os}}">{{os}}</a></li>
-                      {% if os == site.versions.last %}<li class="divider"></li>{% endif %}
-                  {% endfor %}
+
+          <div class="navbar-collapse collapse" id="navbar-main">
+              <ul class="nav navbar-nav">
+
+                  <!-- Detailed -->
+                  <li><a href="/detailed.html">Detailed</a></li>
+
+                  <!-- Languages -->
+                  <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="languages">Languages <span class="caret"></span></a>
+                          <ul class="dropdown-menu" aria-labelledby="languages">
+                              <li><a href="/features">Features</a></li>
+                              <li><a href="/CodeCards">Code Cards</a></li>
+                              <li><a href="/languages">Functional</a></li>
+                              <li><a href="/Swift">Swift</a></li>
+                              <li><a href="/ObjectiveC">Objective C</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+
+                  <!-- iOS -->
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="ios_menu">iOS <span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelledby="iOS">
+                          {% for os in site.versions reversed %}
+                          {% if os == site.versions.first %}
+                          <li class="divider"></li>
+                          {% endif %}
+                          <li><a href="/{{os}}">{{os}}</a></li>
+                          {% if os == site.versions.last %}
+                          <li class="divider"></li>
+                          {% endif %}
+                          {% endfor %}
+                      </ul>
+                  </li>
+
+                  <!-- XCode -->
+                  <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="xcode_menu">Xcode <span class="caret"></span></a>
+                      <ul class="dropdown-menu" aria-labelledby="Xcode">
+                          <li><a href="/Xcode6">Xcode 6</a></li>
+                          <li><a href="/Xcode5">Xcode 5</a></li>
+                          <li><a href="/Xcode45">Xcode 4.5</a></li>
+                          <li><a href="/Xcode42">Xcode 4.2</a></li>
+                          <li><a href="/Xcode4">Xcode 4</a></li>
+                          <li><a href="/Xcode3">Xcode 3</a></li>
+                      </ul>
+                  </li>
+
+                  <!-- Devices -->
+                  <li><a href="/devices.html">Devices</a></li>
+
+                  <!-- CVs -->
+                  <li><a href="/cvs">CVs</a></li>
+
               </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="xcode_menu">Xcode <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="Xcode">
-                <li><a href="/Xcode6">Xcode 6</a></li>
-                <li><a href="/Xcode5">Xcode 5</a></li>
-                <li><a href="/Xcode45">Xcode 4.5</a></li>
-                <li><a href="/Xcode42">Xcode 4.2</a></li>
-                <li><a href="/Xcode4">Xcode 4</a></li>
-                <li><a href="/Xcode3">Xcode 3</a></li>
+
+              <!-- About -->
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/about">About</a></li>
               </ul>
-            </li>
-          </ul>
-	      
-	      <ul class="nav navbar-nav">
-	        <li><a href="/features.html">Features</a></li>
-	      </ul>
-	      
-	      <ul class="nav navbar-nav">
-	        <li><a href="/devices.html">Devices</a></li>
-	      </ul>
-
-	      <ul class="nav navbar-nav">
-	        <li><a href="/cvs">CVs</a></li>
-	      </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">About</a></li>
-          </ul>
-
-        </div>
+          </div>
       </div>
     </div>
 

@@ -1,0 +1,51 @@
+---
+layout: default-headed
+---
+
+{% assign status = 'DONE' %}
+{% for feature in site.features %}
+	{% if feature.status != 'DONE' %}
+		{% assign status = 'DOING' %}
+	{% endif %}
+{% endfor %}
+
+
+<h1>
+	Code Cards
+	<span class="pull-right">{% include mark-status.html status=status %}</span>
+</h1>
+
+<p>
+	Code Card is a full code snippet including the whole material seen on a <a href="/features">feature page</a> -
+	hopefully as the most coherent way as possible. As those snippets are embedded from 'gist' platform, you need to have access to
+	<a href="http://gist.github.com" target="_blank">http://gist.github.com</a> to see them.
+</p>
+
+<p>This page can be seen as a sum up of the source code of the <a href="/Swift">Swift</a> language.</p>
+
+<ol>
+{% for feature in site.features %}
+	{% if feature.language contains 'swift' %}
+		<li>
+			{% if feature.code.gist %}
+			<a href="#{{ feature.iid }}">{{ feature.name }}</a>
+			{% else %}
+			<a style="color: gray" href="{{ feature.url }}">{{ feature.name }}</a>
+			{% endif %}
+		</li>
+	{% endif %}
+{% endfor %}
+</ol>
+
+
+{% for feature in site.features %}
+	{% if feature.code.gist %}
+		<a id="{{feature.iid}}">&nbsp;</a>
+		<h2>
+			{{ feature.name }}
+			<a class="pull-right" href="#top" title="Go to the top"><span class="glyphicon glyphicon-triangle-top"></span></a>
+			<a class="pull-right" href="{{feature.url}}" title="Go to the feature"><span class="glyphicon glyphicon-triangle-right"></span></a>
+		</h2>
+		{% gist feature.code.gist %}
+	{% endif %}
+{% endfor %}

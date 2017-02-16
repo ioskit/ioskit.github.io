@@ -41,12 +41,13 @@ features:
 * TOC
 {:toc}
 
-Swift is an innovative new programming language for Cocoa and Cocoa Touch. Writing code is interactive and fun, the syntax is concise yet expressive, 
+Swift is a new programming language for Cocoa and Cocoa Touch. Writing code is interactive, the syntax is concise yet expressive, 
 and apps run lightning-fast. Swift is ready for your next iOS and OS X project — or for addition into your current app — because Swift code works 
 side-by-side with Objective-C.
 
 A strength of Swift as an open source hybrid language is the ability to support both __Object-Oriented Programming (OOP)__ and __Functional Programming__.
 
+This page also covers __Swift 3.0__.
 
 ## Main topics
 
@@ -60,7 +61,12 @@ A strength of Swift as an open source hybrid language is the ability to support 
 * [Read-Eval-Print-Loop](/REPL) and [Interactive Playgrounds](/InteractivePlaygrounds)
 
 
-See also the comparison with other [Languages](/languages)
+See also:
+
+* the full list of [features](/features) 
+* the comparison with other [Functional Languages](/languages)
+* the [Code Cards](/CodeCards) as the source code sum up
+
 
 ## Object-Oriented Programming (OOP)
 
@@ -127,4 +133,4 @@ Swift has features empowering it as a functional programming language:
   * [First-class types](/functional/FirstClassFunction), so they can be stored, passed, and returned
   * [Higher-order functions](/functional/HigherOrderFunction), so they can receive other functions as their parameters
 * [Pattern Matching](/functional/PatternMatching)
-* Closures
+* [Closures](/Closure)
